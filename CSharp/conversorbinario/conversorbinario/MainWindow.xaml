@@ -1,0 +1,24 @@
+﻿<Window x:Class="conversorbinario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Converte Binario" Height="489" Width="676" ResizeMode="NoResize">
+    <Grid Background="{x:Null}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1112*" />
+            <ColumnDefinition Width="9*" />
+        </Grid.ColumnDefinitions>
+        <Button Content="Binary to Decimal" Height="23" Margin="0,41,5,0" Name="cmdDECIMAL" VerticalAlignment="Top" Click="cmdDECIMAL_Click" HorizontalAlignment="Right" Width="165" />
+        <TextBox Height="177" HorizontalAlignment="Left" Margin="12,261,0,0" Name="txtRESULT" VerticalAlignment="Top" Width="320" IsEnabled="True" AcceptsReturn="True" AcceptsTab="True" TextWrapping="Wrap" IsReadOnly="True" UseLayoutRounding="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto"></TextBox>
+        <Button Content="Decimal to Binary" Height="23" HorizontalAlignment="Right" Margin="0,12,4,0" Name="cmdBINARIO" VerticalAlignment="Top" Width="166" Click="cmdBINARIO_Click" />
+        <TextBox Height="231" Margin="12,12,178,0" Name="txtTEXT" VerticalAlignment="Top" AcceptsReturn="True" AcceptsTab="True" TextWrapping="Wrap" />
+        <Button Content="String to Binary" Height="23" HorizontalAlignment="Right" Margin="0,70,7,0" Name="cmdDESTRING" VerticalAlignment="Top" Width="165" Click="cmdDESTRING_Click" />
+        <Button Content="Binary to String" Height="23" Margin="0,99,7,0" Name="cmdPARASTRING" VerticalAlignment="Top" Click="cmdPARASTRING_Click" HorizontalAlignment="Right" Width="165" />
+        <TextBox AcceptsReturn="True" AcceptsTab="True" Height="177" Margin="338,261,7,0" Name="txtLOG" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" IsEnabled="True" VerticalScrollBarVisibility="Auto" />
+        <Button Content="Decimal to Hex" Height="23" Margin="0,128,6,0" Name="cmdDECIMALTOHEX" HorizontalAlignment="Right" Width="165" Click="cmdDECIMALTOHEX_Click" VerticalAlignment="Top" />
+        <Button Content="Hex to Decimal" Height="23" HorizontalAlignment="Right" Margin="0,157,7,0" Name="cmdHEXTODECIMAL" VerticalAlignment="Top" Width="165" />
+        <Button Content="String to Hex" Height="23" HorizontalAlignment="Right" Margin="0,186,5,0" Name="cmdSTRINGTOHEX" VerticalAlignment="Top" Width="165" />
+        <Button Content="Hex to String" HorizontalAlignment="Right" Margin="0,215,5,0" Name="cmdHEXTOSTRING" Width="165" Height="23" VerticalAlignment="Top" />
+        <Label Content="Resultado" Height="28" HorizontalAlignment="Left" Margin="12,238,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Calculo" Height="28" HorizontalAlignment="Left" Margin="338,238,0,0" Name="label2" VerticalAlignment="Top" />
+    </Grid>
+</Window>

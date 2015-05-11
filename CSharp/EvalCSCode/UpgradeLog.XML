@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="EvalCSCode">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\EvalCSCode.sln">
+</Property><Property Name="Date" Value="segunda-feira, 23 de maio de 2011">
+</Property><Property Name="Time" Value="15:51">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="EvalCSCode.sln" Description="File successfully backed up as C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\Backup\EvalCSCode.sln">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="EvalCSCode.csproj" Description="Project file successfully backed up as C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\Backup\EvalCSCode.csproj">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="EvalCSCode.csproj.user" Description="Project user file successfully backed up as C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\Backup\EvalCSCode.csproj.user">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="Class1.cs" Description="File successfully backed up as C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\Backup\Class1.cs">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="Form1.cs" Description="File successfully backed up as C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="App.ico" Description="File successfully backed up as C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="Form1.resx" Description="File successfully backed up as C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\Backup\Form1.resx">
+</Event><Event ErrorLevel="1" Project="EvalCSCode" Source="EvalCSCode.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="EvalCSCode.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="EvalCSCode" Source="EvalCSCode.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="EvalCSCode.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="EvalCSCode.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EvalCSCode" Source="EvalCSCode.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

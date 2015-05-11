@@ -1,0 +1,9 @@
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\obj\Debug\InvestExcel.csprojResolveAssemblyReference.cache
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Debug\InvestExcel.dna
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Debug\InvestExcel.xll
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Debug\InvestExcel.dll
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Debug\InvestExcel.pdb
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Debug\SQL.dll
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Debug\SQL.pdb
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\obj\Debug\InvestExcel.dll
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\obj\Debug\InvestExcel.pdb

@@ -1,0 +1,16 @@
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\PGM.Interfaces.dll.config
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\PGM.Interfaces.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\PGM.Interfaces.pdb
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\EntityFramework.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\PGM.Attributes.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\PGM.Attributes.pdb
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\EntityFramework.xml
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\obj\Debug\PGM.Interfaces.csprojResolveAssemblyReference.cache
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\obj\Debug\PGM.Interfaces.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\obj\Debug\PGM.Interfaces.pdb
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\PGM.Sys.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\SimpleInjector.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\PGM.Sys.pdb
+C:\ProjetosPragma\PGM.Framework\PGM.Interfaces\bin\Debug\SimpleInjector.xml

@@ -1,0 +1,10 @@
+C:\ProjetosPragma\PGM.Framework\PGM.Excel\bin\Release\PGM.Excel.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Excel\bin\Release\PGM.Excel.pdb
+X:\PGM.Framework\PGM.Excel\PGM.Excel.dll
+X:\PGM.Framework\PGM.Excel\PGM.Excel.pdb
+C:\ProjetosPragma\PGM.Framework\PGM.Excel\obj\Release\PGM.Excel.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Excel\obj\Release\PGM.Excel.pdb
+C:\ProjetosPragma\PGM.Framework\PGM.Excel\obj\Release\PGM.Excel.csprojResolveAssemblyReference.cache
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Excel\obj\Release\PGM.Excel.csprojResolveAssemblyReference.cache
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Excel\obj\Release\PGM.Excel.dll
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Excel\obj\Release\PGM.Excel.pdb

@@ -1,0 +1,3 @@
+﻿<DnaLibrary Name="InvestExcel" RuntimeVersion="v4.0">
+  <ExternalLibrary Path="InvestExcelNew.dll" />
+</DnaLibrary>

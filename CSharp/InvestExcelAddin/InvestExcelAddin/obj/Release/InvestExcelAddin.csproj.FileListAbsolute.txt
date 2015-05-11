@@ -1,0 +1,14 @@
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestExcelAddin.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestExcelAddin.pdb
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestExcelAddin.dll.manifest
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestExcelAddin.vsto
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\ResolveAssemblyReference.cache
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.Properties.Resources.resources
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.menu.resources
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.read.1.tlog
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.write.1.tlog
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.pdb
+C:\Documents and Settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestExcelAddin.tlb

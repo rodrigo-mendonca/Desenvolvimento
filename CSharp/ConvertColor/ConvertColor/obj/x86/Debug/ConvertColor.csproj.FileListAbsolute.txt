@@ -1,0 +1,8 @@
+C:\Dropbox\TestesCS\ConvertColor\ConvertColor\bin\Debug\ConvertColor.exe
+C:\Dropbox\TestesCS\ConvertColor\ConvertColor\bin\Debug\ConvertColor.pdb
+C:\Dropbox\TestesCS\ConvertColor\ConvertColor\obj\x86\Debug\ConvertColor.Form1.resources
+C:\Dropbox\TestesCS\ConvertColor\ConvertColor\obj\x86\Debug\ConvertColor.Properties.Resources.resources
+C:\Dropbox\TestesCS\ConvertColor\ConvertColor\obj\x86\Debug\ConvertColor.exe
+C:\Dropbox\TestesCS\ConvertColor\ConvertColor\obj\x86\Debug\ConvertColor.pdb
+C:\Dropbox\TestesCS\ConvertColor\ConvertColor\obj\x86\Debug\ConvertColor.csprojResolveAssemblyReference.cache
+C:\Dropbox\TestesCS\ConvertColor\ConvertColor\obj\x86\Debug\ConvertColor.csproj.GenerateResource.Cache

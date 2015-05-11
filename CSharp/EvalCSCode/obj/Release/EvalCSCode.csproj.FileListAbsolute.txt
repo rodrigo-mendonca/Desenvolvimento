@@ -1,0 +1,6 @@
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\bin\Release\EvalCSCode.exe
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\obj\Release\EvalCSCode.Form1.resources
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\obj\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\EvalCSCode\obj\Release\EvalCSCode.exe

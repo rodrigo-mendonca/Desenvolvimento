@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.SQL", "PGM.SQL\PGM.SQL.csproj", "{94418F83-0BDA-4355-9867-420DCACA5276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.FormTeste", "PGM.FormTeste\PGM.FormTeste.csproj", "{301BD2B3-1220-448A-8A81-7FDA21A5C467}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Controls", "PGM.Controls\PGM.Controls.csproj", "{2C6A66EA-8A0C-43DD-AA1A-990DCE210F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Xml", "PGM.Xml\PGM.Xml.csproj", "{29444F3B-5CAF-42E4-81FA-F68A06C82929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Excel", "PGM.Excel\PGM.Excel.csproj", "{76FBA490-35C3-4BA0-8BAE-523F411BA5B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Common", "PGM.Common\PGM.Common.csproj", "{C55822DE-6364-48FF-9664-855AF929161D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Interfaces", "PGM.Interfaces\PGM.Interfaces.csproj", "{6BBEBB17-C113-4B28-A3C9-5D651B5BA592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Controllers", "PGM.Controllers\PGM.Controllers.csproj", "{93C0CD68-57D9-45F6-93A8-D9442F4BBCE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Modules", "PGM.Modules\PGM.Modules.csproj", "{588C4E4E-EF55-4D08-AF68-AE87408D6783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Attributes", "PGM.Attributes\PGM.Attributes.csproj", "{D67EC87A-1AEF-4350-85B6-0149A779DA38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Sys", "PGM.Sys\PGM.Sys.csproj", "{B6879CF1-4905-4F41-A479-30744E7964EB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://pgmframework.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PGM.Common\\PGM.Common.csproj
+		SccProjectName1 = PGM.Common
+		SccLocalPath1 = PGM.Common
+		SccProjectUniqueName2 = PGM.Controls\\PGM.Controls.csproj
+		SccProjectName2 = PGM.Controls
+		SccLocalPath2 = PGM.Controls
+		SccProjectUniqueName3 = PGM.FormTeste\\PGM.FormTeste.csproj
+		SccProjectName3 = PGM.FormTeste
+		SccLocalPath3 = PGM.FormTeste
+		SccProjectUniqueName4 = PGM.SQL\\PGM.SQL.csproj
+		SccProjectName4 = PGM.SQL
+		SccLocalPath4 = PGM.SQL
+		SccProjectUniqueName5 = PGM.Xml\\PGM.Xml.csproj
+		SccProjectName5 = PGM.Xml
+		SccLocalPath5 = PGM.Xml
+		SccProjectUniqueName6 = PGM.Interfaces\\PGM.Interfaces.csproj
+		SccProjectName6 = PGM.Interfaces
+		SccLocalPath6 = PGM.Interfaces
+		SccProjectUniqueName7 = PGM.Controllers\\PGM.Controllers.csproj
+		SccProjectName7 = PGM.Controllers
+		SccLocalPath7 = PGM.Controllers
+		SccProjectUniqueName8 = PGM.Modules\\PGM.Modules.csproj
+		SccProjectName8 = PGM.Modules
+		SccLocalPath8 = PGM.Modules
+		SccProjectUniqueName9 = PGM.Attributes\\PGM.Attributes.csproj
+		SccProjectName9 = PGM.Attributes
+		SccLocalPath9 = PGM.Attributes
+		SccProjectUniqueName10 = PGM.Sys\\PGM.Sys.csproj
+		SccProjectName10 = PGM.Sys
+		SccLocalPath10 = PGM.Sys
+		SccProjectUniqueName11 = PGM.Excel\\PGM.Excel.csproj
+		SccProjectName11 = PGM.Excel
+		SccLocalPath11 = PGM.Excel
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94418F83-0BDA-4355-9867-420DCACA5276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94418F83-0BDA-4355-9867-420DCACA5276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94418F83-0BDA-4355-9867-420DCACA5276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94418F83-0BDA-4355-9867-420DCACA5276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{301BD2B3-1220-448A-8A81-7FDA21A5C467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301BD2B3-1220-448A-8A81-7FDA21A5C467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301BD2B3-1220-448A-8A81-7FDA21A5C467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301BD2B3-1220-448A-8A81-7FDA21A5C467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C6A66EA-8A0C-43DD-AA1A-990DCE210F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C6A66EA-8A0C-43DD-AA1A-990DCE210F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C6A66EA-8A0C-43DD-AA1A-990DCE210F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C6A66EA-8A0C-43DD-AA1A-990DCE210F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29444F3B-5CAF-42E4-81FA-F68A06C82929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29444F3B-5CAF-42E4-81FA-F68A06C82929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29444F3B-5CAF-42E4-81FA-F68A06C82929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29444F3B-5CAF-42E4-81FA-F68A06C82929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76FBA490-35C3-4BA0-8BAE-523F411BA5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FBA490-35C3-4BA0-8BAE-523F411BA5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FBA490-35C3-4BA0-8BAE-523F411BA5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FBA490-35C3-4BA0-8BAE-523F411BA5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55822DE-6364-48FF-9664-855AF929161D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55822DE-6364-48FF-9664-855AF929161D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55822DE-6364-48FF-9664-855AF929161D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55822DE-6364-48FF-9664-855AF929161D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BBEBB17-C113-4B28-A3C9-5D651B5BA592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BBEBB17-C113-4B28-A3C9-5D651B5BA592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BBEBB17-C113-4B28-A3C9-5D651B5BA592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BBEBB17-C113-4B28-A3C9-5D651B5BA592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C0CD68-57D9-45F6-93A8-D9442F4BBCE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C0CD68-57D9-45F6-93A8-D9442F4BBCE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C0CD68-57D9-45F6-93A8-D9442F4BBCE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C0CD68-57D9-45F6-93A8-D9442F4BBCE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588C4E4E-EF55-4D08-AF68-AE87408D6783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588C4E4E-EF55-4D08-AF68-AE87408D6783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588C4E4E-EF55-4D08-AF68-AE87408D6783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588C4E4E-EF55-4D08-AF68-AE87408D6783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D67EC87A-1AEF-4350-85B6-0149A779DA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67EC87A-1AEF-4350-85B6-0149A779DA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67EC87A-1AEF-4350-85B6-0149A779DA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67EC87A-1AEF-4350-85B6-0149A779DA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6879CF1-4905-4F41-A479-30744E7964EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6879CF1-4905-4F41-A479-30744E7964EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6879CF1-4905-4F41-A479-30744E7964EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6879CF1-4905-4F41-A479-30744E7964EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

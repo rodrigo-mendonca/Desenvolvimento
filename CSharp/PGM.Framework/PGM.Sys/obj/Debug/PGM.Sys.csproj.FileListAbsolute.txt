@@ -1,0 +1,9 @@
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\bin\Debug\PGM.Sys.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\bin\Debug\PGM.Sys.pdb
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\bin\Debug\SimpleInjector.Diagnostics.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\bin\Debug\SimpleInjector.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\bin\Debug\SimpleInjector.xml
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\bin\Debug\SimpleInjector.Diagnostics.xml
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\obj\Debug\PGM.Sys.dll
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\obj\Debug\PGM.Sys.pdb
+C:\ProjetosPragma\PGM.Framework\PGM.Sys\obj\Debug\PGM.Sys.csprojResolveAssemblyReference.cache

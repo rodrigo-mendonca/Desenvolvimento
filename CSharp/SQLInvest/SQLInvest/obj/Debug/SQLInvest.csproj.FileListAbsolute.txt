@@ -1,0 +1,6 @@
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\obj\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\bin\Debug\SQLInvest.dll
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\bin\Debug\SQLInvest.pdb
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\bin\Debug\SQLInvest.tlb
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\obj\Debug\SQLInvest.dll
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\obj\Debug\SQLInvest.pdb

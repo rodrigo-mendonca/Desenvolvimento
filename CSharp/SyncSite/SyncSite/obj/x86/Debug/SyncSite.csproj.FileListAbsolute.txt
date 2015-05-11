@@ -1,0 +1,9 @@
+C:\Dropbox\TestesCS\SyncSite\SyncSite\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\TestesCS\SyncSite\SyncSite\obj\x86\Debug\SyncSite.Properties.Resources.resources
+C:\Dropbox\TestesCS\SyncSite\SyncSite\obj\x86\Debug\SyncSite.SyncSite.resources
+C:\Dropbox\TestesCS\SyncSite\SyncSite\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Dropbox\TestesCS\SyncSite\SyncSite\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Dropbox\TestesCS\SyncSite\SyncSite\bin\Debug\SyncSite.exe
+C:\Dropbox\TestesCS\SyncSite\SyncSite\bin\Debug\SyncSite.pdb
+C:\Dropbox\TestesCS\SyncSite\SyncSite\obj\x86\Debug\SyncSite.exe
+C:\Dropbox\TestesCS\SyncSite\SyncSite\obj\x86\Debug\SyncSite.pdb

@@ -1,0 +1,13 @@
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Debug\InvestExcelAddin.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Debug\InvestExcelAddin.pdb
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Debug\InvestExcelAddin.dll.manifest
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Debug\InvestExcelAddin.vsto
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Debug\InvestExcelAddin.Properties.Resources.resources
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Debug\InvestExcelAddin.menu.resources
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Debug\InvestExcelAddin.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Debug\InvestExcelAddin.pdb

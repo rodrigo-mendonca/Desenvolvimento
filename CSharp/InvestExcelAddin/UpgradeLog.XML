@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="InvestAddin">
+</Property><Property Name="Solution File" Value="C:\TestesCS\InvestExcelAddin\InvestAddin.sln">
+</Property><Property Name="User Options File" Value="C:\TestesCS\InvestExcelAddin\InvestAddin.suo">
+</Property><Property Name="Date" Value="terça-feira, 29 de novembro de 2011">
+</Property><Property Name="Time" Value="10:40">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="InvestAddin.sln" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestAddin.sln">
+</Event><Event ErrorLevel="0" Project="" Source="InvestAddin.suo" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestAddin.suo">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\InvestAddin.csproj" Description="Project file successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\InvestAddin.csproj">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\InvestAddin.csproj.user" Description="Project user file successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\InvestAddin.csproj.user">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\Menu.cs" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\Menu.cs">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\Menu.Designer.cs" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\Menu.Designer.cs">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\ThisAddIn.cs" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\ThisAddIn.cs">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\ThisAddIn.Designer.cs" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\ThisAddIn.Designer.cs">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\InvestAddin_TemporaryKey.pfx" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\InvestAddin_TemporaryKey.pfx">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\Properties\Settings.settings" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\ThisAddIn.Designer.xml" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\ThisAddIn.Designer.xml">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\Properties\Resources.resx" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\Menu.resx" Description="File successfully backed up as C:\TestesCS\InvestExcelAddin\Backup\InvestExcelAddin\Menu.resx">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\InvestAddin.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="InvestAddin" Source="InvestExcelAddin\InvestAddin.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="InvestAddin.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="InvestAddin.sln" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="InvestAddin" Source="InvestExcelAddin\InvestAddin.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

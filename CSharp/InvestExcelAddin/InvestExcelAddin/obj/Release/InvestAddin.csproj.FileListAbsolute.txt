@@ -1,0 +1,64 @@
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.dll
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.pdb
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.dll.manifest
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.vsto
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.tlb
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.Properties.Resources.resources
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.menu.resources
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.dll
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.pdb
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddinCore.dll
+C:\Documents and Settings\rmendonca\Meus documentos\Visual Studio 2010\Projects\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddinCore.pdb
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\ResolveAssemblyReference.cache
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.Properties.Resources.resources
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.menu.resources
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.read.1.tlog
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.write.1.tlog
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.dll
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.pdb
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.dll
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.pdb
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.dll.manifest
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.vsto
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.tlb
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddinCore.dll
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddinCore.pdb
+C:\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.dll
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.pdb
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.dll.manifest
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.vsto
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.tlb
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddinCore.dll
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddinCore.pdb
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\ResolveAssemblyReference.cache
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.Properties.Resources.resources
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.menu.resources
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.read.1.tlog
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.write.1.tlog
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.dll
+C:\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.pdb
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.dll
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.pdb
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.dll.manifest
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.vsto
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddin.tlb
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddinCore.dll
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\InvestAddinCore.pdb
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.Properties.Resources.resources
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.menu.resources
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.read.1.tlog
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.write.1.tlog
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.dll
+C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.pdb

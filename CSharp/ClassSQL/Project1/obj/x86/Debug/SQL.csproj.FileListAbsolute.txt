@@ -1,0 +1,4 @@
+C:\Dropbox\TestesCS\ClassSQL\Project1\bin\Debug\SQL.dll
+C:\Dropbox\TestesCS\ClassSQL\Project1\bin\Debug\SQL.pdb
+C:\Dropbox\TestesCS\ClassSQL\Project1\obj\x86\Debug\SQL.dll
+C:\Dropbox\TestesCS\ClassSQL\Project1\obj\x86\Debug\SQL.pdb

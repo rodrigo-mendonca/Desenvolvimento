@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{301BD2B3-1220-448A-8A81-7FDA21A5C467}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PGM.FormTeste</RootNamespace>
+    <AssemblyName>PGM.FormTeste</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Final|AnyCPU'">
+    <OutputPath>bin\Final\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector, Version=2.7.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SimpleInjector.2.7.1\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Diagnostics">
+      <HintPath>..\packages\SimpleInjector.2.7.1\lib\net45\SimpleInjector.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anbima4Teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anbima4Teste.Designer.cs">
+      <DependentUpon>Anbima4Teste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultTeste.Designer.cs">
+      <DependentUpon>FormConsultTeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDigTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDigTeste.Designer.cs">
+      <DependentUpon>FormDigTeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeste.Designer.cs">
+      <DependentUpon>FormTeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PgmContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TesteGalgo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesteGalgo.Designer.cs">
+      <DependentUpon>TesteGalgo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anbima4Teste.resx">
+      <DependentUpon>Anbima4Teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultTeste.resx">
+      <DependentUpon>FormConsultTeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDigTeste.resx">
+      <DependentUpon>FormDigTeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeste.resx">
+      <DependentUpon>FormTeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TesteGalgo.resx">
+      <DependentUpon>TesteGalgo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PGM.Common\PGM.Common.csproj">
+      <Project>{c55822de-6364-48ff-9664-855af929161d}</Project>
+      <Name>PGM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PGM.Controls\PGM.Controls.csproj">
+      <Project>{2c6a66ea-8a0c-43dd-aa1a-990dce210f26}</Project>
+      <Name>PGM.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PGM.Excel\PGM.Excel.csproj">
+      <Project>{76fba490-35c3-4ba0-8bae-523f411ba5b9}</Project>
+      <Name>PGM.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PGM.Interfaces\PGM.Interfaces.csproj">
+      <Project>{6bbebb17-c113-4b28-a3c9-5d651b5ba592}</Project>
+      <Name>PGM.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PGM.Modules\PGM.Modules.csproj">
+      <Project>{588c4e4e-ef55-4d08-af68-ae87408d6783}</Project>
+      <Name>PGM.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PGM.SQL\PGM.SQL.csproj">
+      <Project>{94418f83-0bda-4355-9867-420dcaca5276}</Project>
+      <Name>PGM.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PGM.Sys\PGM.Sys.csproj">
+      <Project>{b6879cf1-4905-4f41-a479-30744e7964eb}</Project>
+      <Name>PGM.Sys</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PGM.Xml\PGM.Xml.csproj">
+      <Project>{29444f3b-5caf-42e4-81fa-f68a06c82929}</Project>
+      <Name>PGM.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

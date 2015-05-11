@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalCSCode", "EvalCSCode.csproj", "{F80B4D39-C5B1-45CC-A5E3-AB9F64A1183E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F80B4D39-C5B1-45CC-A5E3-AB9F64A1183E}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{F80B4D39-C5B1-45CC-A5E3-AB9F64A1183E}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{F80B4D39-C5B1-45CC-A5E3-AB9F64A1183E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80B4D39-C5B1-45CC-A5E3-AB9F64A1183E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

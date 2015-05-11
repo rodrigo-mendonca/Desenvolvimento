@@ -1,0 +1,9 @@
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\bin\Release\Invest.dll
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\bin\Release\Invest.pdb
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\bin\Release\Invest.tlb
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\obj\Release\Invest.dll
+C:\Dropbox\TestesCS\SQLInvest\SQLInvest\obj\Release\Invest.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\SQLInvest\SQLInvest\bin\Release\Invest.dll
+D:\Armazem\Internet\Dropbox\TestesCS\SQLInvest\SQLInvest\bin\Release\Invest.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\SQLInvest\SQLInvest\obj\Release\Invest.dll
+D:\Armazem\Internet\Dropbox\TestesCS\SQLInvest\SQLInvest\obj\Release\Invest.pdb

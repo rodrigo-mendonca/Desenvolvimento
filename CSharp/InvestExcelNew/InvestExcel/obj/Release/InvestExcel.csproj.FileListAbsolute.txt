@@ -1,0 +1,7 @@
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Release\InvestExcel.xll
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Release\InvestExcel.dll
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Release\InvestExcel.pdb
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\bin\Release\ExcelDna.Integration.dll
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\obj\Release\ResolveAssemblyReference.cache
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\obj\Release\InvestExcel.dll
+C:\Dropbox\TestesCS\InvestExcel\InvestExcel\obj\Release\InvestExcel.pdb

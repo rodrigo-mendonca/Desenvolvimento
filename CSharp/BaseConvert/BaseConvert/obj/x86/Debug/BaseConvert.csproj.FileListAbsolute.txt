@@ -1,0 +1,16 @@
+C:\TestesCS\BaseConvert\BaseConvert\bin\Debug\BaseConvert.exe
+C:\TestesCS\BaseConvert\BaseConvert\bin\Debug\BaseConvert.pdb
+C:\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.Properties.Resources.resources
+C:\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.exe
+C:\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.pdb
+C:\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.frmBaseConvert.resources
+D:\Armazem\Internet\Dropbox\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.exe
+D:\Armazem\Internet\Dropbox\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\BaseConvert\BaseConvert\bin\Debug\BaseConvert.exe
+D:\Armazem\Internet\Dropbox\TestesCS\BaseConvert\BaseConvert\bin\Debug\BaseConvert.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.frmBaseConvert.resources
+D:\Armazem\Internet\Dropbox\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.Properties.Resources.resources
+D:\Armazem\Internet\Dropbox\TestesCS\BaseConvert\BaseConvert\obj\x86\Debug\BaseConvert.csproj.GenerateResource.Cache

@@ -1,0 +1,37 @@
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\bin\Debug\conversorbinario.exe
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\bin\Debug\conversorbinario.pdb
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\MainWindow.baml
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\MainWindow.g.cs
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\App.g.cs
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario_MarkupCompile.cache
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.g.resources
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.Properties.Resources.resources
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.exe
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.pdb
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.exe
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.pdb
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\bin\Debug\conversorbinario.exe
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\bin\Debug\conversorbinario.pdb
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\MainWindow.baml
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\MainWindow.g.cs
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\App.g.cs
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario_MarkupCompile.cache
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.g.resources
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.Properties.Resources.resources
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.exe
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\bin\Debug\conversorbinario.exe
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\bin\Debug\conversorbinario.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\MainWindow.baml
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\MainWindow.g.cs
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\App.g.cs
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario_MarkupCompile.cache
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.g.resources
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.Properties.Resources.resources
+D:\Armazem\Internet\Dropbox\TestesCS\conversorbinario\conversorbinario\obj\x86\Debug\conversorbinario.csproj.GenerateResource.Cache
