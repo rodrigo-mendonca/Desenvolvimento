@@ -1,0 +1,12 @@
+id=0;
+size_x=28;
+size_y=32;
+image=Characters//James//Images//Mov.png;
+qt_sprites=1;
+stepx=0;
+stepy=0;
+fps=1;
+sound=NULL;
+charge=20;
+damage=0;
+lock=0;

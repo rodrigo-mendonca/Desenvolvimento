@@ -1,0 +1,10 @@
+id=3;
+size_x=33;
+size_y=34;
+image=Characters//James//Images//Attack.png;
+qt_sprites=6;
+stepx=0;
+stepy=0;
+fps=5;
+sound=NULL;
+charge=-10;

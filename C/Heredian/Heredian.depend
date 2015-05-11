@@ -1,0 +1,433 @@
+# depslib dependency file v1.0
+1385589206 source:c:\lucas\heredian\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Lib/Include/GameLib.h"
+
+1385761275 clude/GameLib.h"
+
+1385588940 c:\lucas\lib\include\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_primitives.h>
+	"Structs.h"
+	"GDPilha.h"
+	"heredianet.h"
+	"Events.h"
+	"GameServer.h"
+	"GameLoader.h"
+	"GameMenu.h"
+	"GameDraw.h"
+
+1385761283 h"
+
+1385555576 c:\lucas\lib\include\structs.h
+	"GDPilha.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+
+1385761283 allegro_acodec.h>
+
+1385555566 c:\lucas\lib\include\gdpilha.h
+
+1385555577 c:\lucas\lib\include\heredianet.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<ctype.h>
+	<pthread.h>
+	<winsock2.h>
+	<unistd.h>
+	<errno.h>
+	<netdb.h>
+	<sys/ioctl.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netinet/ip.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+
+1385761283 .h>
+
+1385555563 c:\lucas\lib\include\events.h
+	"GameLib.h"
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1385761283 "
+
+1385555574 c:\lucas\lib\include\gameserver.h
+	"GameLib.h"
+
+1385555571 c:\lucas\lib\include\gameloader.h
+	"Structs.h"
+	"FileManager.h"
+	"GameLib.h"
+
+1385555564 c:\lucas\lib\include\filemanager.h
+	<stdlib.h>
+	<stdio.h>
+
+1385761283 
+
+1385555573 c:\lucas\lib\include\gamemenu.h
+	"GameLib.h"
+
+1385555567 c:\lucas\lib\include\gamedraw.h
+	"GameLib.h"
+
+1385555533 source:c:\lucas\lib\events.c
+	"Include/Events.h"
+
+1385761282 vents.h"
+
+1385555534 source:c:\lucas\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Include/FileManager.h"
+
+1385761282 ileManager.h"
+
+1385555535 source:c:\lucas\lib\gdpilha.c
+	<stdlib.h>
+	"Include/GDPilha.h"
+
+1385761282 DPilha.h"
+
+1385555536 source:c:\lucas\lib\gamedraw.c
+	"Include/GameDraw.h"
+
+1385761282 ameDraw.h"
+
+1385651227 source:c:\lucas\lib\gamelib.c
+	"Include/GameLib.h"
+
+1385761764 ameLib.h"
+
+1385587844 source:c:\lucas\lib\gameloader.c
+	"Include/GameLoader.h"
+
+1385761282 ameLoader.h"
+
+1385555539 source:c:\lucas\lib\gamemenu.c
+	"Include/GameMenu.h"
+
+1385761282 ameMenu.h"
+
+1385555543 source:c:\lucas\lib\client.c
+	"Include/heredianet.h"
+
+1385761283 eredianet.h"
+
+1385555545 source:c:\lucas\lib\io_thread.c
+	"Include/heredianet.h"
+
+1385555547 source:c:\lucas\lib\list.c
+	"Include/heredianet.h"
+
+1385555549 source:c:\lucas\lib\misc.c
+	"Include/heredianet.h"
+
+1385555550 source:c:\lucas\lib\packet.c
+	"Include/heredianet.h"
+
+1385555552 source:c:\lucas\lib\queue.c
+	"Include/heredianet.h"
+
+1385555554 source:c:\lucas\lib\server.c
+	"Include/heredianet.h"
+
+1385555556 source:c:\lucas\lib\stack.c
+	"Include/heredianet.h"
+
+1385555557 source:c:\lucas\lib\stream_reader.c
+	"Include/heredianet.h"
+
+1385555559 source:c:\lucas\lib\stream_writer.c
+	"Include/heredianet.h"
+
+1385587742 source:c:\lucas\lib\gameserver.c
+	"Include/GameServer.h"
+
+1385761282 ameServer.h"
+
+1385761275 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\heredian\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Lib/Include/GameLib.h"
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_primitives.h>
+	"Structs.h"
+	"GDPilha.h"
+	"heredianet.h"
+	"Events.h"
+	"GameServer.h"
+	"GameLoader.h"
+	"GameMenu.h"
+	"GameDraw.h"
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\structs.h
+	"GDPilha.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\gdpilha.h
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\heredianet.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<ctype.h>
+	<pthread.h>
+	<winsock2.h>
+	<unistd.h>
+	<errno.h>
+	<netdb.h>
+	<sys/ioctl.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netinet/ip.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\events.h
+	"GameLib.h"
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\gameserver.h
+	"GameLib.h"
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\gameloader.h
+	"Structs.h"
+	"FileManager.h"
+	"GameLib.h"
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\filemanager.h
+	<stdlib.h>
+	<stdio.h>
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\gamemenu.h
+	"GameLib.h"
+
+1385761283 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\include\gamedraw.h
+	"GameLib.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\events.c
+	"Include/Events.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Include/FileManager.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\gdpilha.c
+	<stdlib.h>
+	"Include/GDPilha.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\gamedraw.c
+	"Include/GameDraw.h"
+
+1385761764 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\gamelib.c
+	"Include/GameLib.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\gameloader.c
+	"Include/GameLoader.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\gamemenu.c
+	"Include/GameMenu.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\gameserver.c
+	"Include/GameServer.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\client.c
+	"Include/heredianet.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\io_thread.c
+	"Include/heredianet.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\list.c
+	"Include/heredianet.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\misc.c
+	"Include/heredianet.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\packet.c
+	"Include/heredianet.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\queue.c
+	"Include/heredianet.h"
+
+1385761282 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\server.c
+	"Include/heredianet.h"
+
+1385761283 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\stack.c
+	"Include/heredianet.h"
+
+1385761283 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\stream_reader.c
+	"Include/heredianet.h"
+
+1385761283 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\lib\stream_writer.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/client.c
+	"Include/heredianet.h"
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/heredianet.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<ctype.h>
+	<pthread.h>
+	<winsock2.h>
+	<unistd.h>
+	<errno.h>
+	<netdb.h>
+	<sys/ioctl.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netinet/ip.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/Events.c
+	"Include/Events.h"
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/Events.h
+	"GameLib.h"
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/GameLib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_primitives.h>
+	"Structs.h"
+	"GDPilha.h"
+	"heredianet.h"
+	"Events.h"
+	"GameServer.h"
+	"GameLoader.h"
+	"GameMenu.h"
+	"GameDraw.h"
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/Structs.h
+	"GDPilha.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/GDPilha.h
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/GameServer.h
+	"GameLib.h"
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/GameLoader.h
+	"Structs.h"
+	"FileManager.h"
+	"GameLib.h"
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/FileManager.h
+	<stdlib.h>
+	<stdio.h>
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/GameMenu.h
+	"GameLib.h"
+
+1385761284 /home/rodrigo/Dropbox/TestesC/Lib/Include/GameDraw.h
+	"GameLib.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/FileManager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Include/FileManager.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/GameDraw.c
+	"Include/GameDraw.h"
+
+1385763795 source:/home/rodrigo/Dropbox/TestesC/Lib/GameLib.c
+	"Include/GameLib.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/GameLoader.c
+	"Include/GameLoader.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/GameMenu.c
+	"Include/GameMenu.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/GameServer.c
+	"Include/GameServer.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/GDPilha.c
+	<stdlib.h>
+	"Include/GDPilha.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/io_thread.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/list.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/misc.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/packet.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/queue.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/server.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/stack.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/stream_reader.c
+	"Include/heredianet.h"
+
+1385761284 source:/home/rodrigo/Dropbox/TestesC/Lib/stream_writer.c
+	"Include/heredianet.h"
+
+1385761276 source:/home/rodrigo/Dropbox/TestesC/Heredian/main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Lib/Include/GameLib.h"
+

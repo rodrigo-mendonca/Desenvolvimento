@@ -1,0 +1,15 @@
+id=0;
+scale_w=1.0;
+scale_h=1.0;
+posX=150;
+posY=100;
+direction=0;
+ini_act=0;
+healtfull=100;
+staminafull=100;
+action_number=5;
+act_0=Characters//Julios//Configs//julios_act_stop.txt;
+act_1=Characters//Julios//Configs//julios_act_mov.txt;
+act_2=Characters//Julios//Configs//julios_act_run.txt;
+act_3=Characters//Julios//Configs//julios_act_attack.txt;
+act_4=Characters//Julios//Configs//julios_act_dead.txt;

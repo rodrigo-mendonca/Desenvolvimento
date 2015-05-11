@@ -1,0 +1,2 @@
+server=10.135.160.22;
+boss_char_id=21;

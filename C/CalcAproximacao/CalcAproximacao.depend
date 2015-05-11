@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1366915998 source:c:\dropbox\testesc\calcaproximacao\main.cpp
+	<stdio.h>
+	<math.h>
+
+1367713360 source:d:\armazem\internet\dropbox\testesc\calcaproximacao\main.cpp
+	<stdio.h>
+	<math.h>
+	<iostream>
+	<stdlib.h>
+

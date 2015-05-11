@@ -1,0 +1,10 @@
+id=2;
+size_x=33;
+size_y=33;
+image=Characters//James//Images//MovFast.png;
+qt_sprites=4;
+stepx=3;
+stepy=3;
+fps=5;
+sound=Songs//Menu//musicsel.ogg;
+charge=-5;

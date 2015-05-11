@@ -1,0 +1,9 @@
+1=Characters//James//Configs//config.txt;
+2=Characters//Julios//Configs//config.txt;
+3=Characters//Japa//Configs//config.txt;
+4=Characters//Gauss//Configs//config.txt;
+5=Enemies//Zombie//Configs//config.txt;
+6=Enemies//BadZombie//Configs//config.txt;
+7=Enemies//Mumy//Configs//config.txt;
+8=Enemies//Skull//Configs//config.txt;
+9=Enemies//Marlin//Configs//config.txt;

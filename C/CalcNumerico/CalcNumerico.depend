@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1363637136 source:c:\dropbox\testesc\calcnumerico\main.cpp
+	<iostream>
+	<stdio.h>
+	<math.h>
+	"include\Grafico.h"
+
+1363636589 c:\dropbox\testesc\calcnumerico\include\grafico.h
+
+1363636805 source:c:\dropbox\testesc\calcnumerico\src\grafico.cpp
+	"..\include\Grafico.h"
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	<graphics.h>
+	<math.h>
+

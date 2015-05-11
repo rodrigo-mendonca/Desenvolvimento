@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Windows" />
+	<File name="Lib\Events.c" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Lib\Events.h" open="1" top="0" tabpos="7">
+		<Cursor position="271" topLine="0" />
+	</File>
+	<File name="Lib\FileManager.c" open="0" top="0" tabpos="3">
+		<Cursor position="1988" topLine="98" />
+	</File>
+	<File name="Lib\FileManager.h" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Lib\GDPilha.c" open="0" top="0" tabpos="0">
+		<Cursor position="339" topLine="73" />
+	</File>
+	<File name="Lib\GDPilha.h" open="1" top="0" tabpos="6">
+		<Cursor position="378" topLine="0" />
+	</File>
+	<File name="Lib\GameLib.c" open="1" top="1" tabpos="3">
+		<Cursor position="13192" topLine="459" />
+	</File>
+	<File name="Lib\GameLib.h" open="1" top="0" tabpos="5">
+		<Cursor position="1277" topLine="0" />
+	</File>
+	<File name="Lib\Structs.h" open="1" top="0" tabpos="1">
+		<Cursor position="1027" topLine="50" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="2">
+		<Cursor position="294" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

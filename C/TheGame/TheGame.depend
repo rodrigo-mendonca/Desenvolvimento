@@ -1,0 +1,903 @@
+# depslib dependency file v1.0
+1379442009 source:c:\dropbox\testesc\thegame\class\events.c
+	"GameLib.h"
+
+1380843576 "
+
+1379375656 c:\dropbox\testesc\thegame\class\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1379103980 allegro.h>
+
+1379442640 source:c:\dropbox\testesc\thegame\class\gamelib.c
+	"GameLib.h"
+
+1379380918 c:\dropbox\testesc\thegame\class\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+
+1379375612 
+
+1379381056 source:c:\dropbox\testesc\thegame\class\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1379431401 c:\dropbox\testesc\thegame\class\gdpilha.h
+
+1379375663 allegro_image.h>
+
+1382707875 source:c:\dropbox\testesc\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1380844219 ib.h"
+
+1379382785 eLib.h"
+
+1379031010 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\class\gdpilha.c
+	<stdio.h>
+	<stdlib.h>
+	"GDPilha.h"
+
+1379025459 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\class\gdpilha.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1379025459 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\class\gamelib.c
+	<stdlib.h>
+	"GameLib.h"
+
+1379025459 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\class\gamelib.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"Structs.h"
+
+1379025459 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\class\events.h
+	<allegro5/allegro.h>
+
+1380148651 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1379025459 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\class\events.c
+	"GameLib.h"
+
+1379424450 c:\dropbox\testesc\thegame\class\structs.h
+
+1378911962 source:c:\dropbox\testesc\thegame\class\structs.h
+
+1379035900 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\class\structs.h
+
+1379103979 source:c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\class\gdpilha.c
+	<stdio.h>
+	<stdlib.h>
+	"GDPilha.h"
+
+1379103979 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\class\gdpilha.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1379103979 source:c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\class\gamelib.c
+	<stdlib.h>
+	"GameLib.h"
+
+1379103979 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\class\gamelib.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"Structs.h"
+
+1379103979 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\class\events.h
+	<allegro5/allegro.h>
+
+1379103979 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\class\structs.h
+
+1379103979 source:c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\class\events.c
+	"GameLib.h"
+
+1382712477 source:c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1379103980 source:/home/rodrigo/Downloads/TheGame/Class/Events.c
+	"GameLib.h"
+
+1379103980 /home/rodrigo/Downloads/TheGame/Class/GameLib.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"Structs.h"
+
+1379103980 /home/rodrigo/Downloads/TheGame/Class/GDPilha.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1379103980 /home/rodrigo/Downloads/TheGame/Class/Events.h
+	<allegro5/allegro.h>
+
+1379103980 /home/rodrigo/Downloads/TheGame/Class/Structs.h
+
+1379103980 source:/home/rodrigo/Downloads/TheGame/Class/GameLib.c
+	<stdlib.h>
+	"GameLib.h"
+
+1379103980 source:/home/rodrigo/Downloads/TheGame/Class/GDPilha.c
+	<stdio.h>
+	<stdlib.h>
+	"GDPilha.h"
+
+1379137678 source:/home/rodrigo/Downloads/TheGame/main.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	"Class/GameLib.h"
+
+1379375486 source:/home/rodrigo/Dropbox/TestesC/TheGame/Class/Events.c
+	"GameLib.h"
+	"GameLib.h"
+	"GameLib.h"
+	"GameLib.h"
+
+1379380918 /home/rodrigo/Dropbox/TestesC/TheGame/Class/GameLib.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"Structs.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"Structs.h"
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"Events.h"
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+
+1379375663 /home/rodrigo/Dropbox/TestesC/TheGame/Class/GDPilha.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1379375656 /home/rodrigo/Dropbox/TestesC/TheGame/Class/Events.h
+	<allegro5/allegro.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro.h>
+	"Structs.h"
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1379381035 /home/rodrigo/Dropbox/TestesC/TheGame/Class/Structs.h
+	"GDPilha.h"
+
+1379382351 source:/home/rodrigo/Dropbox/TestesC/TheGame/Class/GameLib.c
+	<stdio.h>
+	<stdlib.h>
+	"GameLib.h"
+	<stdio.h>
+	<stdlib.h>
+	"GameLib.h"
+	"GameLib.h"
+	"GameLib.h"
+
+1379381056 source:/home/rodrigo/Dropbox/TestesC/TheGame/Class/GDPilha.c
+	<stdio.h>
+	<stdlib.h>
+	"GDPilha.h"
+	<stdio.h>
+	<stdlib.h>
+	"GDPilha.h"
+	<stdio.h>
+	<stdlib.h>
+	"GDPilha.h"
+	<stdlib.h>
+	"GDPilha.h"
+
+1381198194 source:/home/rodrigo/Dropbox/TestesC/TheGame/main.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	"Class/GameLib.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	"Class/GameLib.h"
+	<stdio.h>
+	<stdlib.h>
+	"Class/GameLib.h"
+	<stdio.h>
+	<stdlib.h>
+	"Class/GameLib.h"
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1379375486 source:d:\armazem\internet\dropbox\testesc\thegame\class\events.c
+	"GameLib.h"
+
+1379380918 d:\armazem\internet\dropbox\testesc\thegame\class\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+
+1379375663 d:\armazem\internet\dropbox\testesc\thegame\class\gdpilha.h
+
+1379375656 d:\armazem\internet\dropbox\testesc\thegame\class\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1379381035 d:\armazem\internet\dropbox\testesc\thegame\class\structs.h
+
+1379380351 source:d:\armazem\internet\dropbox\testesc\thegame\class\gamelib.c
+	"GameLib.h"
+
+1379381056 source:d:\armazem\internet\dropbox\testesc\thegame\class\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1379969576 source:d:\armazem\internet\dropbox\testesc\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1379375486 source:/home/gdpltda/Dropbox/TestesC/TheGame/Class/Events.c
+	"GameLib.h"
+	"GameLib.h"
+	"GameLib.h"
+
+1379380918 /home/gdpltda/Dropbox/TestesC/TheGame/Class/GameLib.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"Events.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"Events.h"
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+
+1379375663 /home/gdpltda/Dropbox/TestesC/TheGame/Class/GDPilha.h
+
+1379375656 /home/gdpltda/Dropbox/TestesC/TheGame/Class/Events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+	<allegro5/allegro.h>
+	"Structs.h"
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1379381035 /home/gdpltda/Dropbox/TestesC/TheGame/Class/Structs.h
+	"GDPilha.h"
+	"GDPilha.h"
+
+1379380351 source:/home/gdpltda/Dropbox/TestesC/TheGame/Class/GameLib.c
+	<stdio.h>
+	<stdlib.h>
+	"GameLib.h"
+	<stdio.h>
+	<stdlib.h>
+	"GameLib.h"
+	"GameLib.h"
+
+1379381056 source:/home/gdpltda/Dropbox/TestesC/TheGame/Class/GDPilha.c
+	<stdio.h>
+	<stdlib.h>
+	"GDPilha.h"
+	<stdio.h>
+	<stdlib.h>
+	"GDPilha.h"
+	<stdlib.h>
+	"GDPilha.h"
+
+1379382785 source:/home/gdpltda/Dropbox/TestesC/TheGame/main.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	"Class/GameLib.h"
+	<stdio.h>
+	<stdlib.h>
+	"Class/GameLib.h"
+	<stdio.h>
+	<stdlib.h>
+	"Class/GameLib.h"
+
+1382147260 source:c:\dropbox\testesc\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1380843603 er.h"
+
+1382139722 c:\dropbox\testesc\thegame\lib\filemanager.h
+
+1382139722 source:c:\dropbox\testesc\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1382703868 c:\dropbox\testesc\thegame\lib\gdpilha.h
+
+1382707819 source:c:\dropbox\testesc\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1382628531 c:\dropbox\testesc\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1382139818 c:\dropbox\testesc\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1382705488 c:\dropbox\testesc\thegame\lib\structs.h
+
+1382704560 source:c:\dropbox\testesc\thegame\lib\events.c
+	"GameLib.h"
+
+1382712477 source:c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1382712477 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\filemanager.h
+
+1382712477 source:c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1382712477 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\gdpilha.h
+
+1382712477 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1382712477 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1382712477 c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\structs.h
+
+1382712477 source:c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\events.c
+	"GameLib.h"
+
+1382712477 source:c:\users\rodrigo.mpaixao\downloads\pi6-master\testes\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1379704938 source:d:\armazem\internet\dropbox\testesc\thegame\lib\events.c
+	"GameLib.h"
+
+1379963928 d:\armazem\internet\dropbox\testesc\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+
+1379431401 d:\armazem\internet\dropbox\testesc\thegame\lib\gdpilha.h
+
+1379704938 d:\armazem\internet\dropbox\testesc\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1379723208 d:\armazem\internet\dropbox\testesc\thegame\lib\structs.h
+
+1379025459 source:d:\armazem\internet\dropbox\testesc\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1379025459 d:\armazem\internet\dropbox\testesc\thegame\lib\filemanager.h
+
+1379969709 source:d:\armazem\internet\dropbox\testesc\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1379704938 source:d:\armazem\internet\dropbox\testesc\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1380144794 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1380148173 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\filemanager.h
+
+1380144794 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1380144794 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\gdpilha.h
+
+1380148506 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1380147956 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1380144794 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1380144794 c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\structs.h
+
+1380144794 source:c:\users\lucas.tagostinho\downloads\pi6-master\pi6-master\testes\thegame\lib\events.c
+	"GameLib.h"
+
+1380236111 source:f:\pi6-master\pi6-master\testes\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1380151510 f:\pi6-master\pi6-master\testes\thegame\lib\filemanager.h
+
+1380144794 source:f:\pi6-master\pi6-master\testes\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1380144794 f:\pi6-master\pi6-master\testes\thegame\lib\gdpilha.h
+
+1380843660 source:f:\pi6-master\pi6-master\testes\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1380843603 f:\pi6-master\pi6-master\testes\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1380144794 f:\pi6-master\pi6-master\testes\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1380843614 f:\pi6-master\pi6-master\testes\thegame\lib\structs.h
+
+1380843576 source:f:\pi6-master\pi6-master\testes\thegame\lib\events.c
+	"GameLib.h"
+
+1380843644 source:f:\pi6-master\pi6-master\testes\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1380236111 source:d:\pi6-master\pi6-master\testes\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1380151510 d:\pi6-master\pi6-master\testes\thegame\lib\filemanager.h
+
+1380144794 source:d:\pi6-master\pi6-master\testes\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1380144794 d:\pi6-master\pi6-master\testes\thegame\lib\gdpilha.h
+
+1380321873 source:d:\pi6-master\pi6-master\testes\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1380321798 d:\pi6-master\pi6-master\testes\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1380144794 d:\pi6-master\pi6-master\testes\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1380144794 d:\pi6-master\pi6-master\testes\thegame\lib\structs.h
+
+1380322180 source:d:\pi6-master\pi6-master\testes\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1380144794 source:d:\pi6-master\pi6-master\testes\thegame\lib\events.c
+	"GameLib.h"
+
+1380236111 source:c:\users\lucas.tagostinho\downloads\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1380151510 c:\users\lucas.tagostinho\downloads\thegame\lib\filemanager.h
+
+1380144794 source:c:\users\lucas.tagostinho\downloads\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1380144794 c:\users\lucas.tagostinho\downloads\thegame\lib\gdpilha.h
+
+1380843660 source:c:\users\lucas.tagostinho\downloads\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1380843603 c:\users\lucas.tagostinho\downloads\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1380844100 c:\users\lucas.tagostinho\downloads\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1380843614 c:\users\lucas.tagostinho\downloads\thegame\lib\structs.h
+
+1380843576 source:c:\users\lucas.tagostinho\downloads\thegame\lib\events.c
+	"GameLib.h"
+
+1380844219 source:c:\users\lucas.tagostinho\downloads\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1380843576 source:/home/rodrigo/Dropbox/TestesC/TheGame/Lib/Events.c
+	"GameLib.h"
+
+1380843603 /home/rodrigo/Dropbox/TestesC/TheGame/Lib/GameLib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1379431401 /home/rodrigo/Dropbox/TestesC/TheGame/Lib/GDPilha.h
+
+1380844100 /home/rodrigo/Dropbox/TestesC/TheGame/Lib/Events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1380843614 /home/rodrigo/Dropbox/TestesC/TheGame/Lib/Structs.h
+
+1380151510 /home/rodrigo/Dropbox/TestesC/TheGame/Lib/FileManager.h
+
+1380151503 source:/home/rodrigo/Dropbox/TestesC/TheGame/Lib/FileManager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1381198585 source:/home/rodrigo/Dropbox/TestesC/TheGame/Lib/GameLib.c
+	"GameLib.h"
+
+1379704938 source:/home/rodrigo/Dropbox/TestesC/TheGame/Lib/GDPilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1380144794 source:d:\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1380144794 d:\thegame\lib\gdpilha.h
+
+1381539619 source:d:\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1381538361 d:\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1380844100 d:\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1380843614 d:\thegame\lib\structs.h
+
+1380151510 d:\thegame\lib\filemanager.h
+
+1380843576 source:d:\thegame\lib\events.c
+	"GameLib.h"
+
+1381538134 source:d:\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1381540375 source:d:\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1382143660 source:d:\pi6-master\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1382136122 d:\pi6-master\thegame\lib\filemanager.h
+
+1382136122 source:d:\pi6-master\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1382136122 d:\pi6-master\thegame\lib\gdpilha.h
+
+1382145144 source:d:\pi6-master\thegame\lib\gamelib.c
+	"GameLib.h"
+
+1382145176 d:\pi6-master\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1382136218 d:\pi6-master\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1382145284 d:\pi6-master\thegame\lib\structs.h
+
+1382145240 source:d:\pi6-master\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1382136122 source:d:\pi6-master\thegame\lib\events.c
+	"GameLib.h"
+
+1382712478 source:c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1382712478 c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\filemanager.h
+
+1382712478 source:c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1382712478 c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\gdpilha.h
+
+1382739711 source:c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\gamelib.c
+	"GameLib.h"
+
+1382712478 c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+
+1382712478 c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1382738847 c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\structs.h
+
+1382712478 source:c:\users\rodrigo.mpaixao\downloads\thegame-vjames\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1382738118 source:c:\users\rodrigo.mpaixao\downloads\thegame-vjames\lib\events.c
+	"GameLib.h"
+
+1382712478 source:c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileManager.h"
+
+1382712478 c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\filemanager.h
+
+1382712478 source:c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\gdpilha.c
+	<stdlib.h>
+	"GDPilha.h"
+
+1382743729 c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\gdpilha.h
+
+1382739887 source:c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lib/GameLib.h"
+
+1382743799 c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"GDPilha.h"
+	"Events.h"
+	"FileManager.h"
+	"../../libheredianet/include/heredianet.h"
+
+1382744142 c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\events.h
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1382746142 c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\structs.h
+	"GDPilha.h"
+
+1381003902 c:\users\rodrigo.mpaixao\documents\github\pi6\testes\libheredianet\include\heredianet.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<pthread.h>
+	<winsock2.h>
+
+1382746187 source:c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\events.c
+	"GameLib.h"
+
+1382744169 source:c:\users\rodrigo.mpaixao\documents\github\pi6\testes\thegame\lib\gamelib.c
+	"GameLib.h"
+

@@ -1,0 +1,6 @@
+map1=Stages//Fase1//config.txt;
+map2=Stages//Fase2//config.txt;
+map3=Stages//Fase3//config.txt;
+map4=Stages//Fase4//config.txt;
+map5=Stages//Fase5//config.txt;
+

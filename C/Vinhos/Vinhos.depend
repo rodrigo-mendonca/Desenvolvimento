@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1382969672 source:c:\dropbox\testesc\vinhos\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

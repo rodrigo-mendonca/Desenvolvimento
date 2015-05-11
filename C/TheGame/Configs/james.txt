@@ -1,0 +1,15 @@
+﻿id=0;
+scale_w=1.0;
+scale_h=1.0;
+posX=100;
+posY=100;
+direction=0;
+ini_act=0;
+healtfull=100;
+staminafull=100;
+action_number=5;
+act_0=Configs//james_act_stop.txt;
+act_1=Configs//james_act_mov.txt;
+act_2=Configs//james_act_run.txt;
+act_3=Configs//james_act_attack.txt;
+act_4=Configs//james_act_dead.txt;

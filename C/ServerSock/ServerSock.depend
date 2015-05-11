@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1367861388 source:c:\dropbox\testesc\serversock\main.cpp
+	<iostream>
+	<time.h>
+	<Windows.h>
+	"..\Classes\WinSockClass.h"
+
+1367861388 source:d:\armazem\internet\dropbox\testesc\serversock\main.cpp
+	<iostream>
+	<time.h>
+	<Windows.h>
+	"..\Classes\WinSockClass.h"
+
+1362706369 source:c:\users\rodrigo.mpaixao\downloads\serversock\main.cpp
+	<iostream>
+	<winsock2.h>
+	<time.h>
+	<Windows.h>
+
+1363310790 source:f:\sock\serversock\main.cpp
+	<iostream>
+	<time.h>
+	<Windows.h>
+	"..\Classes\WinSockClass.h"
+
+1363310894 f:\sock\classes\winsockclass.h
+	<winsock2.h>
+
+1367861363 source:c:\dropbox\testesc\classes\winsockclass.cpp
+	"WinSockClass.h"
+	<winsock2.h>
+	<iostream>
+	<pthread.h>
+
+1367871762 c:\dropbox\testesc\classes\winsockclass.h
+	<winsock2.h>
+	<pthread.h>
+
+1367871762 d:\armazem\internet\dropbox\testesc\classes\winsockclass.h
+	<winsock2.h>
+	<pthread.h>
+
+1368904625 source:d:\armazem\internet\dropbox\testesc\classes\winsockclass.cpp
+	"WinSockClass.h"
+	<winsock2.h>
+	<iostream>
+	<pthread.h>
+

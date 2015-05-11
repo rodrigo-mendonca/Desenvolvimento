@@ -1,0 +1,14 @@
+; dlltool --base-file C:\Users\RMENDO~1\AppData\Local\Temp/cca05852.base --output-exp Matriz3D.exp --dllname Matriz3D.dll --output-def libMatriz3D.def --no-export-all-symbols --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def C:\Users\RMENDO~1\AppData\Local\Temp/cca05852.def
+EXPORTS
+;	DllClass::DllClass()
+	_ZN8DllClassC2Ev @ 1
+;	DllClass::~DllClass()
+	_ZN8DllClassD0Ev @ 2
+;	DllClass::~DllClass()
+	_ZN8DllClassD1Ev @ 3
+;	DllClass::~DllClass()
+	_ZN8DllClassD2Ev @ 4
+;	vtable for DllClass
+	_ZTV8DllClass @ 5 DATA
+;	DllClass::DllClass()
+	_ZN8DllClassC1Ev @ 6

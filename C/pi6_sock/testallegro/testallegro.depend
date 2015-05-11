@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1381013637 source:c:\users\celso\desktop\trabalho\testallegro\main.c
+	<stdio.h>
+	<stdlib.h>
+	<allegro5\allegro.h>
+	"heredianet.h"
+
+1380751941 source:c:\users\celso\desktop\trabalho\testallegro\client.c
+	"heredianet.h"
+
+1380751577 c:\users\celso\desktop\trabalho\testallegro\heredianet.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<pthread.h>
+	<winsock2.h>
+
+1380750977 source:c:\users\celso\desktop\trabalho\testallegro\io_thread.c
+	"heredianet.h"
+
+1380484700 source:c:\users\celso\desktop\trabalho\testallegro\list.c
+	"heredianet.h"
+
+1380750727 source:c:\users\celso\desktop\trabalho\testallegro\misc.c
+	"heredianet.h"
+
+1380751437 source:c:\users\celso\desktop\trabalho\testallegro\packet.c
+	"heredianet.h"
+
+1380488345 source:c:\users\celso\desktop\trabalho\testallegro\queue.c
+	"heredianet.h"
+
+1380751457 source:c:\users\celso\desktop\trabalho\testallegro\server.c
+	"heredianet.h"
+
+1380148279 source:c:\users\celso\desktop\trabalho\testallegro\stack.c
+	"heredianet.h"
+
+1380751469 source:c:\users\celso\desktop\trabalho\testallegro\stream_reader.c
+	"heredianet.h"
+
+1380751548 source:c:\users\celso\desktop\trabalho\testallegro\stream_writer.c
+	"heredianet.h"
+
+1380931395 source:c:\users\lucas.tagostinho\downloads\pi6_sock\testallegro\main.c
+	<stdio.h>
+	<stdlib.h>
+	<allegro5\allegro.h>
+	"heredianet.h"
+
+1380751578 c:\users\lucas.tagostinho\downloads\pi6_sock\testallegro\heredianet.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<pthread.h>
+	<winsock2.h>
+

@@ -1,0 +1,6 @@
+qt_maps=5;
+map1=Models//Mold1.png;
+map2=Models//Mold2.png;
+map3=Models//Mold3.png;
+map4=Models//Mold4.png;
+map5=Models//Mold5.png;

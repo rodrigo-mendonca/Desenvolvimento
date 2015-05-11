@@ -1,0 +1,135 @@
+# depslib dependency file v1.0
+1385589206 source:c:\lucas\heredian\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Lib/Include/GameLib.h"
+
+1385588940 c:\lucas\lib\include\gamelib.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_primitives.h>
+	"Structs.h"
+	"GDPilha.h"
+	"heredianet.h"
+	"Events.h"
+	"GameServer.h"
+	"GameLoader.h"
+	"GameMenu.h"
+	"GameDraw.h"
+
+1385555576 c:\lucas\lib\include\structs.h
+	"GDPilha.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+
+1385555566 c:\lucas\lib\include\gdpilha.h
+
+1385555577 c:\lucas\lib\include\heredianet.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<ctype.h>
+	<pthread.h>
+	<winsock2.h>
+	<unistd.h>
+	<errno.h>
+	<netdb.h>
+	<sys/ioctl.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netinet/ip.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+
+1385555563 c:\lucas\lib\include\events.h
+	"GameLib.h"
+	<allegro5/allegro.h>
+	"Structs.h"
+
+1385555574 c:\lucas\lib\include\gameserver.h
+	"GameLib.h"
+
+1385555571 c:\lucas\lib\include\gameloader.h
+	"Structs.h"
+	"FileManager.h"
+	"GameLib.h"
+
+1385555564 c:\lucas\lib\include\filemanager.h
+	<stdlib.h>
+	<stdio.h>
+
+1385555573 c:\lucas\lib\include\gamemenu.h
+	"GameLib.h"
+
+1385555567 c:\lucas\lib\include\gamedraw.h
+	"GameLib.h"
+
+1385555533 source:c:\lucas\lib\events.c
+	"Include/Events.h"
+
+1385555534 source:c:\lucas\lib\filemanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Include/FileManager.h"
+
+1385555535 source:c:\lucas\lib\gdpilha.c
+	<stdlib.h>
+	"Include/GDPilha.h"
+
+1385555536 source:c:\lucas\lib\gamedraw.c
+	"Include/GameDraw.h"
+
+1385651227 source:c:\lucas\lib\gamelib.c
+	"Include/GameLib.h"
+
+1385587844 source:c:\lucas\lib\gameloader.c
+	"Include/GameLoader.h"
+
+1385555539 source:c:\lucas\lib\gamemenu.c
+	"Include/GameMenu.h"
+
+1385555543 source:c:\lucas\lib\client.c
+	"Include/heredianet.h"
+
+1385555545 source:c:\lucas\lib\io_thread.c
+	"Include/heredianet.h"
+
+1385555547 source:c:\lucas\lib\list.c
+	"Include/heredianet.h"
+
+1385555549 source:c:\lucas\lib\misc.c
+	"Include/heredianet.h"
+
+1385555550 source:c:\lucas\lib\packet.c
+	"Include/heredianet.h"
+
+1385555552 source:c:\lucas\lib\queue.c
+	"Include/heredianet.h"
+
+1385555554 source:c:\lucas\lib\server.c
+	"Include/heredianet.h"
+
+1385555556 source:c:\lucas\lib\stack.c
+	"Include/heredianet.h"
+
+1385555557 source:c:\lucas\lib\stream_reader.c
+	"Include/heredianet.h"
+
+1385555559 source:c:\lucas\lib\stream_writer.c
+	"Include/heredianet.h"
+
+1385587742 source:c:\lucas\lib\gameserver.c
+	"Include/GameServer.h"
+

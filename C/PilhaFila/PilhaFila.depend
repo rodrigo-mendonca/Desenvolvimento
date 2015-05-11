@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1377626810 source:c:\dropbox\testesc\pilhafila\main.c
+	<stdio.h>
+	<stdlib.h>
+	"List.h"
+
+1377626749 c:\dropbox\testesc\pilhafila\list.h
+

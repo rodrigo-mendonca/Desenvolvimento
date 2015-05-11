@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1368904625 source:d:\armazem\internet\dropbox\testesc\classes\winsockclass.cpp
+	"WinSockClass.h"
+	<winsock2.h>
+	<iostream>
+	<pthread.h>
+
+1367871762 d:\armazem\internet\dropbox\testesc\classes\winsockclass.h
+	<winsock2.h>
+	<pthread.h>
+
+1368905790 source:d:\armazem\internet\dropbox\testesc\testesock\main.cpp
+	<iostream>
+	"..\Classes\WinSockClass.h"
+

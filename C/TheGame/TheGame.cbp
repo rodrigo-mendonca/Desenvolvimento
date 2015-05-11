@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TheGame" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Windows">
+				<Option output="bin\Windows\TheGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Windows\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-std=c99" />
+				</Compiler>
+				<Linker>
+					<Add option="-std=c99" />
+					<Add library="..\libheredianet\libheredianet.a" />
+					<Add library="d:\MinGW\lib\liballegro-5.0.10-monolith-mt.a" />
+					<Add library="D:\MinGW\lib\libpthread.a" />
+					<Add library="D:\MinGW\lib\libws2_32.a" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="bin\Linux\TheGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Linux\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-std=c99" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lallegro" />
+					<Add option="-lallegro_image" />
+					<Add option="-lallegro_font" />
+					<Add option="-lallegro_ttf" />
+					<Add option="-lallegro_audio" />
+					<Add option="-lallegro_acodec" />
+					<Add option="-std=c99" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Lib\Events.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lib\Events.h" />
+		<Unit filename="Lib\FileManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lib\FileManager.h" />
+		<Unit filename="Lib\GDPilha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lib\GDPilha.h" />
+		<Unit filename="Lib\GameLib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lib\GameLib.h" />
+		<Unit filename="Lib\Structs.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
