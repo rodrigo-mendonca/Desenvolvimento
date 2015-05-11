@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Emme!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/Slide.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+    // Slideshow 3
+      $("#slider3").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 700,
+        namespace: "large-btns"
+      });
+
+    });
+    </script>
+
+    <div>
+        <!--Imagem do logo-->
+        <img id="barra" src="images/logo.png" height="120" width="222"> 
+        <!--Barra do menu-->
+        <nav role="navigation" class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse" style="color:#0000FF;">
+                <ul class="nav navbar-nav">
+                    <li class="ativo"><a href="Index.html">Home</a></li>
+                    <li class="naoativo"><a href="beleza.html">Beleza</a></li>
+                    <li class="naoativo"><a href="famosam.html">Famosa M!</a></li>
+                    <li class="naoativo"><a href="cabelos.html">Cabelos</a></li>
+                </ul>
+                 <form class="navbar-form" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+</head> 
+<body>
+    <div id="banner" class="rslides_container">
+      <ul class="rslides" id="slider3">
+        <li><img src="images/banner.png" alt=""></li>
+        <li><img src="images/2.jpg" alt=""></li>
+        <li><img src="images/3.jpg" alt=""></li>
+      </ul>
+    </div>
+<div> <img id="banner-2" src="images/banner2.png"></img>
+</div>
+<div id="coluna1">
+        <figure class="foto"><img class="fotos" src="images/foto-04.jpg"></figure>
+        <h2>MAIS QUERATINA</h2>
+        <p>Veja todos os tipos de queratinas para e todas as melhorias que ela pode proporcionar para o seu cabelo, produto bastante usada pelas famosas. </p>
+      </div>
+
+      <div id="coluna">
+        <figure class="foto"><a href="beleza.html"><img src="images/foto-02.jpg"></figure></a>
+        <h2>AZUL NO MAKE</h2>
+        <p>Confira o passoa a passo do make mais queridinho do momento, nesse tutorial vamos mostrar os passos para maquiagem e os produtos.</p>
+      </div>
+
+<iframe id="video" width="355" height="300" src="http://www.youtube.com/embed/54mdBn2veog" frameborder="0" allowfullscreen></iframe>
+<div><a href="beleza.html"><img class="final-f" src="images/final.png"></a></div>
+<div><img src="images/bottom.png"></img></div>
+</body>
+</html>

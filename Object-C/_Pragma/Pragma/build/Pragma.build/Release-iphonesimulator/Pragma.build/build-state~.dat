@@ -1,0 +1,322 @@
+TPragma
+v7
+r0
+t353505682.614607
+cCheck dependencies
+cProcessInfoPlistFile /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Info.plist Pragma-Info.plist
+cCompileXIB /Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/MainWindow_iPhone.xib
+cCompileXIB /Users/thiagotakehana_/XCodeProjects/Pragma/iPad/MainWindow_iPad.xib
+cCpResource build/Release-iphonesimulator/Pragma.app/Icon_Old.png ../../Library/iConify/Icon_Old.png
+cCpResource build/Release-iphonesimulator/Pragma.app/Icon.png Icon.png
+cCpResource build/Release-iphonesimulator/Pragma.app/Logo_pragma.gif Logo_pragma.gif
+cProcessPCH /var/folders/jp/jpPIszX2HL00-3lG9VrRrU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Pragma_Prefix-gskyppkddmsgrncvbbrrxbaiqkna/Pragma_Prefix.pch.gch Pragma_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/main.o /Users/thiagotakehana_/XCodeProjects/Pragma/Shared/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPhone.o /Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPad.o /Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma normal i386
+cGenerateDSYMFile /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app.dSYM /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma
+cTouch /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/../../Library/iConify/Icon_Old.png
+c000000004D57ED1200000000000027C0
+t1297607954
+s10176
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/Icon.png
+c000000004D5C29A20000000000000513
+t1297885602
+s1299
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/Logo_pragma.gif
+c000000004D657DD20000000000000DE1
+t1298496978
+s3553
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/Pragma_Prefix.pch
+c000000004D57DDBD00000000000000B5
+t1297604029
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/Shared/main.m
+c000000004D57DDBD000000000000016C
+t1297604029
+s364
+i<UIKit/UIKit.h>
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPad.o
+t1331812882
+s49456
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPhone.o
+t1331812882
+s51196
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/Pragma.LinkFileList
+c000000004F61DA0F0000000000000197
+t1331812879
+s407
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/main.o
+t1331812882
+s6312
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app
+t1331812882
+s340
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app.dSYM
+t1331812882
+s102
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Icon.png
+t1331812880
+s1299
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Icon_Old.png
+t1331812880
+s10176
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Info.plist
+t1331812879
+s901
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Logo_pragma.gif
+t1331812880
+s3553
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/MainWindow_iPad.nib
+t1331812880
+s982
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/MainWindow_iPhone.nib
+t1331812881
+s2125
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/PkgInfo
+t1331812879
+s8
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma
+t1331812882
+s17892
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.h
+c000000004D57DDBD0000000000000146
+t1297604029
+s326
+i<UIKit/UIKit.h>
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m
+c000000004D6583090000000000000766
+t1298498313
+s1894
+i"AppDelegate_iPad.h"
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/MainWindow_iPad.xib
+c000000004D57DDBD00000000000036DA
+t1297604029
+s14042
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.h
+c000000004D6D8E9400000000000001C8
+t1299025556
+s456
+i<UIKit/UIKit.h>
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m
+c000000004DDA73820000000000000D24
+t1306162050
+s3364
+i"AppDelegate_iPhone.h"
+
+N/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/MainWindow_iPhone.xib
+c000000004D658D5A00000000000068B7
+t1298500954
+s26807
+
+N/var/folders/jp/jpPIszX2HL00-3lG9VrRrU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Pragma_Prefix-gskyppkddmsgrncvbbrrxbaiqkna/Pragma_Prefix.pch.gch
+t1331812882
+s15113424
+
+NPragma-Info.plist
+c000000004D57DDBD0000000000000569
+t1297604029
+s1385
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies353505679#353505679#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPad.o /Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s353505682.330672
+e353505682.407236
+r1
+xCompileC
+xbuild/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPad.o
+x/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m: In function '-[AppDelegate_iPad application:didFinishLaunchingWithOptions:]':
+o/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m:27: warning: 'UIApplication' may not respond to '-terminate'
+o/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m:27: warning: (Messages without a matching method signature
+o/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m:27: warning: will be assumed to return 'id' and accept
+o/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m:27: warning: '...' as arguments.)
+lSLF07#2@75"Compile /Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m353505682#353505682#0(628"/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m: In function '-[AppDelegate_iPad application:didFinishLaunchingWithOptions:]':/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m:27: warning: 'UIApplication' may not respond to '-terminate'/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m:27: warning: (Messages without a matching method signature/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m:27: warning: will be assumed to return 'id' and accept/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m:27: warning: '...' as arguments.)2(22@47"'UIApplication' may not respond to '-terminate'353505682#147#129#0(6@67"/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m320191113#27#0#27#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)353505682#276#127#0(6@67"/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m320191113#27#0#27#0#0"0(0#0#67"/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m8604131648#2037"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-generated-files.hmap -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-own-target-headers.hmap -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-all-target-headers.hmap -iquote /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-project-headers.hmap -F/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/include -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/DerivedSources/i386 -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/jp/jpPIszX2HL00-3lG9VrRrU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Pragma_Prefix-gskyppkddmsgrncvbbrrxbaiqkna/Pragma_Prefix.pch -c /Users/thiagotakehana_/XCodeProjects/Pragma/iPad/AppDelegate_iPad.m -o /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPad.o0#
+
+CCompileC build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPhone.o /Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s353505682.183026
+e353505682.360252
+r1
+xCompileC
+xbuild/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPhone.o
+x/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m:112: warning: property 'webView' requires method '-webView' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m:112: warning: property 'webView' requires the method 'setWebView:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@79"Compile /Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m353505682#353505682#0(425"/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m:112: warning: property 'webView' requires method '-webView' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m:112: warning: property 'webView' requires the method 'setWebView:' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@122"Property 'webView' requires method '-webView' to be defined - use @synthesize, @dynamic or provide a method implementation353505682#0#209#0(6@71"/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m327854850#112#0#112#0#0"0(22@129"Property 'webView' requires the method 'setWebView:' to be defined - use @synthesize, @dynamic or provide a method implementation353505682#209#216#0(6@71"/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m327854850#112#0#112#0#0"0(0#0#71"/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m8601901440#2043"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-generated-files.hmap -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-own-target-headers.hmap -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-all-target-headers.hmap -iquote /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-project-headers.hmap -F/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/include -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/DerivedSources/i386 -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/jp/jpPIszX2HL00-3lG9VrRrU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Pragma_Prefix-gskyppkddmsgrncvbbrrxbaiqkna/Pragma_Prefix.pch -c /Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/AppDelegate_iPhone.m -o /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/AppDelegate_iPhone.o0#
+
+CCompileC build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/main.o /Users/thiagotakehana_/XCodeProjects/Pragma/Shared/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s353505682.181771
+e353505682.330459
+r1
+xCompileC
+xbuild/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/main.o
+x/Users/thiagotakehana_/XCodeProjects/Pragma/Shared/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/thiagotakehana_/XCodeProjects/Pragma/Shared/main.m353505682#353505682#0(0"0(0#0#57"/Users/thiagotakehana_/XCodeProjects/Pragma/Shared/main.m8602445920#2015"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-generated-files.hmap -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-own-target-headers.hmap -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-all-target-headers.hmap -iquote /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-project-headers.hmap -F/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/include -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/DerivedSources/i386 -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/jp/jpPIszX2HL00-3lG9VrRrU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Pragma_Prefix-gskyppkddmsgrncvbbrrxbaiqkna/Pragma_Prefix.pch -c /Users/thiagotakehana_/XCodeProjects/Pragma/Shared/main.m -o /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/thiagotakehana_/XCodeProjects/Pragma/iPad/MainWindow_iPad.xib
+s353505679.993329
+e353505680.950190
+r1
+xCompileXIB
+x/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/MainWindow_iPad.xib
+lSLF07#2@35"CompileXIB iPad/MainWindow_iPad.xib353505679#353505680#0(0"0(0#0#68"/Users/thiagotakehana_/XCodeProjects/Pragma/iPad/MainWindow_iPad.xib8599191584#601"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/MainWindow_iPad.nib /Users/thiagotakehana_/XCodeProjects/Pragma/iPad/MainWindow_iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/MainWindow_iPhone.xib
+s353505679.977765
+e353505681.472309
+r1
+xCompileXIB
+x/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/MainWindow_iPhone.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@39"CompileXIB iPhone/MainWindow_iPhone.xib353505679#353505681#0(252"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#72"/Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/MainWindow_iPhone.xib8599201056#607"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/MainWindow_iPhone.nib /Users/thiagotakehana_/XCodeProjects/Pragma/iPhone/MainWindow_iPhone.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Release-iphonesimulator/Pragma.app/Icon.png Icon.png
+s353505680.950948
+e353505680.983297
+r1
+xCpResource
+xbuild/Release-iphonesimulator/Pragma.app/Icon.png
+xIcon.png
+lSLF07#2@13"Copy Icon.png353505680#353505680#0(0"0(0#0#52"/Users/thiagotakehana_/XCodeProjects/Pragma/Icon.png8603674528#503"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/thiagotakehana_/XCodeProjects/Pragma/Icon.png /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app0#
+
+CCpResource build/Release-iphonesimulator/Pragma.app/Icon_Old.png ../../Library/iConify/Icon_Old.png
+s353505680.950271
+e353505680.980677
+r1
+xCpResource
+xbuild/Release-iphonesimulator/Pragma.app/Icon_Old.png
+x../../Library/iConify/Icon_Old.png
+lSLF07#2@39"Copy ../../Library/iConify/Icon_Old.png353505680#353505680#0(0"0(0#0#78"/Users/thiagotakehana_/XCodeProjects/Pragma/../../Library/iConify/Icon_Old.png8603000416#529"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/thiagotakehana_/XCodeProjects/Pragma/../../Library/iConify/Icon_Old.png /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app0#
+
+CCpResource build/Release-iphonesimulator/Pragma.app/Logo_pragma.gif Logo_pragma.gif
+s353505680.951433
+e353505680.983416
+r1
+xCpResource
+xbuild/Release-iphonesimulator/Pragma.app/Logo_pragma.gif
+xLogo_pragma.gif
+lSLF07#2@20"Copy Logo_pragma.gif353505680#353505680#0(0"0(0#0#59"/Users/thiagotakehana_/XCodeProjects/Pragma/Logo_pragma.gif8602918688#510"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/thiagotakehana_/XCodeProjects/Pragma/Logo_pragma.gif /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app0#
+
+CGenerateDSYMFile /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app.dSYM /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma
+s353505682.571812
+e353505682.611974
+r1
+xGenerateDSYMFile
+x/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app.dSYM
+x/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma
+lSLF07#2@110"GenerateDSYMFile build/Release-iphonesimulator/Pragma.app.dSYM build/Release-iphonesimulator/Pragma.app/Pragma353505682#353505682#0(0"0(0#0#91"/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma8602490528#399"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma -o /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app.dSYM0#
+
+CLd /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma normal i386
+s353505682.407329
+e353505682.571706
+r1
+xLd
+x/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma
+xnormal
+xi386
+lSLF07#2@96"Link /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma353505682#353505682#0(0"0(0#0#0"8603367264#928"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator -F/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator -filelist /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Objects-normal/i386/Pragma.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Pragma0#
+
+CProcessInfoPlistFile /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Info.plist Pragma-Info.plist
+s353505679.948830
+e353505679.977671
+r1
+xProcessInfoPlistFile
+x/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Info.plist
+xPragma-Info.plist
+lSLF07#2@25"Process Pragma-Info.plist353505679#353505679#0(0"0(0#0#61"/Users/thiagotakehana_/XCodeProjects/Pragma/Pragma-Info.plist27303506539708516#495"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Pragma-Info.plist -genpkginfo /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app/Info.plist0#
+
+CProcessPCH /var/folders/jp/jpPIszX2HL00-3lG9VrRrU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Pragma_Prefix-gskyppkddmsgrncvbbrrxbaiqkna/Pragma_Prefix.pch.gch Pragma_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s353505681.472669
+e353505682.181641
+r1
+xProcessPCH
+x/var/folders/jp/jpPIszX2HL00-3lG9VrRrU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Pragma_Prefix-gskyppkddmsgrncvbbrrxbaiqkna/Pragma_Prefix.pch.gch
+xPragma_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Pragma_Prefix.pch353505681#353505682#0(0"0(0#0#61"/Users/thiagotakehana_/XCodeProjects/Pragma/Pragma_Prefix.pch8603843136#1894"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-generated-files.hmap -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-own-target-headers.hmap -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-all-target-headers.hmap -iquote /Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/Pragma-project-headers.hmap -F/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/include -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/DerivedSources/i386 -I/Users/thiagotakehana_/XCodeProjects/Pragma/build/Pragma.build/Release-iphonesimulator/Pragma.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/thiagotakehana_/XCodeProjects/Pragma/Pragma_Prefix.pch -o /var/folders/jp/jpPIszX2HL00-3lG9VrRrU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Pragma_Prefix-gskyppkddmsgrncvbbrrxbaiqkna/Pragma_Prefix.pch.gch0#
+
+CTouch /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app
+s353505682.612054
+e353505682.614575
+r1
+xTouch
+x/Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app
+lSLF07#2@90"Touch /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app353505682#353505682#0(0"0(0#0#0"8599211424#289"    cd /Users/thiagotakehana_/XCodeProjects/Pragma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/thiagotakehana_/XCodeProjects/Pragma/build/Release-iphonesimulator/Pragma.app0#
+

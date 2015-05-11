@@ -1,0 +1,37 @@
+@media (max-width:1000px) and (min-width:801px){
+	body{
+		padding:0;
+		margin:0;
+	}
+
+	header{
+		background: hsla(250,50%,30%,0.5);
+		position:fixed;
+		left:0;
+		right:0;
+		top:0;
+		height:100px;
+		box-shadow: 0px 4px 4px #999;
+		z-index:1000;
+	}
+
+	section{
+		height: 1000px;
+		position: relative;
+		overflow: hidden;
+		margin-top: 130px;
+	}
+
+	article{
+		width: 31.33%;
+		height:400px;
+		background: hsla(250,30%,70%,0.9);
+		box-shadow: 0px 0px 4px #999;
+		margin: 1% 1%;
+		float: left;
+		-webkit-transition:.5s;
+	}
+	article:last-of-type{
+		width:98%;
+	}
+}

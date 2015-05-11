@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/TableLayout1" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:weightSum="1" android:layout_height="match_parent">
+    <CheckedTextView android:layout_alignParentLeft="true" android:layout_alignParentTop="true" 
+    	android:layout_width="wrap_content" 
+    	android:text="De:" 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/CheckedTextView01">
+   	</CheckedTextView>
+    <Spinner android:id="@+id/spinner1" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_below="@+id/CheckedTextView01" android:layout_alignParentLeft="true"></Spinner>
+    <CheckedTextView android:layout_height="wrap_content" android:text="Para:" android:id="@+id/checkedTextView1" android:layout_width="wrap_content" android:layout_below="@+id/spinner1" android:layout_alignParentLeft="true" android:layout_marginTop="46dp"></CheckedTextView>
+    <Spinner android:id="@+id/spinner2" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_below="@+id/checkedTextView1" android:layout_alignParentLeft="true"></Spinner>
+    <EditText android:layout_height="wrap_content" android:id="@+id/txtPara" android:layout_width="match_parent" android:inputType="numberDecimal" android:layout_below="@+id/spinner1" android:layout_alignParentLeft="true"></EditText>
+    <EditText android:layout_height="wrap_content" android:id="@+id/txtDe" android:layout_width="match_parent" android:inputType="numberDecimal" android:layout_below="@+id/spinner2" android:layout_alignParentLeft="true"></EditText>
+</RelativeLayout>

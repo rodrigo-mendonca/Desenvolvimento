@@ -1,0 +1,67 @@
+/* Reset Styles
+***********************/
+
+
+body {background: url('../images/fundo.png');  ) repeat left top; font-family: helvetica}
+#container {width: 100%; max-width: 800px; margin-left: 65px;}
+
+h2 {padding: 20px 0 20px; font-size: 30px; line-height: 22px;}
+h2 a {text-decoration: none; color: #363636;}
+h2 a:hover {border-bottom: 1px dotted #363636;}
+
+.texto{font-family: helvetica;
+
+bottom: 470px;
+margin-bottom: 20px;
+margin-right: 20px;}
+
+#bannerred{
+	position:relative;
+	right: -200px;
+	top: -360px;
+	width: 450px;
+	height: 450px; 
+}
+
+@media (max-width:770px){
+	#container{
+		margin-left: 0px;
+	}
+}
+
+
+#banner-4{
+	position: relative;
+	width: 390px;
+	height: 310px;
+	margin-left: 20px;
+	top: -150px;
+}
+	
+@media (max-width:770px){
+	#banner-4{
+		position: relative;
+		top: 50px;
+		width: 400px;
+		margin-left: 5px;
+	}
+}
+
+#video{
+  position: relative;
+  margin-left: 4px;
+  top: 30px;
+
+}
+
+@media (max-width:770px){
+	#video{
+		position: relative;
+	  	
+	  	top: 80px;
+	  	width: 405px;
+	  	height: 320px;
+	  	margin-left: 5px;
+	  }
+}
+

@@ -1,0 +1,78 @@
+.navbar-default {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	margin-left:222px;
+	 position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+/* Cor do fundo do logo*/
+.navbar-header {
+	background-color: #ae1f8e;
+	border-color: #ffffff;
+}
+/* Cor do fundo dos botoes*/
+.navbar-collapse {
+	background-color: #ae1f8e;
+	border-color: #ffffff;
+}
+/* Cor do botão para abrir o menu quando a tela está menor*/
+.navbar-default .navbar-toggle {
+	border-color: #75b9e2;
+	background-color: #75b9e2;
+}
+/*Cor do botao selecionado */
+.ativo{
+	background-color: #75b9e2;
+}
+/*Cor do botao nao selecionado */
+.naoativo{
+	background-color: #ae1f8e;
+}
+
+.navbar-form{
+	position: absolute;
+	right: 0px;
+}
+
+@media (max-width:770px){
+	.navbar-form{
+		visibility:hidden;
+	}
+}
+.navbar-default .navbar-brand {
+	color: #ffffff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #ffffff;
+}
+.navbar-default .navbar-text {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	/* Cor da fonte quando passa o mouse*/
+	color: #ae1f8e;
+	background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ff80c0;
+	background-color: #000000;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #ff80c0;
+	background-color: #000000;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ae1f8e;
+}

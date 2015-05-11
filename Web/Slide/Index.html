@@ -1,0 +1,48 @@
+<html>
+<head>
+<script type="text/javascript">
+index = 0
+array1 = new Array ("img1.jpg", "img2.jpg", "img3.jpg")
+opaco = 0
+tempo = 10
+function comeco(){
+	document.getElementById('imgId').src = array1[index]
+}
+ 
+ function fadeIn(){
+	opaco+=0.1
+	document.getElementById('imgId').style.opacity = opaco
+}
+
+function mais(){
+	index = Math.floor (index+1)
+	if (index > 2){index = 0}
+		opaco = 0
+
+}
+ 
+function menos(){
+	index = Math.floor (index-1)
+	if (index < 0){index = 2}
+		opaco = 0
+}
+
+
+function regular(){
+	document.getElementById('imgId').src = array1[index]
+	fadeIn()
+
+	if(opaco>tempo){
+		mais()
+		opaco = 0
+	}
+	setTimeout("regular()", 50)
+}
+</script>
+<body onLoad="comeco();regular()">
+<a id="aId"><img id="imgId" width="200" height="200"></a>
+</br>
+<a id="prev" href="javascript:menos()">Anterior</a>
+<a id="next" href="javascript:mais()">Proximo</a>
+</body>
+</HTML>
