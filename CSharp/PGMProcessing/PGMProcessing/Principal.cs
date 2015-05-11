@@ -45,18 +45,26 @@ namespace PGMProcessing
             if (!oControler.IsEmpty())
             {
                 ImgReflesh();
-                ToolRight.Enabled = true;
-                ToolLeft.Enabled = true;
-                ToolSave.Enabled = true;
-                stpReduction.Enabled = true;
-                stpMedia.Enabled = true;
-                stpDesvio.Enabled = true;
-                ToolOpcoes.Enabled = true;
+
+                foreach (var item in ToolMenu.Items)
+                {
+                    if (item.GetType() == typeof(ToolStripSplitButton)){
+                        ToolStripSplitButton oMenu = (ToolStripSplitButton)item;
+                        oMenu.Enabled = true;
+                        foreach (ToolStripMenuItem item2 in oMenu.DropDownItems)
+                        {
+                            item2.Enabled = true;
+                        }
+                    }
+                    if (item.GetType() == typeof(ToolStripButton)){
+                        ToolStripButton oMenu = (ToolStripButton)item;
+                        oMenu.Enabled = true;
+                    }
+                }
+
                 ToolRedo.Enabled = false;
                 ToolUndo.Enabled = false;
-                ToolErosaoMorfologica.Enabled = true;
-                ToolDilatacaoMorfologica.Enabled = true;
-                ToolHistograma.Enabled = true;
+
                 stpDesvio.Value = Convert.ToDecimal(((double)stpMedia.Value) / 6F);
             }
         }

@@ -129,17 +129,19 @@
             // 
             // ToolSalvar
             // 
+            this.ToolSalvar.Enabled = false;
             this.ToolSalvar.Image = ((System.Drawing.Image)(resources.GetObject("ToolSalvar.Image")));
             this.ToolSalvar.Name = "ToolSalvar";
-            this.ToolSalvar.Size = new System.Drawing.Size(150, 22);
+            this.ToolSalvar.Size = new System.Drawing.Size(161, 32);
             this.ToolSalvar.Text = "Salvar";
             this.ToolSalvar.Click += new System.EventHandler(this.ToolSavar_Click);
             // 
             // ToolSalvarComo
             // 
+            this.ToolSalvarComo.Enabled = false;
             this.ToolSalvarComo.Image = ((System.Drawing.Image)(resources.GetObject("ToolSalvarComo.Image")));
             this.ToolSalvarComo.Name = "ToolSalvarComo";
-            this.ToolSalvarComo.Size = new System.Drawing.Size(150, 22);
+            this.ToolSalvarComo.Size = new System.Drawing.Size(161, 32);
             this.ToolSalvarComo.Text = "Salvar Como...";
             this.ToolSalvarComo.Click += new System.EventHandler(this.ToolSavarComo_Click);
             // 
