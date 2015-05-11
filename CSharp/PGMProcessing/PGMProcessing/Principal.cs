@@ -48,7 +48,8 @@ namespace PGMProcessing
 
                 foreach (var item in ToolMenu.Items)
                 {
-                    if (item.GetType() == typeof(ToolStripSplitButton)){
+                    if (item.GetType() == typeof(ToolStripSplitButton))
+                    {
                         ToolStripSplitButton oMenu = (ToolStripSplitButton)item;
                         oMenu.Enabled = true;
                         foreach (ToolStripMenuItem item2 in oMenu.DropDownItems)
@@ -61,7 +62,6 @@ namespace PGMProcessing
                         oMenu.Enabled = true;
                     }
                 }
-
                 ToolRedo.Enabled = false;
                 ToolUndo.Enabled = false;
 
