@@ -56,3 +56,6 @@ C:\ProjetosPragma\PGM.Framework\PGM.FormTeste\bin\Debug\PGM.Sys.dll
 C:\ProjetosPragma\PGM.Framework\PGM.FormTeste\bin\Debug\PGM.Sys.pdb
 C:\ProjetosPragma\PGM.Framework\PGM.FormTeste\bin\Debug\PGM.Excel.dll
 C:\ProjetosPragma\PGM.Framework\PGM.FormTeste\bin\Debug\PGM.Excel.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.FormTeste\bin\Debug\PGM.FormTeste.exe.config
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.FormTeste\obj\Debug\PGM.FormTeste.exe
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.FormTeste\obj\Debug\PGM.FormTeste.pdb
