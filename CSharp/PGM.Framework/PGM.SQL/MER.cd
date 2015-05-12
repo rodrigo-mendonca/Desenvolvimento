@@ -1,37 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="PGM.SQL.Models.InvestimentoPosicao">
-    <Position X="3.5" Y="0.5" Width="1.75" />
+    <Position X="0.5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>CAggACCIcUgGIYAGhCGAlIgQlByIAABkwEJHMKAAAhI=</HashCode>
+      <HashCode>CAggACCIcWgGIYAGhAGAlIgQlByIAABkwEJHMKAAAhI=</HashCode>
       <FileName>Models\InvestimentoPosicao.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Investimento" />
       <Property Name="Ativo" />
       <Property Name="TipoAtivo" />
-      <Property Name="Indice" />
+      <Property Name="Moeda" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PGM.SQL.Models.Investimento">
-    <Position X="6.5" Y="8.75" Width="1.75" />
+    <Position X="4.5" Y="2.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAIAAAAAAEAAEAgAAABAgAAAAAAAIAAAEAAgA=</HashCode>
+      <HashCode>AAAAAACAACAAAAAEAAEAkAAABAgAAAAAAEIAAAEAAgA=</HashCode>
       <FileName>Models\Investimento.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ativo" />
+      <Property Name="Moeda" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PGM.SQL.Models.Ativo">
-    <Position X="0.5" Y="9" Width="1.5" />
+    <Position X="6" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAAEAAAAgAAABAAAAAAAAAIAAAEAAgA=</HashCode>
+      <HashCode>AAAAAACAACAAAAAEAAAAlAAABAEAAABAAAJAAAECAgA=</HashCode>
       <FileName>Models\Ativo.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TipoAtivo" />
+      <Property Name="Moeda" />
+      <Property Name="MoedaLanc" />
+      <Property Name="MoedaOri" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PGM.SQL.Models.TipoAtivo">
-    <Position X="6.5" Y="5" Width="1.5" />
+    <Position X="9" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAEAAAAgAAABAAAAAAAAAIAAAEAAgA=</HashCode>
       <FileName>Models\TipoAivo.cs</FileName>
@@ -39,7 +49,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PGM.SQL.Models.Indice">
-    <Position X="0.5" Y="5.25" Width="1.5" />
+    <Position X="3" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAEAAAAgAAABAAAAAAAAAIAAAEAAgA=</HashCode>
       <FileName>Models\Indice.cs</FileName>

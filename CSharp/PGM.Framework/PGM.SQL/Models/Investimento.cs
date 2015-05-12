@@ -20,17 +20,23 @@ namespace PGM.SQL.Models
 
         [Column("DS_FANTASIA")]
         [GridHeader(Desc = "Investimento")]
-        public string Nome { get; set; }
+        public string Fantasia { get; set; }
 
         [Column("DS_CLUBE")]
         [GridHeader(Desc = "Nome do Investimento")]
-        public string NomeInvestimento { get; set; }
+        public string Nome { get; set; }
 
         [Column("FK_ATIVO")]
         [GridHeader(Desc = "Cód. Ativo")]
         public string FkAtivo { get; set; }
         [ForeignKey("FkAtivo")]
         public virtual Ativo Ativo { get; set; }
+
+        [Column("FK_MOEDA")]
+        [GridHeader(Desc = "Cód. Moeda")]
+        public decimal FkMoeda { get; set; }
+        [ForeignKey("FkMoeda")]
+        public virtual Indice Moeda { get; set; }
 
         [Column("TG_INATIVO")]
         public Nullable<decimal> Inativo { get; set; }

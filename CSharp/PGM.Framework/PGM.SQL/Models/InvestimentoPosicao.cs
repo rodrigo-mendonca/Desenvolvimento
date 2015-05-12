@@ -144,7 +144,7 @@ namespace PGM.SQL.Models
         [GridHeader(Desc = "Cód. Moeda")]
         public decimal FkMoeda { get; set; }
         [ForeignKey("FkMoeda")]
-        public virtual Indice Indice { get; set; }
+        public virtual Indice Moeda { get; set; }
 
         [Column("TG_SEMQTD")]
         [GridHeader(Desc = "Sem QTD.")]

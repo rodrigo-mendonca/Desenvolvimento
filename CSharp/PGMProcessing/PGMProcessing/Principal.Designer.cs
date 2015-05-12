@@ -41,13 +41,14 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ToolLeft = new System.Windows.Forms.ToolStripButton();
             this.ToolRight = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolColorReduction = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.ToolErosaoMorfologica = new System.Windows.Forms.ToolStripButton();
             this.ToolDilatacaoMorfologica = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.ToolHistograma = new System.Windows.Forms.ToolStripButton();
             this.ToolOpcoes = new System.Windows.Forms.ToolStripSplitButton();
-            this.ToolColorReduction = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolFloydSteinberg = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolEqualizarCores = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolFiltroMedia = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,6 +92,8 @@
             this.toolStripSeparator2,
             this.ToolLeft,
             this.ToolRight,
+            this.toolStripSeparator4,
+            this.ToolColorReduction,
             this.toolStripSeparator3,
             this.ToolErosaoMorfologica,
             this.ToolDilatacaoMorfologica,
@@ -132,7 +135,7 @@
             this.ToolSalvar.Enabled = false;
             this.ToolSalvar.Image = ((System.Drawing.Image)(resources.GetObject("ToolSalvar.Image")));
             this.ToolSalvar.Name = "ToolSalvar";
-            this.ToolSalvar.Size = new System.Drawing.Size(161, 32);
+            this.ToolSalvar.Size = new System.Drawing.Size(150, 22);
             this.ToolSalvar.Text = "Salvar";
             this.ToolSalvar.Click += new System.EventHandler(this.ToolSavar_Click);
             // 
@@ -141,7 +144,7 @@
             this.ToolSalvarComo.Enabled = false;
             this.ToolSalvarComo.Image = ((System.Drawing.Image)(resources.GetObject("ToolSalvarComo.Image")));
             this.ToolSalvarComo.Name = "ToolSalvarComo";
-            this.ToolSalvarComo.Size = new System.Drawing.Size(161, 32);
+            this.ToolSalvarComo.Size = new System.Drawing.Size(150, 22);
             this.ToolSalvarComo.Text = "Salvar Como...";
             this.ToolSalvarComo.Click += new System.EventHandler(this.ToolSavarComo_Click);
             // 
@@ -199,6 +202,22 @@
             this.ToolRight.Text = "Girar para direita";
             this.ToolRight.Click += new System.EventHandler(this.ToolRight_Click);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 32);
+            // 
+            // ToolColorReduction
+            // 
+            this.ToolColorReduction.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolColorReduction.Enabled = false;
+            this.ToolColorReduction.Image = ((System.Drawing.Image)(resources.GetObject("ToolColorReduction.Image")));
+            this.ToolColorReduction.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolColorReduction.Name = "ToolColorReduction";
+            this.ToolColorReduction.Size = new System.Drawing.Size(29, 29);
+            this.ToolColorReduction.Text = "toolStripButton1";
+            this.ToolColorReduction.Click += new System.EventHandler(this.ToolColorReduction_Click);
+            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
@@ -246,7 +265,6 @@
             // 
             this.ToolOpcoes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.ToolOpcoes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolColorReduction,
             this.ToolFloydSteinberg,
             this.ToolEqualizarCores,
             this.ToolFiltroMedia,
@@ -259,13 +277,6 @@
             this.ToolOpcoes.Name = "ToolOpcoes";
             this.ToolOpcoes.Size = new System.Drawing.Size(41, 29);
             this.ToolOpcoes.Text = "toolStripSplitButton1";
-            // 
-            // ToolColorReduction
-            // 
-            this.ToolColorReduction.Name = "ToolColorReduction";
-            this.ToolColorReduction.Size = new System.Drawing.Size(181, 22);
-            this.ToolColorReduction.Text = "Reduzir Cores";
-            this.ToolColorReduction.Click += new System.EventHandler(this.ToolColorReduction_Click);
             // 
             // ToolFloydSteinberg
             // 
@@ -453,7 +464,6 @@
         private System.Windows.Forms.NumericUpDown stpReduction;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripSplitButton ToolOpcoes;
-        private System.Windows.Forms.ToolStripMenuItem ToolColorReduction;
         private System.Windows.Forms.ToolStripMenuItem ToolFloydSteinberg;
         private System.Windows.Forms.ToolStripMenuItem ToolEqualizarCores;
         private System.Windows.Forms.ToolStripMenuItem ToolFiltroMedia;
@@ -468,6 +478,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton ToolHistograma;
         private System.Windows.Forms.ToolStripButton ToolDilatacaoMorfologica;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton ToolColorReduction;
     }
 }
 

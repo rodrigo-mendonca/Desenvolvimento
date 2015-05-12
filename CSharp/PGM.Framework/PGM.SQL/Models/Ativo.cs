@@ -23,11 +23,30 @@ namespace PGM.SQL.Models
         [GridHeader(Desc = "Ativo")]
         public string Nome { get; set; }
 
-        //[Column("FK_TIPOATIVO")]
-        //[Header(Desc = "Cód Tipo Ativo")]
-        //public int FkTipoAtivo { get; set; }
-        //[ForeignKey("FkTipoAtivo")]
-        //public virtual TipoAtivo TipoAtivo { get; set; }
+        [Column("FK_TIPOATIVO")]
+        [GridHeader(Desc = "Cód Tipo Ativo")]
+        public int FkTipoAtivo { get; set; }
+        [ForeignKey("FkTipoAtivo")]
+        public virtual TipoAtivo TipoAtivo { get; set; }
+
+        [Column("FK_MOEDA")]
+        [GridHeader(Desc = "Cód. Moeda")]
+        public decimal FkMoeda { get; set; }
+        [ForeignKey("FkMoeda")]
+        public virtual Indice Moeda { get; set; }
+
+
+        [Column("FK_MOEDA")]
+        [GridHeader(Desc = "Cód. Moeda")]
+        public decimal FkMoedaLanc { get; set; }
+        [ForeignKey("FkMoedaLanc")]
+        public virtual Indice MoedaLanc { get; set; }
+
+        [Column("FK_MOEDA")]
+        [GridHeader(Desc = "Cód. Moeda")]
+        public decimal FkMoedaOri { get; set; }
+        [ForeignKey("FkMoedaOri")]
+        public virtual Indice MoedaOri { get; set; }
 
         [Column("TG_INATIVO")]
         public Nullable<decimal> Inativo { get; set; }

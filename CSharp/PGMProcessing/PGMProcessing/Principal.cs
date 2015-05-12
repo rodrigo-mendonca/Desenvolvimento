@@ -62,6 +62,9 @@ namespace PGMProcessing
                         oMenu.Enabled = true;
                     }
                 }
+                stpReduction.Enabled = true;
+                stpMedia.Enabled = true;
+                stpDesvio.Enabled = true;
                 ToolRedo.Enabled = false;
                 ToolUndo.Enabled = false;
 

@@ -8,3 +8,4 @@ C:\ProjetosPragma\PGM.Framework\PGM.Sys\obj\Release\PGM.Sys.dll
 C:\ProjetosPragma\PGM.Framework\PGM.Sys\obj\Release\PGM.Sys.pdb
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Sys\obj\Release\PGM.Sys.dll
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Sys\obj\Release\PGM.Sys.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Sys\obj\Release\PGM.Sys.csprojResolveAssemblyReference.cache

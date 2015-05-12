@@ -6,3 +6,4 @@ C:\ProjetosPragma\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.dll
 C:\ProjetosPragma\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.pdb
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.dll
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.csprojResolveAssemblyReference.cache
