@@ -162,10 +162,6 @@ namespace PGM.SQL.Models
         [GridHeader(Desc = "Vl. Cot. Real")]
         public decimal VlCotReal { get; set; }
 
-        [Column("VL_COTREAL")]
-        [GridHeader(Desc = "Vl. Cot. Real")]
-        public decimal VlCOTREAL { get; set; }
-
         [Column("TG_DESCONSIDERAR")]
         [GridHeader(Desc = "Desconsiderar")]
         public int TgDesconsiderar { get; set; }

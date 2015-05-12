@@ -3,31 +3,28 @@
   <Class Name="PGM.SQL.Models.InvestimentoPosicao">
     <Position X="0.5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>CAggACCIcWgGIYAGhAGAlIgQlByIAABkwEJHMKAAAhI=</HashCode>
+      <HashCode>CAggACCIcWgGIYAGhAGAlIgQlByIAABkwEJHMIAAAhI=</HashCode>
       <FileName>Models\InvestimentoPosicao.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Investimento" />
       <Property Name="Ativo" />
       <Property Name="TipoAtivo" />
       <Property Name="Moeda" />
+      <Property Name="Investimento" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="PGM.SQL.Models.Investimento">
-    <Position X="4.5" Y="2.25" Width="1.75" />
+  <Class Name="PGM.SQL.Models.TipoInvestimento">
+    <Position X="3.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAACAAAAAEAAEAkAAABAgAAAAAAEIAAAEAAgA=</HashCode>
-      <FileName>Models\Investimento.cs</FileName>
+      <HashCode>AAAAAACAAAAAAAAEAAAAgAAABAAAAAAAAAIAAAAAAgA=</HashCode>
+      <FileName>Models\TipoInvestimento.cs</FileName>
+      <NewMemberFileName>Models\Investimento.cs</NewMemberFileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Ativo" />
-      <Property Name="Moeda" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PGM.SQL.Models.Ativo">
-    <Position X="6" Y="6.25" Width="1.5" />
+    <Position X="6.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAACAAAAAEAAAAlAAABAEAAABAAAJAAAECAgA=</HashCode>
       <FileName>Models\Ativo.cs</FileName>
@@ -41,7 +38,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PGM.SQL.Models.TipoAtivo">
-    <Position X="9" Y="6.5" Width="1.5" />
+    <Position X="6.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAEAAAAgAAABAAAAAAAAAIAAAEAAgA=</HashCode>
       <FileName>Models\TipoAivo.cs</FileName>
@@ -49,10 +46,32 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PGM.SQL.Models.Indice">
-    <Position X="3" Y="6.5" Width="1.5" />
+    <Position X="9.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAEAAAAgAAABAAAAAAAAAIAAAEAAgA=</HashCode>
       <FileName>Models\Indice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PGM.SQL.Models.Investimento">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AREAAADAACAAAiQFgAEAkAABBAgAIIBgAFIAAAEAAgQ=</HashCode>
+      <FileName>Models\Investimento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ativo" />
+      <Property Name="Cadunico" />
+      <Property Name="TipoAtivo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PGM.SQL.Models.Cadunico">
+    <Position X="3.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAEAAAAgAAABAAAAAAAAAIAAAAAAgA=</HashCode>
+      <FileName>Models\Cadunico.cs</FileName>
+      <NewMemberFileName>Models\Investimento.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>

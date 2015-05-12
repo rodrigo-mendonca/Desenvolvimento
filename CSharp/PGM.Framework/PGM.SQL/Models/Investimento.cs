@@ -18,13 +18,83 @@ namespace PGM.SQL.Models
         [GridHeader(Desc = "Cód.")]
         public decimal PkId { get; set; }
 
+        [Column("FK_TIPOCLUBE")]
+        [GridHeader(Desc = "Tipo de Investimento")]
+        public decimal FkTipoInvestimento { get; set; }
+        [ForeignKey("FkTipoInvestimento")]
+        public virtual TipoInvestimento TipoAtivo { get; set; }
+
+        [Column("FK_CADUNICO")]
+        [GridHeader(Desc = "Cód. Cadunico")]
+        public int FkCadunico { get; set; }
+        [ForeignKey("FkCadunico")]
+        public virtual Cadunico Cadunico { get; set; }
+
         [Column("DS_FANTASIA")]
         [GridHeader(Desc = "Investimento")]
         public string Fantasia { get; set; }
 
+        [Column("TG_ABERTO")]
+        [GridHeader(Desc = "Aberto")]
+        public decimal Aberto { get; set; }
+
+        [Column("DT_ULTFECH")]
+        [GridHeader(Desc = "Dt.Ult.Fech.")]
+        public DateTime DtUltFech { get; set; }
+
+        [Column("DT_D0")]
+        [GridHeader(Desc = "Dt.D0")]
+        public DateTime DtD0 { get; set; }
+
+        [Column("DT_INICIO")]
+        [GridHeader(Desc = "Dt.Inicio")]
+        public DateTime DtInicio { get; set; }
+
+        [Column("DT_TERMINO")]
+        [GridHeader(Desc = "Dt.Termino")]
+        public DateTime DtTermino { get; set; }
+
+        [Column("DT_PUBLICADO")]
+        [GridHeader(Desc = "Dt.Publicado")]
+        public DateTime DtPublicado { get; set; }
+
+        [Column("NR_CNPJ")]
+        [GridHeader(Desc = "Nr.CNPJ")]
+        public decimal NrCnpj { get; set; }
+
+        [Column("FK_CLIENTE")]
+        [GridHeader(Desc = "Cód. Cliente")]
+        public decimal FkCliente { get; set; }
+
         [Column("DS_CLUBE")]
         [GridHeader(Desc = "Nome do Investimento")]
         public string Nome { get; set; }
+
+        [Column("NR_MESTXPER")]
+        [GridHeader(Desc = "Nr. Taxa de Perf. Mês")]
+        public decimal NrMesTxPer { get; set; }
+
+        [Column("NR_MESTXADM")]
+        [GridHeader(Desc = "Nr. Taxa de Adm. Mês")]
+        public decimal NrMesTxAdm { get; set; }
+
+        [Column("VL_INDTXPER")]
+        [GridHeader(Desc = "Nr. Ind. de Per.")]
+        public decimal VlIndTxPer { get; set; }
+        
+        [Column("FK_INDTXPER")]
+        [GridHeader(Desc = "Cód Ind. de Per.")]
+        public decimal FkIndTxPer { get; set; }
+
+        [Column("VL_PORTXPER")]
+        [GridHeader(Desc = "Por. Taxa de Per.")]
+        public decimal VlPorTxPer { get; set; }
+
+
+
+
+
+
 
         [Column("FK_ATIVO")]
         [GridHeader(Desc = "Cód. Ativo")]

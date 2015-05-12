@@ -215,7 +215,7 @@
             this.ToolColorReduction.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolColorReduction.Name = "ToolColorReduction";
             this.ToolColorReduction.Size = new System.Drawing.Size(29, 29);
-            this.ToolColorReduction.Text = "toolStripButton1";
+            this.ToolColorReduction.Text = "Redução de cores";
             this.ToolColorReduction.Click += new System.EventHandler(this.ToolColorReduction_Click);
             // 
             // toolStripSeparator3
@@ -258,7 +258,7 @@
             this.ToolHistograma.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolHistograma.Name = "ToolHistograma";
             this.ToolHistograma.Size = new System.Drawing.Size(29, 29);
-            this.ToolHistograma.Text = "toolStripButton1";
+            this.ToolHistograma.Text = "Histograma";
             this.ToolHistograma.Click += new System.EventHandler(this.ToolHistograma_Click);
             // 
             // ToolOpcoes
@@ -276,7 +276,7 @@
             this.ToolOpcoes.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ToolOpcoes.Name = "ToolOpcoes";
             this.ToolOpcoes.Size = new System.Drawing.Size(41, 29);
-            this.ToolOpcoes.Text = "toolStripSplitButton1";
+            this.ToolOpcoes.Text = "Mais";
             // 
             // ToolFloydSteinberg
             // 

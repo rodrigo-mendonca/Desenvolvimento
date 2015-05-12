@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Cadunico.cs" />
     <Compile Include="Models\GalgoLog.cs" />
     <Compile Include="Models\Indice.cs" />
     <Compile Include="Models\Sys\AjudaSistema.cs" />
@@ -77,6 +78,7 @@
     </Compile>
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\SysRepository.cs" />
+    <Compile Include="Models\TipoInvestimento.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
