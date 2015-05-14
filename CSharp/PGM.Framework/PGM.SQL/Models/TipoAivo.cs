@@ -18,7 +18,7 @@ namespace PGM.SQL.Models
         [Column("PK_ID")]
         [GridHeader(Desc = "Cód.")]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public decimal PkId { get; set; }
+        public int PkId { get; set; }
 
         [Column("DS_TIPOATIVO")]
         [GridHeader(Desc = "Tipo Ativo")]

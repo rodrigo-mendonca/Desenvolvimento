@@ -16,7 +16,7 @@ namespace PGM.SQL.Models
         [Key]
         [Column("PK_ID")]
         [GridHeader(Desc = "Cód.")]
-        public decimal PkId { get; set; }
+        public int PkId { get; set; }
 
         [Column("TG_INATIVO")]
         public Nullable<decimal> Inativo { get; set; }

@@ -124,17 +124,13 @@ namespace PGM.SQL.Models
         [GridHeader(Desc = "Vl. Movimento")]
         public decimal VlMovimentoAnt { get; set; }
 
-        [Column("FK_PARENT")]
-        [GridHeader(Desc = "Parent")]
-        public decimal FkParent { get; set; }
-
         [Column("TG_ESTRANGEIRO")]
         [GridHeader(Desc = "Estrangeiro")]
-        public decimal TgEstrangeiro { get; set; }
+        public Nullable<byte> TgEstrangeiro { get; set; }
 
         [Column("TG_SEMCOTACAO")]
         [GridHeader(Desc = "Sem Cotação")]
-        public decimal TgSemCotacao { get; set; }
+        public Nullable<byte> TgSemCotacao { get; set; }
 
         [Column("VL_PORTAXA")]
         [GridHeader(Desc = "Vl. Por. Taxa")]
@@ -142,13 +138,13 @@ namespace PGM.SQL.Models
 
         [Column("FK_MOEDA")]
         [GridHeader(Desc = "Cód. Moeda")]
-        public decimal FkMoeda { get; set; }
+        public string FkMoeda { get; set; }
         [ForeignKey("FkMoeda")]
         public virtual Indice Moeda { get; set; }
 
         [Column("TG_SEMQTD")]
         [GridHeader(Desc = "Sem QTD.")]
-        public int TgSemQtd { get; set; }
+        public Nullable<byte> TgSemQtd { get; set; }
 
         [Column("VL_OFFMOV")]
         [GridHeader(Desc = "Vl. Off. Mov.")]
@@ -164,7 +160,7 @@ namespace PGM.SQL.Models
 
         [Column("TG_DESCONSIDERAR")]
         [GridHeader(Desc = "Desconsiderar")]
-        public int TgDesconsiderar { get; set; }
+        public Nullable<byte> TgDesconsiderar { get; set; }
 
         [Column("VL_PRINCIPAL")]
         [GridHeader(Desc = "Vl. Principal")]

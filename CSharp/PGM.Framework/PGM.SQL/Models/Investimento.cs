@@ -56,45 +56,16 @@ namespace PGM.SQL.Models
 
         [Column("DT_PUBLICADO")]
         [GridHeader(Desc = "Dt.Publicado")]
-        public DateTime DtPublicado { get; set; }
+        public Nullable<DateTime> DtPublicado { get; set; }
 
         [Column("NR_CNPJ")]
         [GridHeader(Desc = "Nr.CNPJ")]
         public decimal NrCnpj { get; set; }
 
-        [Column("FK_CLIENTE")]
-        [GridHeader(Desc = "Cód. Cliente")]
-        public decimal FkCliente { get; set; }
-
         [Column("DS_CLUBE")]
         [GridHeader(Desc = "Nome do Investimento")]
         public string Nome { get; set; }
-
-        [Column("NR_MESTXPER")]
-        [GridHeader(Desc = "Nr. Taxa de Perf. Mês")]
-        public decimal NrMesTxPer { get; set; }
-
-        [Column("NR_MESTXADM")]
-        [GridHeader(Desc = "Nr. Taxa de Adm. Mês")]
-        public decimal NrMesTxAdm { get; set; }
-
-        [Column("VL_INDTXPER")]
-        [GridHeader(Desc = "Nr. Ind. de Per.")]
-        public decimal VlIndTxPer { get; set; }
         
-        [Column("FK_INDTXPER")]
-        [GridHeader(Desc = "Cód Ind. de Per.")]
-        public decimal FkIndTxPer { get; set; }
-
-        [Column("VL_PORTXPER")]
-        [GridHeader(Desc = "Por. Taxa de Per.")]
-        public decimal VlPorTxPer { get; set; }
-
-
-
-
-
-
 
         [Column("FK_ATIVO")]
         [GridHeader(Desc = "Cód. Ativo")]
@@ -104,7 +75,7 @@ namespace PGM.SQL.Models
 
         [Column("FK_MOEDA")]
         [GridHeader(Desc = "Cód. Moeda")]
-        public decimal FkMoeda { get; set; }
+        public string FkMoeda { get; set; }
         [ForeignKey("FkMoeda")]
         public virtual Indice Moeda { get; set; }
 

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.SQL", "PGM.SQL\PGM.SQL.csproj", "{94418F83-0BDA-4355-9867-420DCACA5276}"
 EndProject
@@ -25,46 +25,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Attributes", "PGM.Attri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Sys", "PGM.Sys\PGM.Sys.csproj", "{B6879CF1-4905-4F41-A479-30744E7964EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PGM.Test", "PGM.Test\PGM.Test.csproj", "{F9544994-501E-4470-9495-13E225B2FD36}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 12
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://pgmframework.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = PGM.Common\\PGM.Common.csproj
-		SccProjectName1 = PGM.Common
-		SccLocalPath1 = PGM.Common
-		SccProjectUniqueName2 = PGM.Controls\\PGM.Controls.csproj
-		SccProjectName2 = PGM.Controls
-		SccLocalPath2 = PGM.Controls
-		SccProjectUniqueName3 = PGM.FormTeste\\PGM.FormTeste.csproj
-		SccProjectName3 = PGM.FormTeste
-		SccLocalPath3 = PGM.FormTeste
-		SccProjectUniqueName4 = PGM.SQL\\PGM.SQL.csproj
-		SccProjectName4 = PGM.SQL
-		SccLocalPath4 = PGM.SQL
-		SccProjectUniqueName5 = PGM.Xml\\PGM.Xml.csproj
-		SccProjectName5 = PGM.Xml
-		SccLocalPath5 = PGM.Xml
-		SccProjectUniqueName6 = PGM.Interfaces\\PGM.Interfaces.csproj
-		SccProjectName6 = PGM.Interfaces
-		SccLocalPath6 = PGM.Interfaces
-		SccProjectUniqueName7 = PGM.Controllers\\PGM.Controllers.csproj
-		SccProjectName7 = PGM.Controllers
-		SccLocalPath7 = PGM.Controllers
-		SccProjectUniqueName8 = PGM.Modules\\PGM.Modules.csproj
-		SccProjectName8 = PGM.Modules
-		SccLocalPath8 = PGM.Modules
-		SccProjectUniqueName9 = PGM.Attributes\\PGM.Attributes.csproj
-		SccProjectName9 = PGM.Attributes
-		SccLocalPath9 = PGM.Attributes
-		SccProjectUniqueName10 = PGM.Sys\\PGM.Sys.csproj
-		SccProjectName10 = PGM.Sys
-		SccLocalPath10 = PGM.Sys
-		SccProjectUniqueName11 = PGM.Excel\\PGM.Excel.csproj
-		SccProjectName11 = PGM.Excel
-		SccLocalPath11 = PGM.Excel
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -114,6 +77,10 @@ Global
 		{B6879CF1-4905-4F41-A479-30744E7964EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6879CF1-4905-4F41-A479-30744E7964EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6879CF1-4905-4F41-A479-30744E7964EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9544994-501E-4470-9495-13E225B2FD36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9544994-501E-4470-9495-13E225B2FD36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9544994-501E-4470-9495-13E225B2FD36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9544994-501E-4470-9495-13E225B2FD36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

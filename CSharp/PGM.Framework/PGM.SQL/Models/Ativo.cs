@@ -29,22 +29,27 @@ namespace PGM.SQL.Models
         [ForeignKey("FkTipoAtivo")]
         public virtual TipoAtivo TipoAtivo { get; set; }
 
-        [Column("FK_MOEDA")]
-        [GridHeader(Desc = "Cód. Moeda")]
-        public decimal FkMoeda { get; set; }
+        [Column("FK_MOEDAESTRANGEIRA")]
+        [GridHeader(Desc = "Cód. Moeda Estrang.")]
+        public string FkMoedaEstrang { get; set; }
+        [ForeignKey("FkMoedaEstrang")]
+        public virtual Indice MoedaEstrang { get; set; }
+
+        [Column("FK_MOEDAATI")]
+        [GridHeader(Desc = "Cód. Moeda Ativo")]
+        public string FkMoeda { get; set; }
         [ForeignKey("FkMoeda")]
-        public virtual Indice Moeda { get; set; }
-
-
-        [Column("FK_MOEDA")]
-        [GridHeader(Desc = "Cód. Moeda")]
-        public decimal FkMoedaLanc { get; set; }
+        public virtual Indice MoedaAti { get; set; }
+        
+        [Column("FK_MOEDALANC")]
+        [GridHeader(Desc = "Cód. Moeda Lanc.")]
+        public string FkMoedaLanc { get; set; }
         [ForeignKey("FkMoedaLanc")]
         public virtual Indice MoedaLanc { get; set; }
 
-        [Column("FK_MOEDA")]
-        [GridHeader(Desc = "Cód. Moeda")]
-        public decimal FkMoedaOri { get; set; }
+        [Column("FK_MOEDAORI")]
+        [GridHeader(Desc = "Cód. Moeda Original")]
+        public string FkMoedaOri { get; set; }
         [ForeignKey("FkMoedaOri")]
         public virtual Indice MoedaOri { get; set; }
 

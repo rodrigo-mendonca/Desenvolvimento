@@ -16,7 +16,7 @@ namespace PGM.SQL.Models
         [Key]
         [Column("PK_ID")]
         [GridHeader(Desc = "Cód")]
-        public int PkId { get; set; }
+        public string PkId { get; set; }
 
         [Column("DS_INDICE")]
         public string Nome { get; set; }
