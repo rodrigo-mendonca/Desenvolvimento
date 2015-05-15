@@ -36,7 +36,8 @@ namespace PGM.Aws.Test
 
             foreach (Volume vol in listvol.Volumes)
             {
-                Console.WriteLine(vol.VolumeId + " Tamanho=" + vol.Size.ToString());
+                ;
+                Console.WriteLine(vol.VolumeId + " Tamanho=" + vol.Size.ToString() + " Status=" + vol.State.Value);
             }
 
             Console.ReadKey();

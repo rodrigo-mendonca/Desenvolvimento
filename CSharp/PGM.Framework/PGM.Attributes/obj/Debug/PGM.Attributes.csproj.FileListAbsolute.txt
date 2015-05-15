@@ -7,3 +7,4 @@ C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Att
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\bin\Debug\PGM.Attributes.pdb
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Debug\PGM.Attributes.dll
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Debug\PGM.Attributes.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Debug\PGM.Attributes.csprojResolveAssemblyReference.cache

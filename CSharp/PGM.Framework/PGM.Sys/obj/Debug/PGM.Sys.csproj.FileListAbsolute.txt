@@ -15,3 +15,4 @@ C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Sys
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Sys\bin\Debug\SimpleInjector.Diagnostics.xml
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Sys\obj\Debug\PGM.Sys.dll
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Sys\obj\Debug\PGM.Sys.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Sys\obj\Debug\PGM.Sys.csprojResolveAssemblyReference.cache
