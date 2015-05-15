@@ -1,9 +1,0 @@
-C:\ProjetosPragma\PGM.Framework\PGM.Attributes\bin\Release\PGM.Attributes.dll
-C:\ProjetosPragma\PGM.Framework\PGM.Attributes\bin\Release\PGM.Attributes.pdb
-X:\PGM.Framework\PGM.Attributes\PGM.Attributes.dll
-X:\PGM.Framework\PGM.Attributes\PGM.Attributes.pdb
-C:\ProjetosPragma\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.dll
-C:\ProjetosPragma\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.pdb
-C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.dll
-C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.pdb
-C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGM.Framework\PGM.Attributes\obj\Release\PGM.Attributes.csprojResolveAssemblyReference.cache

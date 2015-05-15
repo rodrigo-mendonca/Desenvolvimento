@@ -1,6 +1,0 @@
-C:\ProjetosPragma\PGM.Framework\PGM.System\bin\Release\PGM.System.dll
-C:\ProjetosPragma\PGM.Framework\PGM.System\bin\Release\PGM.System.pdb
-C:\ProjetosPragma\PGM.Framework\PGM.System\obj\Release\PGM.System.dll
-C:\ProjetosPragma\PGM.Framework\PGM.System\obj\Release\PGM.System.pdb
-X:\PGM.Framework\PGM.System\PGM.System.dll
-X:\PGM.Framework\PGM.System\PGM.System.pdb

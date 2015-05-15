@@ -1,5 +1,0 @@
-X:\PGM.Framework\PGM.System\PGM.PgmSystem.dll
-X:\PGM.Framework\PGM.System\PGM.PgmSystem.pdb
-C:\ProjetosPragma\PGM.Framework\PGM.System\obj\Release\PGM.PgmSystem.dll
-C:\ProjetosPragma\PGM.Framework\PGM.System\obj\Release\PGM.PgmSystem.pdb
-C:\ProjetosPragma\PGM.Framework\PGM.System\obj\Release\PGM.PgmSystem.csprojResolveAssemblyReference.cache
