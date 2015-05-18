@@ -188,5 +188,11 @@ namespace PGMProcessing
             oControler.DilatacaoMorfologica((int)stpMedia.Value);
             ImgReflesh();
         }
+
+        private void ToolFourier_Click(object sender, EventArgs e)
+        {
+            oControler.Fourier();
+            ImgReflesh();
+        }
     }
 }

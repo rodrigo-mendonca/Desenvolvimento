@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -114,8 +115,15 @@ namespace PGMProcessing
             {
                 lVersions.Clear();
                 nVersion = -1;
+                OpenFile(oOpen.FileName);
+            }
+        }
+        public void OpenFile(string FileName)
+        {
+            if (FileName != "")
+            {
                 // guarda o caminho para depois salvar
-                cFielSource = oOpen.FileName;
+                cFielSource = FileName;
 
                 using (FileStream oFileStream = new FileStream(cFielSource, FileMode.Open))
                 {
@@ -598,6 +606,27 @@ namespace PGMProcessing
             }
 
             return tList;
+        }
+
+        public void Fourier()
+        {
+            string path = @"C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\C\Fourier\bin\Debug\";
+            string program = @"Fourier.exe";
+
+            ProcessStartInfo _info =
+            new ProcessStartInfo(path + program, cFielSource);
+
+            _info.RedirectStandardOutput = true;
+            _info.UseShellExecute = false;
+            _info.CreateNoWindow = true;
+
+            Process _p = new Process();
+            _p.StartInfo = _info;
+            _p.Start();
+
+            string _processResults = _p.StandardOutput.ReadToEnd();
+            // abre o arquivo salvo adiconando como uma nova versão
+            OpenFile(_processResults);
         }
     }
 }

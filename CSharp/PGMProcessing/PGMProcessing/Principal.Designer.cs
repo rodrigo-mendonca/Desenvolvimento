@@ -61,6 +61,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.stpDesvio = new System.Windows.Forms.NumericUpDown();
+            this.ToolFourier = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.pctScreen)).BeginInit();
             this.ToolMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stpReduction)).BeginInit();
@@ -94,6 +95,7 @@
             this.ToolRight,
             this.toolStripSeparator4,
             this.ToolColorReduction,
+            this.ToolFourier,
             this.toolStripSeparator3,
             this.ToolErosaoMorfologica,
             this.ToolDilatacaoMorfologica,
@@ -419,6 +421,18 @@
             this.stpDesvio.Size = new System.Drawing.Size(51, 18);
             this.stpDesvio.TabIndex = 7;
             // 
+            // ToolFourier
+            // 
+            this.ToolFourier.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ToolFourier.Enabled = false;
+            this.ToolFourier.Image = ((System.Drawing.Image)(resources.GetObject("ToolFourier.Image")));
+            this.ToolFourier.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ToolFourier.Name = "ToolFourier";
+            this.ToolFourier.Size = new System.Drawing.Size(29, 29);
+            this.ToolFourier.Text = "Fourier";
+            this.ToolFourier.ToolTipText = "Fourier";
+            this.ToolFourier.Click += new System.EventHandler(this.ToolFourier_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -480,6 +494,7 @@
         private System.Windows.Forms.ToolStripButton ToolDilatacaoMorfologica;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton ToolColorReduction;
+        private System.Windows.Forms.ToolStripButton ToolFourier;
     }
 }
 
