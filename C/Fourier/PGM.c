@@ -4,7 +4,7 @@ int **alloc_matrix(int height, int width)
 {
     int **ret, i;
 
-    ret = (int **)malloc(sizeof(int) * height);
+    ret = (int **)malloc(sizeof(int*) * height);
     for (i = 0; i < height; ++i)
         ret[i] = (int*)malloc(sizeof(int) * width);
 
