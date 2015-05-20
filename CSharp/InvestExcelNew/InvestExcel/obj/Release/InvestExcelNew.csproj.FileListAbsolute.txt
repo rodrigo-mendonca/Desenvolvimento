@@ -1,9 +1,0 @@
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\bin\Release\InvestExcelNew.dna
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\bin\Release\InvestExcelNew.xll
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\bin\Release\InvestExcelNew.dll
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\bin\Release\InvestExcelNew.pdb
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\bin\Release\SQL.dll
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\bin\Release\SQL.pdb
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\obj\Release\InvestExcelNew.csprojResolveAssemblyReference.cache
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\obj\Release\InvestExcelNew.dll
-C:\Dropbox\TestesCS\InvestExcelNew\InvestExcel\obj\Release\InvestExcelNew.pdb

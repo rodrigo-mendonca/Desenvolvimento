@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
 int* Ordenar(int*,int);
 int Sum(int*,int);
+void RandFiles(int *,int,int);
+
 
 typedef struct HeapSort HeapSort;
 struct HeapSort {
@@ -12,26 +16,26 @@ struct HeapSort {
 
 int main()
 {
+    int Tam = 50;
     // inicializações
-    int PenDrive = 1000;
-    int Arquivos[15] = {241,241,151,151,451,151,151,651,151,151,351,151,251,95,151};
+    int PenDrive = 5000;
+    int *Arquivos = (int*)malloc(sizeof(int) * Tam);
 
-    int *Arq = Ordenar(Arquivos,sizeof(Arquivos)/sizeof(int));;
+    RandFiles(Arquivos,Tam,300);
+
+    int *Arq = Ordenar(Arquivos,Tam);;
     int soma = 0,i=0;
-    int Tam = sizeof(Arquivos)/sizeof(int);
-
     soma= Sum(Arq,Tam);
     printf("Total %i MBs de Arquivos!\n\n",soma);
 
     for(i=0;i<Tam ;i++)
-    {
         if(PenDrive >= Arq[i])
         {
             printf("Adicionou ao PenDrive %i MB(s)\n",Arq[i]);
             PenDrive -= Arq[i];
             Arq[i] = 0;
         }
-    }
+
     printf("Sobrou %i MBs no Pendrive!\n",PenDrive);
 
     for(i=0;i<Tam ;i++)
@@ -67,4 +71,14 @@ int Sum(int *tList,int Tam)
         Retorno+=tList[i];
 
     return Retorno;
+}
+
+void RandFiles(int *Lista,int Tam,int Lim)
+{
+    srand (time(NULL));
+    int i;
+    for(i=0;i<Tam;i++)
+    {
+        Lista[i] = (int) 1 + (rand() % Lim);
+    }
 }

@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="INumber.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="INumber.h" />
 		<Unit filename="PGM.c">
 			<Option compilerVar="CC" />
 		</Unit>

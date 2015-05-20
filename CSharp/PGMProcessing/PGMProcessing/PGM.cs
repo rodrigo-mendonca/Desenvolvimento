@@ -608,13 +608,13 @@ namespace PGMProcessing
             return tList;
         }
 
-        public void Fourier()
+        public void Fourier(char Tipo)
         {
-            string path = @"C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\C\Fourier\bin\Debug\";
+            string path = @"";
             string program = @"Fourier.exe";
 
             ProcessStartInfo _info =
-            new ProcessStartInfo(path + program, cFielSource);
+            new ProcessStartInfo(path + program, cFielSource+" "+Tipo);
 
             _info.RedirectStandardOutput = true;
             _info.UseShellExecute = false;

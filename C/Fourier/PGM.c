@@ -1,4 +1,5 @@
 #include "PGM.h"
+#include "INumber.h"
 
 int **alloc_matrix(int height, int width)
 {
@@ -89,7 +90,7 @@ void savefile(const char *fileName, const PGM *data)
 
     for (i = 0; i < data->height; ++i)
         for (j = 0; j < data->width; ++j) {
-            lo = data->matrix[i][j];
+            lo = min(data->matrix[i][j],255);
             fputc(lo, pgmFile);
         }
 
