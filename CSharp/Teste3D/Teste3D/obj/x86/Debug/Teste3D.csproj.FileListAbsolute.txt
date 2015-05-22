@@ -23,3 +23,5 @@ D:\Armazem\Internet\Dropbox\TestesCS\Teste3D\Teste3D\obj\x86\Debug\Teste3D.cspro
 D:\Armazem\Internet\Dropbox\TestesCS\Teste3D\Teste3D\obj\x86\Debug\Teste3D.csprojResolveAssemblyReference.cache
 C:\Dropbox\TestesCS\Teste3D\Teste3D\obj\x86\Debug\Teste3D.csprojResolveAssemblyReference.cache
 C:\Dropbox\TestesCS\Teste3D\Teste3D\obj\x86\Debug\Teste3D.csproj.GenerateResource.Cache
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\Teste3D\Teste3D\obj\x86\Debug\Teste3D.exe
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\Teste3D\Teste3D\obj\x86\Debug\Teste3D.pdb
