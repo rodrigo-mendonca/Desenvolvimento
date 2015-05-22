@@ -62,3 +62,9 @@ C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Releas
 C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\GenerateResource.write.1.tlog
 C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.dll
 C:\Users\rmendonca\Dropbox\TestesCS\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.csprojResolveAssemblyReference.cache
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.Properties.Resources.resources
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestExcelAddin.menu.resources
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.csproj.GenerateResource.Cache
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.dll
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestExcelAddin\InvestExcelAddin\obj\Release\InvestAddin.pdb

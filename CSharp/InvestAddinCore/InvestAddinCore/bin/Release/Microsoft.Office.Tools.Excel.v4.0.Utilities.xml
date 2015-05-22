@@ -7,12 +7,7 @@
     <member name="T:Microsoft.Office.Tools.Excel.ChartSheetBase">
       <summary>Provides the base class for chart sheet host items in document-level Office projects for Microsoft Office Excel.</summary>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider,System.String,System.String)">
-      <param name="factory"></param>
-      <param name="serviceProvider"></param>
-      <param name="primaryCookie"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider,System.String,System.String)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase._CodeName"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Activate">
       <summary>Makes the current <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" /> the active chart.</summary>
@@ -51,9 +46,7 @@
       <param name="layout">An integer from 1 through 10 that specifies the type of layout to apply to the chart. </param>
       <param name="chartType">One of the <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> values.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Arcs(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Arcs(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Area3DGroup">
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> that represents the area chart group on a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> that represents the area chart group on a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</returns>
@@ -62,10 +55,7 @@
       <summary>On a 2-D chart, returns an object that represents either a single area chart group (a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object) or a collection of the area chart groups (a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection).</summary>
       <param name="index">The chart group number.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.AutoFormat(System.Int32,System.Object)">
-      <param name="gallery"></param>
-      <param name="format"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.AutoFormat(System.Int32,System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.AutoScaling">
       <summary>Gets a value that indicates whether Microsoft Office Excel scales a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" /> so that it is closer in size to the equivalent 2-D chart</summary>
       <returns>true if Microsoft Office Excel scales a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" /> so that it is closer in size to the equivalent 2-D chart. </returns>
@@ -104,9 +94,7 @@
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.BeginInit"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.BindingContext"></member>
     <member name="E:Microsoft.Office.Tools.Excel.ChartSheetBase.BindingContextChanged"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Buttons(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Buttons(System.Object)"></member>
     <member name="E:Microsoft.Office.Tools.Excel.ChartSheetBase.Calculate">
       <summary>Occurs after the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" /> plots new or changed data.</summary>
     </member>
@@ -148,9 +136,7 @@
       <param name="valueTitle">The value axis title text</param>
       <param name="extraTitle">The series axis title for 3-D charts or the second value axis title for 2-D charts.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.CheckBoxes(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.CheckBoxes(System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.CheckSpelling(System.Object,System.Object,System.Object,System.Object)">
       <summary>Checks the spelling of an <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />. </summary>
       <param name="customDictionary">A string that indicates the file name of the custom dictionary to be examined if the word is not found in the main dictionary. If this argument is omitted, the currently specified dictionary is used.</param>
@@ -186,15 +172,7 @@
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.Corners" /> object that represents the corners of a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.Corners" /> object that represents the corners of a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.CreatePublisher(System.Object,Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlPictureAppearance,System.Object,System.Object,System.Object,System.Object)">
-      <param name="edition"></param>
-      <param name="appearance"></param>
-      <param name="size"></param>
-      <param name="containsPICT"></param>
-      <param name="containsBIFF"></param>
-      <param name="containsRTF"></param>
-      <param name="containsVALU"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.CreatePublisher(System.Object,Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlPictureAppearance,System.Object,System.Object,System.Object,System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Creator">
       <summary>Gets an <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> code that indicates the application in which the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" /> was created.</summary>
       <returns>One of the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> values.</returns>
@@ -230,17 +208,15 @@
       <summary>On a 2-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />, returns an object that represents either a single doughnut chart group (a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object) or a collection of the doughnut chart groups (a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection).</summary>
       <param name="index">Specifies the chart group.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.DrawingObjects(System.Object)">
-      <param name="index"></param>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.DrawingObjects(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Drawings(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.DropDowns(System.Object)"></member>
+    <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Dummy24">
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Drawings(System.Object)">
-      <param name="index"></param>
+    <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Dummy25">
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.DropDowns(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Dummy24"></member>
-    <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Dummy25"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Elevation">
       <summary>Gets or sets the elevation of the 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />, in degrees.</summary>
       <returns>The elevation of the 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />, in degrees.</returns>
@@ -277,25 +253,18 @@
       <summary>Gets or sets the distance between the data series in a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />, as a percentage of the marker width. </summary>
       <returns>The distance between the data series in a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />, as a percentage of the marker width. The value of this property must be between 0 and 500.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.get_HasAxis(System.Object,System.Object)">
-      <param name="index1"></param>
-      <param name="index2"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.get_HasAxis(System.Object,System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.GetAutomationObject"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.GetChartElement(System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)">
       <summary>Gets information about the chart element at specified X and Y coordinates. </summary>
       <param name="x">The X coordinate of the chart element.</param>
       <param name="y">The Y coordinate of the chart element.</param>
-      <param name="elementID">When the method returns, this argument contains the <see cref="T:Microsoft.Office.Interop.Excel.XlChartItem" /> value of the chart element at the specified coordinates. For more information, see the “Remarks” section.</param>
-      <param name="arg1">When the method returns, this argument contains information related to the chart element. For more information, see the “Remarks” section.</param>
-      <param name="arg2">When the method returns, this argument contains information related to the chart element. For more information, see the “Remarks” section.</param>
+      <param name="elementID">When the method returns, this argument contains the <see cref="T:Microsoft.Office.Interop.Excel.XlChartItem" /> value of the chart element at the specified coordinates. For more information, see the "Remarks" section.</param>
+      <param name="arg1">When the method returns, this argument contains information related to the chart element. For more information, see the "Remarks" section.</param>
+      <param name="arg2">When the method returns, this argument contains information related to the chart element. For more information, see the "Remarks" section.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.GroupBoxes(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.GroupObjects(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.GroupBoxes(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.GroupObjects(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.HasAxis">
       <summary>Gets or sets a value indicating whether a specific axis exists on the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <returns>true if the specified axis exists on the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />; otherwise, false.</returns>
@@ -336,9 +305,7 @@
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> that represents the underlying native object for the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</returns>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.ItemProvider"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Labels(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Labels(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Legend">
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.Legend" /> that represents the legend for the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.Legend" /> that represents the legend for the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</returns>
@@ -351,12 +318,8 @@
       <summary>On a 2-D chart, returns an object that represents either a single line chart group (a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object) or a collection of the line chart groups (a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection).</summary>
       <param name="index">Specifies the chart group.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Lines(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.ListBoxes(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Lines(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.ListBoxes(System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Location(Microsoft.Office.Interop.Excel.XlChartLocation,System.Object)">
       <summary>Moves the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" /> to a new location. </summary>
       <param name="where">One of the <see cref="T:Microsoft.Office.Interop.Excel.XlChartLocation" /> values that specify where to move the chart.</param>
@@ -406,12 +369,8 @@
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.OnSheetDeactivate"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.OnShutdown"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.OnStartup"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.OptionButtons(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Ovals(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.OptionButtons(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Ovals(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.PageSetup">
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> that contains all the page setup settings for the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> that contains all the page setup settings for the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</returns>
@@ -428,9 +387,7 @@
       <summary>Gets or sets the perspective for the 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />. </summary>
       <returns>The perspective for the 3-D chart view. Must be between 0 and 100. </returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Pictures(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Pictures(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Pie3DGroup">
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> that represents the pie chart group on a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> that represents the pie chart group on a 3-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</returns>
@@ -488,7 +445,6 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.PrintPreview(System.Object)">
       <summary>Shows a preview of the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" /> as it would look when printed.</summary>
-      <param name="enableChanges"></param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Protect(System.Object,System.Object,System.Object,System.Object,System.Object)">
       <summary>Protects a <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" /> so that it cannot be modified.</summary>
@@ -530,9 +486,7 @@
       <summary>On a 2-D <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />, returns an object that represents either a single radar chart group (a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object) or a collection of the radar chart groups (a <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection).</summary>
       <param name="index">Specifies the chart group.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Rectangles(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Rectangles(System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Refresh">
       <summary>Updates the cache of the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
     </member>
@@ -568,9 +522,7 @@
       <summary>Gets the <see cref="T:Microsoft.Office.Core.Scripts" /> collection, which contains <see cref="T:Microsoft.Office.Core.Script" /> objects representing blocks of script or code in the specified document when it is saved as a Web page.</summary>
       <returns>The <see cref="T:Microsoft.Office.Core.Scripts" /> collection, which contains <see cref="T:Microsoft.Office.Core.Script" /> objects representing blocks of script or code in the specified document when it is saved as a Web page.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.ScrollBars(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.ScrollBars(System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <param name="replace">The object to replace.</param>
@@ -585,11 +537,7 @@
       <summary>Gets an object that represents either a single series (a <see cref="T:Microsoft.Office.Interop.Excel.Series" /> object) or a collection of all the series (a <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> collection) in the chart or chart group.</summary>
       <param name="index">The name or number of the series.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.set_HasAxis(System.Object,System.Object,System.Object)">
-      <param name="index1"></param>
-      <param name="index2"></param>
-      <param name="rHS"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.set_HasAxis(System.Object,System.Object,System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.SetBackgroundPicture(System.String)">
       <summary>Sets the background graphic for a <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <param name="filename">The name of the graphic file.</param>
@@ -648,9 +596,7 @@
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.Walls" /> object that represents the side wall of a 3-D chart.</returns>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Site"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Spinners(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Spinners(System.Object)"></member>
     <member name="E:Microsoft.Office.Tools.Excel.ChartSheetBase.Startup">
       <summary>Occurs after the document is running and all the initialization code in the assembly has been run.</summary>
     </member>
@@ -667,9 +613,7 @@
       <summary>Gets or sets the object that contains data about the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</summary>
       <returns>The object that contains data about the <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.TextBoxes(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.TextBoxes(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.ChartSheetBase.Type"></member>
     <member name="M:Microsoft.Office.Tools.Excel.ChartSheetBase.Unprotect(System.Object)">
       <summary>Removes protection from a <see cref="T:Microsoft.Office.Tools.Excel.ChartSheetBase" />. This method has no effect if the sheet or workbook is not protected.</summary>
@@ -1238,12 +1182,7 @@
     <member name="T:Microsoft.Office.Tools.Excel.WorkbookBase">
       <summary>Provides the base class for the ThisWorkbook class in document-level projects for Microsoft Office Excel. </summary>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider,System.String,System.String)">
-      <param name="factory"></param>
-      <param name="serviceProvider"></param>
-      <param name="primaryCookie"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider,System.String,System.String)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorkbookBase._CodeName"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorkbookBase._ReadOnlyRecommended"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.AcceptAllChanges(System.Object,System.Object,System.Object)">
@@ -1589,16 +1528,12 @@
       <summary>Gets the name of the object, including its path on disk.</summary>
       <returns>The name of the object, including its path on disk.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.get_Colors(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.get_Colors(System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.GetAutomationObject">
       <summary>Called by the Visual Studio Tools for Office runtime to get an object that can be used by VBA code in the workbook.</summary>
       <returns>An object in a document-level customization that can be used by VBA code in the workbook.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.GetHostItem``1(System.Type,System.String)">
-      <param name="type"></param>
-      <param name="cookie"></param>
       <typeparam name="T"></typeparam>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.GetWorkflowTasks">
@@ -1704,10 +1639,10 @@
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#Excel#IWorkbookExtension#CreateRibbonObjects"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#Excel#IWorkbookExtension#GetAutomationObject"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#Excel#IWorkbookExtension#ProtectDocument"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#Excel#IWorkbookExtension#RequestService(System.Guid)">
-      <param name="serviceGuid"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#Excel#IWorkbookExtension#RequestService(System.Guid)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#Excel#IWorkbookExtension#UnprotectDocument"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#ICachedDataPersistanceCallback#OnAfterSave"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#ICachedDataPersistanceCallback#OnBeforeSave"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorkbookBase.Microsoft#Office#Tools#IExtension#ExtensionBase"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorkbookBase.Modules">
       <summary>Included for backwards compatibility only.</summary>
@@ -1914,7 +1849,9 @@
       <returns>true if the workbook was saved as read-only recommended; otherwise, false.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.RecheckSmartTags">
-      <summary>Causes a foreground smart tag check to occur automatically annotating data that was not annotated before.</summary>
+      <summary>Causes a foreground smart tag check to occur automatically annotating data that was not annotated before. 
+    This type or member is intended to be used only in projects for the 2007 Microsoft Office system. Smart tags are deprecated in Office 2010.
+  .</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.RefreshAll">
       <summary>Refreshes all external data ranges and PivotTable reports in the workbook.</summary>
@@ -2022,9 +1959,7 @@
       <summary>Gets or sets a value that indicates whether Microsoft Office Excel saves external link values with the workbook.</summary>
       <returns>true if Excel saves external link values with the workbook; otherwise, false.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.sblt(System.String)">
-      <param name="s"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.sblt(System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.SendFaxOverInternet(System.Object,System.Object,System.Object)">
       <summary>Sends the active sheet in the workbook as a fax to the specified recipients.</summary>
       <param name="recipients">The fax numbers and e-mail addresses of the people to whom the fax will be sent. Separate multiple recipients with a semicolon.</param>
@@ -2044,10 +1979,7 @@
       <param name="subject">Specifies the subject of the message. If this argument is omitted, the document name is used.</param>
       <param name="returnReceipt">true to request a return receipt. false to not request a return receipt. The default value is false.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.SendMailer(System.Object,Microsoft.Office.Interop.Excel.XlPriority)">
-      <param name="fileFormat"></param>
-      <param name="priority"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.SendMailer(System.Object,Microsoft.Office.Interop.Excel.XlPriority)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorkbookBase.ServerPolicy">
       <summary>Gets an object that represents a policy specified for a workbook that is stored on a server running Microsoft Office SharePoint Server.</summary>
       <returns>A Microsoft.Office.Core.ServerPolicy object that represents a policy specified for a workbook that is stored on a server running SharePoint Server.</returns>
@@ -2058,8 +1990,6 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.set_Colors(System.Object,System.Object)">
       <summary>Use the <see cref="P:Microsoft.Office.Tools.Excel.WorkbookBase.Colors" /> property instead of this method.</summary>
-      <param name="index"></param>
-      <param name="rHS"></param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.WorkbookBase.SetLinkOnData(System.String,System.Object)">
       <summary>Sets the name of a procedure that runs whenever a DDE link is updated.</summary>
@@ -2158,7 +2088,9 @@
       <returns>A Microsoft.Office.Core.SmartDocument that represents the settings for a smart document solution.</returns>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.WorkbookBase.SmartTagOptions">
-      <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.SmartTagOptions" /> object representing the options that can be performed with a smart tag.</summary>
+      <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.SmartTagOptions" /> object representing the options that can be performed with a smart tag. 
+    This type or member is intended to be used only in projects for the 2007 Microsoft Office system. Smart tags are deprecated in Office 2010.
+  .</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.SmartTagOptions" /> object representing the options that can be performed with a smart tag.</returns>
     </member>
     <member name="E:Microsoft.Office.Tools.Excel.WorkbookBase.Startup"></member>
@@ -2244,7 +2176,9 @@
       <returns>The virtual Microsoft.Vbe.Interop.VBProject project that is in the workbook.</returns>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.WorkbookBase.VstoSmartTags">
-      <summary>Gets the <see cref="T:Microsoft.Office.Tools.SmartTagCollection" /> associated with the workbook.</summary>
+      <summary>Gets the <see cref="T:Microsoft.Office.Tools.SmartTagCollection" /> associated with the workbook. 
+    This type or member is intended to be used only in projects for the 2007 Microsoft Office system. Smart tags are deprecated in Office 2010.
+  .</summary>
       <returns>The <see cref="T:Microsoft.Office.Tools.SmartTagCollection" /> associated with the workbook.</returns>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.WorkbookBase.WebOptions">
@@ -2310,12 +2244,7 @@
     <member name="T:Microsoft.Office.Tools.Excel.WorksheetBase">
       <summary>Provides the base class for the Sheetn classes in document-level projects for Microsoft Office Excel. </summary>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider,System.String,System.String)">
-      <param name="factory"></param>
-      <param name="serviceProvider"></param>
-      <param name="primaryCookie"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.#ctor(Microsoft.Office.Tools.Excel.Factory,System.IServiceProvider,System.String,System.String)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase._CodeName"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase._DisplayRightToLeft"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Activate"></member>
@@ -2326,9 +2255,7 @@
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Office Excel application.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.Application" /> that represents the Excel application.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Arcs(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Arcs(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.AutoFilter">
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> that provides information about filtered lists on the worksheet if filtering is enabled. Gets null if filtering is off.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> that provides information about filtered lists on the worksheet if filtering is enabled; otherwise, null.</returns>
@@ -2351,9 +2278,7 @@
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.BeginInit"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.BindingContext"></member>
     <member name="E:Microsoft.Office.Tools.Excel.WorksheetBase.BindingContextChanged"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Buttons(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Buttons(System.Object)"></member>
     <member name="E:Microsoft.Office.Tools.Excel.WorksheetBase.Calculate">
       <summary>Occurs after the worksheet is recalculated.</summary>
     </member>
@@ -2372,15 +2297,8 @@
       <returns>An object that represents either a single embedded chart (a <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />) or a collection of all the embedded charts (a <see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" />) on the worksheet.</returns>
       <param name="index">The name or number of the chart. This argument can be an array, to specify more than one chart.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.CheckBoxes(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.CheckSpelling(System.Object,System.Object,System.Object,System.Object)">
-      <param name="customDictionary"></param>
-      <param name="ignoreUppercase"></param>
-      <param name="alwaysSuggest"></param>
-      <param name="spellLang"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.CheckBoxes(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.CheckSpelling(System.Object,System.Object,System.Object,System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.CircleInvalid">
       <summary>Circles invalid entries on the worksheet.</summary>
     </member>
@@ -2453,15 +2371,9 @@
       <summary>Releases all resources used by the current instance of the <see cref="T:Microsoft.Office.Tools.Excel.WorksheetBase" /> class.</summary>
     </member>
     <member name="E:Microsoft.Office.Tools.Excel.WorksheetBase.Disposed"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.DrawingObjects(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Drawings(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.DropDowns(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.DrawingObjects(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Drawings(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.DropDowns(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.EnableAutoFilter">
       <summary>Gets or sets a value that indicates whether AutoFilter arrows are enabled when user-interface-only protection is turned on.</summary>
       <returns>true if AutoFilter arrows are enabled when user-interface-only protection is turned on; otherwise, false.</returns>
@@ -2475,7 +2387,11 @@
       <returns>true if evaluation of conditional formats will occur automatically; otherwise, false. The default is true.</returns>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.EnableOutlining">
-      <summary>Gets or sets a value that indicates whether outlining symbols are enabled when user-interface-only protection is turned on.</summary>
+      <summary>Gets or sets a value that indicates whether outlining symbols are enabled when user-interface-only protection is turned on. 
+    This type or member is intended to be used only in projects for the 2007 Microsoft Office system. Smart tags are deprecated in Office 2010.
+  . 
+    This type or member is intended to be used only in projects for the 2007 Microsoft Office system. Smart tags are deprecated in Office 2010.
+  .</summary>
       <returns>true if outlining symbols are enabled when user-interface-only protection is turned on; otherwise, false.</returns>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.EnablePivotTable">
@@ -2521,12 +2437,8 @@
       <summary>Called by the Visual Studio Tools for Office runtime to get an object that can be used by VBA code in the worksheet.</summary>
       <returns>An object in a document-level customization that can be used by VBA code in the worksheet.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.GroupBoxes(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.GroupObjects(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.GroupBoxes(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.GroupObjects(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.HostContext"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.HPageBreaks">
       <summary>Gets an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection that represents the horizontal page breaks on the sheet.</summary>
@@ -2547,15 +2459,9 @@
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> that represents the underlying native object for the <see cref="T:Microsoft.Office.Tools.Excel.WorksheetBase" />.</returns>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.ItemProvider"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Labels(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Lines(System.Object)">
-      <param name="index"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.ListBoxes(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Labels(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Lines(System.Object)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.ListBoxes(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.ListObjects">
       <summary>Gets a collection of <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objects in the worksheet.</summary>
       <returns>The <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> collection for the worksheet.</returns>
@@ -2603,16 +2509,12 @@
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.OnSheetDeactivate"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.OnShutdown"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.OnStartup"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.OptionButtons(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.OptionButtons(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.Outline">
       <summary>Gets an <see cref="T:Microsoft.Office.Interop.Excel.Outline" /> that represents the outline for the worksheet.</summary>
       <returns>An <see cref="T:Microsoft.Office.Interop.Excel.Outline" /> that represents the outline for the worksheet.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Ovals(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Ovals(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.PageSetup">
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> that contains all the page setup settings for the worksheet.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> that contains all the page setup settings for the worksheet.</returns>
@@ -2636,9 +2538,7 @@
       <param name="iconLabel">The text label of the icon.</param>
       <param name="noHTMLFormatting">true to remove all formatting, hyperlinks, and images from HTML; false to paste HTML as is. The default value is false.</param>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Pictures(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Pictures(System.Object)"></member>
     <member name="E:Microsoft.Office.Tools.Excel.WorksheetBase.PivotTableAfterValueChange">
       <summary>Occurs after a cell or range of cells inside a PivotTable are edited or recalculated (for cells that contain formulas). This event can be used only in Excel 2010 projects.</summary>
       <exception cref="T:System.MissingMemberException">This event is used in an Excel 2007 project.</exception>
@@ -2721,7 +2621,6 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.PrintPreview(System.Object)">
       <summary>Shows a preview of the worksheet as it would look when printed.</summary>
-      <param name="enableChanges"></param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Protect(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
       <summary>Protects a worksheet so that it cannot be modified.</summary>
@@ -2770,9 +2669,7 @@
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents a cell or a range of cells.</summary>
       <returns>A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> that represents a cell or a range of cells.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Rectangles(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Rectangles(System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.ResetAllPageBreaks">
       <summary>Resets all page breaks on the specified worksheet.</summary>
     </member>
@@ -2806,9 +2703,7 @@
       <summary>Gets or sets the range where scrolling is allowed, as an A1-style range reference.</summary>
       <returns>The range where scrolling is allowed, as an A1-style range reference.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.ScrollBars(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.ScrollBars(System.Object)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Select(System.Object)">
       <summary>Selects the worksheet.</summary>
       <param name="replace">true to remove the current selection and select the worksheet instead; false to extend the current selection to include any previously selected objects and the worksheet.</param>
@@ -2842,9 +2737,7 @@
       <summary>Gets the sorted values in the current worksheet.</summary>
       <returns>The sorted values in the current worksheet.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Spinners(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.Spinners(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.StandardHeight">
       <summary>Gets the standard (default) height of all the rows in the worksheet, in points.</summary>
       <returns>The standard (default) height of all the rows in the worksheet, in points.</returns>
@@ -2862,9 +2755,7 @@
       <summary>Gets or sets the object that contains data about the worksheet. </summary>
       <returns>An object that contains data about the worksheet.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.TextBoxes(System.Object)">
-      <param name="index"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.WorksheetBase.TextBoxes(System.Object)"></member>
     <member name="P:Microsoft.Office.Tools.Excel.WorksheetBase.TransitionExpEval">
       <summary>Gets or sets a value that indicates whether Microsoft Office Excel uses Lotus 1-2-3 expression evaluation rules for the worksheet.</summary>
       <returns>true if Excel uses Lotus 1-2-3 expression evaluation rules for the worksheet; otherwise, false.</returns>
@@ -2911,15 +2802,7 @@
       <summary>Represents a Windows Forms button that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" /> is activated; otherwise, false.</returns>
@@ -2944,7 +2827,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" /> to the Clipboard as a picture.</summary>
@@ -3008,26 +2891,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Button.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Button" /> to the specified visible state. </summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -3068,15 +2940,7 @@
       <summary>Represents a Windows Forms check box that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" /> is activated; otherwise, false.</returns>
@@ -3101,7 +2965,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" /> to the Clipboard as a picture.</summary>
@@ -3165,26 +3029,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckBox.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckBox" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -3225,15 +3078,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" /> is activated; otherwise, false.</returns>
@@ -3258,7 +3103,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" /> to the Clipboard as a picture.</summary>
@@ -3322,26 +3167,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.CheckedListBox.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.CheckedListBox" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -3382,15 +3216,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" /> is activated; otherwise, false.</returns>
@@ -3415,7 +3241,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" /> to the Clipboard as a picture.</summary>
@@ -3479,26 +3305,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ComboBox.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ComboBox" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -3539,15 +3354,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" /> is activated; otherwise, false.</returns>
@@ -3572,7 +3379,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" /> to the Clipboard as a picture.</summary>
@@ -3636,26 +3443,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DataGridView.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DataGridView" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -3696,15 +3492,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" /> is activated; otherwise, false.</returns>
@@ -3729,7 +3517,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" /> to the Clipboard as a picture.</summary>
@@ -3793,26 +3581,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DateTimePicker.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DateTimePicker" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -3853,15 +3630,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" /> is activated; otherwise, false.</returns>
@@ -3886,7 +3655,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" /> to the Clipboard as a picture.</summary>
@@ -3950,26 +3719,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.DomainUpDown.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.DomainUpDown" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -4010,15 +3768,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" /> is activated; otherwise, false.</returns>
@@ -4043,13 +3793,11 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" /> to the Clipboard as a picture.</summary>
       <returns>true if the copy is successful; otherwise, false.</returns>
-      <param name="Appearance"></param>
-      <param name="Format"></param>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.Controls.HScrollBar.Creator">
       <summary>Gets a value that indicates the application in which the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" /> was created.</summary>
@@ -4107,29 +3855,17 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.HScrollBar.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" /> to the specified visible state.</summary>
-      <param name="value"></param>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.Controls.HScrollBar.ShapeRange">
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object that represents the <see cref="T:Microsoft.Office.Tools.Excel.Controls.HScrollBar" />.</summary>
@@ -4167,15 +3903,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" /> is activated; otherwise, false.</returns>
@@ -4200,7 +3928,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" /> to the Clipboard as a picture.</summary>
@@ -4264,29 +3992,17 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.Label.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" /> to the specified visible state.</summary>
-      <param name="value"></param>
     </member>
     <member name="P:Microsoft.Office.Tools.Excel.Controls.Label.ShapeRange">
       <summary>Gets a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object that represents the <see cref="T:Microsoft.Office.Tools.Excel.Controls.Label" />.</summary>
@@ -4324,15 +4040,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" /> is activated; otherwise, false.</returns>
@@ -4357,7 +4065,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" /> to the Clipboard as a picture.</summary>
@@ -4421,26 +4129,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.LinkLabel.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.LinkLabel" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -4480,15 +4177,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" /> is activated; otherwise, false.</returns>
@@ -4513,7 +4202,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" /> to the Clipboard as a picture.</summary>
@@ -4577,26 +4266,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListBox.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListBox" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -4637,15 +4315,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" /> is activated; otherwise, false.</returns>
@@ -4670,7 +4340,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" /> to the Clipboard as a picture.</summary>
@@ -4734,26 +4404,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ListView.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ListView" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -4794,15 +4453,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" /> is activated; otherwise, false.</returns>
@@ -4827,7 +4478,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" /> to the Clipboard as a picture.</summary>
@@ -4891,26 +4542,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MaskedTextBox" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -4951,15 +4591,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" /> is activated; otherwise, false.</returns>
@@ -4984,7 +4616,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" /> to the Clipboard as a picture.</summary>
@@ -5048,26 +4680,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.MonthCalendar.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.MonthCalendar" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -5108,15 +4729,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" /> is activated; otherwise, false.</returns>
@@ -5141,7 +4754,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" /> to the Clipboard as a picture.</summary>
@@ -5205,26 +4818,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.NumericUpDown.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.NumericUpDown" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -5265,15 +4867,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" /> is activated; otherwise, false.</returns>
@@ -5298,7 +4892,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" /> to the Clipboard as a picture.</summary>
@@ -5362,26 +4956,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PictureBox.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PictureBox" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -5423,15 +5006,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" /> is activated; otherwise, false.</returns>
@@ -5456,7 +5031,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" /> to the Clipboard as a picture.</summary>
@@ -5520,26 +5095,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.ProgressBar.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.ProgressBar" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -5580,15 +5144,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" /> is activated; otherwise, false.</returns>
@@ -5613,7 +5169,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" /> to the Clipboard as a picture.</summary>
@@ -5677,26 +5233,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.PropertyGrid.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.PropertyGrid" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -5737,15 +5282,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" /> is activated; otherwise, false.</returns>
@@ -5770,7 +5307,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" /> to the Clipboard as a picture.</summary>
@@ -5834,26 +5371,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RadioButton.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RadioButton" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -5894,15 +5420,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" /> is activated; otherwise, false.</returns>
@@ -5927,7 +5445,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" /> to the Clipboard as a picture.</summary>
@@ -5991,26 +5509,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.RichTextBox.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.RichTextBox" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -6051,15 +5558,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" /> is activated; otherwise, false.</returns>
@@ -6084,7 +5583,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" /> to the Clipboard as a picture.</summary>
@@ -6148,26 +5647,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TextBox.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TextBox" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -6208,15 +5696,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" /> is activated; otherwise, false.</returns>
@@ -6241,7 +5721,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" /> to the Clipboard as a picture.</summary>
@@ -6305,26 +5785,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TrackBar.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TrackBar" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -6365,15 +5834,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" /> is activated; otherwise, false.</returns>
@@ -6398,7 +5859,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" /> to the Clipboard as a picture.</summary>
@@ -6462,26 +5923,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.TreeView.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.TreeView" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -6522,15 +5972,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" /> is activated; otherwise, false.</returns>
@@ -6555,7 +5997,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" /> to the Clipboard as a picture.</summary>
@@ -6618,26 +6060,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.VScrollBar.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.VScrollBar" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>
@@ -6678,15 +6109,7 @@
       <summary>Represents a Windows Forms <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" /> that can be added to a Microsoft Office Excel worksheet.</summary>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.#ctor"></member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)">
-      <param name="factory"></param>
-      <param name="hostItemProvider"></param>
-      <param name="serviceProvider"></param>
-      <param name="cookie"></param>
-      <param name="extenderCookie"></param>
-      <param name="container"></param>
-      <param name="identifier"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.#ctor(Microsoft.Office.Tools.Excel.Factory,Microsoft.Office.Tools.IHostItemProvider,System.IServiceProvider,System.String,System.String,System.Object,System.String)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.Activate">
       <summary>Activates the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" />.</summary>
       <returns>true if the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" /> is activated; otherwise, false.</returns>
@@ -6711,7 +6134,7 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.BringToFront">
       <summary>Brings the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" /> to the front of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)">
       <summary>Copies the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" /> to the Clipboard as a picture.</summary>
@@ -6775,26 +6198,15 @@
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.Select(System.Object)">
       <summary>Selects the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" />.</summary>
-      <returns>true if button is selected; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
       <param name="Replace">true to replace the current selection with the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" />; false to extend the current selection to include any previously selected objects and the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" />.</param>
     </member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.SendToBack">
       <summary>Sends the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" /> to the back of the z-order.</summary>
-      <returns>true if the z-order is successfully changed; otherwise, false.</returns>
+      <returns>In Excel 2010, this method returns a null reference (Nothing in Visual Basic); otherwise this method returns true.</returns>
     </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-    </member>
-    <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
-      <param name="x"></param>
-      <param name="y"></param>
-      <param name="width"></param>
-      <param name="height"></param>
-      <param name="specified"></param>
-    </member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.SetBounds(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"></member>
     <member name="M:Microsoft.Office.Tools.Excel.Controls.WebBrowser.SetVisibleCore(System.Boolean)">
       <summary>Sets the <see cref="T:Microsoft.Office.Tools.Excel.Controls.WebBrowser" /> to the specified visible state.</summary>
       <param name="value">true to make the control visible; otherwise, false.</param>

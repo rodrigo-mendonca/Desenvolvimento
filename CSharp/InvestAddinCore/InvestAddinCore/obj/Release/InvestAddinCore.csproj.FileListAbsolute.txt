@@ -16,3 +16,12 @@ C:\Users\rmendonca\Dropbox\TestesCS\InvestAddinCore\InvestAddinCore\obj\Release\
 C:\Users\rmendonca\Dropbox\TestesCS\InvestAddinCore\InvestAddinCore\obj\Release\InvestAddinCore.csproj.ResolveComReference.cache
 C:\Users\rmendonca\Dropbox\TestesCS\InvestAddinCore\InvestAddinCore\obj\Release\InvestAddinCore.dll
 C:\Users\rmendonca\Dropbox\TestesCS\InvestAddinCore\InvestAddinCore\obj\Release\InvestAddinCore.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\bin\Release\InvestAddinCore.dll
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\bin\Release\InvestAddinCore.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\bin\Release\Microsoft.Office.Tools.Excel.v4.0.Utilities.dll
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\bin\Release\Microsoft.Office.Tools.Excel.v4.0.Utilities.xml
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\obj\Release\InvestAddinCore.csprojResolveAssemblyReference.cache
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\obj\Release\Interop.LCC11.dll
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\obj\Release\InvestAddinCore.csproj.ResolveComReference.cache
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\obj\Release\InvestAddinCore.dll
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\InvestAddinCore\InvestAddinCore\obj\Release\InvestAddinCore.pdb

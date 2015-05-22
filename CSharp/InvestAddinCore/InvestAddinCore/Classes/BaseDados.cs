@@ -33,7 +33,7 @@ namespace InvestAddinCore.Classes
 
         public static string stringconnection()
         {
-            string conexao = "SERVER=PGMSP01DB01;UID=pwi;PWD=pragmap0w2i8;DATABASE=PragmaInvest";
+            string conexao = "";
 
             return (conexao);
         }

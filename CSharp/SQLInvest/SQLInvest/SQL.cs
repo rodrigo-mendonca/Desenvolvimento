@@ -16,7 +16,7 @@ namespace Invest
         Excel.Application oExcel = null;
         string cCampos            = "";
         string cComando           = "";
-        string cConexao           = "Persist Security Info=False;Integrated Security=true;Initial Catalog=Northwind;server=PGMSP01DB01;DATABASE=PragmaInvest";
+        string cConexao           = "";
         string cTabela            = "";
         string cAs                = "";
         List<String> listCond     = new List<String>();
