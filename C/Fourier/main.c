@@ -15,9 +15,9 @@ int main(int argc, char *argv[])
 
     if(argc > 1){
         entrada = argv[1];
-        tipo    = argv[2];
+        saida    = argv[2];
+        tipo    = argv[3];
     }
-
 
     PGM *file = (PGM*)malloc(sizeof(PGM));
 

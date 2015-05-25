@@ -113,6 +113,9 @@ namespace PGMProcessing
 
             if (oOpen.FileName != "")
             {
+                // guarda o caminho para depois salvar
+                cFielSource = oOpen.FileName;
+
                 lVersions.Clear();
                 nVersion = -1;
                 OpenFile(oOpen.FileName);
@@ -122,10 +125,7 @@ namespace PGMProcessing
         {
             if (FileName != "")
             {
-                // guarda o caminho para depois salvar
-                cFielSource = FileName;
-
-                using (FileStream oFileStream = new FileStream(cFielSource, FileMode.Open))
+                using (FileStream oFileStream = new FileStream(FileName, FileMode.Open))
                 {
                     BinaryReader oReader = new BinaryReader(oFileStream);
 
@@ -610,11 +610,15 @@ namespace PGMProcessing
 
         public void Fourier(char Tipo)
         {
-            string path = @"";
+            string Temp = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".pgm";
+            string Save = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".pgm";
+
+            SaveAsFile(Save);
+
             string program = @"Fourier.exe";
 
             ProcessStartInfo _info =
-            new ProcessStartInfo(path + program, cFielSource+" "+Tipo);
+            new ProcessStartInfo(program, Save + " " + Temp + " " + Tipo);
 
             _info.RedirectStandardOutput = true;
             _info.UseShellExecute = false;

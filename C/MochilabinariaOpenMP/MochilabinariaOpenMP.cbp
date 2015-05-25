@@ -31,9 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="knap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="knap_defaults.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="timer.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

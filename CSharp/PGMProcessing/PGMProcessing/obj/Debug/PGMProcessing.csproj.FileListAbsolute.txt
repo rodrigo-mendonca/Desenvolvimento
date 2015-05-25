@@ -7,4 +7,3 @@ C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGMProcessing\PGMProc
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGMProcessing\PGMProcessing\obj\Debug\PGMProcessing.csproj.GenerateResource.Cache
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGMProcessing\PGMProcessing\obj\Debug\PGMProcessing.exe
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGMProcessing\PGMProcessing\obj\Debug\PGMProcessing.pdb
-C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\PGMProcessing\PGMProcessing\obj\Debug\PGMProcessing.csprojResolveAssemblyReference.cache
