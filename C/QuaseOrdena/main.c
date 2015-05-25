@@ -48,13 +48,6 @@ int list_confere_ordem(int *List)
     int Erro = 0;
     for(i=1;i<Tam;i++)
     {
-        system("cls");
-        list_print(List);
-        //printf(" 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12|\n");
-        list_posicao(i);
-
-        Sleep(Speed);
-
         if(List[i-1] > List[i])
         {
             Erro = 1;
@@ -64,8 +57,11 @@ int list_confere_ordem(int *List)
 
     if(Erro)
         printf("\nNao Ordenado!");
-    else
+    else{
+        system("cls");
+        list_print(List);
         printf("\nOrdenado!");
+    }
     Sleep(Speed*3);
 
     return(Erro);
@@ -74,16 +70,27 @@ int list_confere_ordem(int *List)
 void list_ordenar(int *List)
 {
     int Tam = TAM;
-    int i,j;
+    int i,j = 0;
 
-    for(i = 0;i< Tam ;i++)
-    {
-        for(j = 1;j<(Tam - i);j++)
-        {
-            list_confere_ordem(List);
-            list_trocar(List,j-1,j);
+    while(list_confere_ordem(List)){
+        system("cls");
+        list_print(List);
+        //printf(" 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12|\n");
+        list_posicao(j);
+
+        Sleep(Speed);
+        if(List[j] > List[j+1]){
+
+
+            list_trocar(List,j,j+1);
+            j--;
+            if(j< 0)
+                j=0;
         }
+        else
+            j++;
     }
+
 }
 
 void list_posicao(int Pos)

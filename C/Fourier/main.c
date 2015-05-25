@@ -10,13 +10,14 @@ void CalcDistributedFourier(PGM *file);
 int main(int argc, char *argv[])
 {
     char *entrada = "imagem.pgm";
+    char *saida   = "imagem.pgm";
     char *tipo = "I";
 
     if(argc > 1){
         entrada = argv[1];
         tipo    = argv[2];
     }
-    char *saida = "imagem.pgm";
+
 
     PGM *file = (PGM*)malloc(sizeof(PGM));
 
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
     savefile(saida, file);
     free(file);
 
-    printf("imagem.pgm");
+    printf(saida);
     return 0;
 }
 
