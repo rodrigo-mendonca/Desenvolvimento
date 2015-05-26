@@ -615,7 +615,7 @@ namespace PGMProcessing
 
             SaveAsFile(Save);
 
-            string program = @"Fourier.exe";
+            string program = @"C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\C\Fourier\bin\Debug\Fourier.exe";
 
             ProcessStartInfo _info =
             new ProcessStartInfo(program, Save + " " + Temp + " " + Tipo);

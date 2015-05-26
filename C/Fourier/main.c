@@ -6,6 +6,7 @@
 void CalcFourier(PGM *);
 void CalcParallelFourier(PGM *);
 void CalcDistributedFourier(PGM *file);
+int Fourier(int **,int,int);
 
 int main(int argc, char *argv[])
 {
@@ -47,16 +48,17 @@ void CalcFourier(PGM *file)
 
     printf("calculating...\n");
 
-    INumber n1;
-    n1.r=10;
-    n1.i=5;
+    int w = file->width;
+    int h = file->height;
 
-    INumber n2;
-    n2.r=5;
-    n2.i=2;
-    INumber n3 = Multipl(n1,n2);
-    //teste calculo
-    printf("n3=%f+%fi \n",n3.r,n3.i);
+    int **matriz = file->matrix; // alloc_matrix(h,w);
+
+    int i,j;
+    for(i=0;i<h;i++)
+        for(j=0;j<w;j++)
+            file->matrix[i][j] = Fourier(file->matrix,i,j);
+
+    //file->matrix = matriz;
 }
 
 void CalcParallelFourier(PGM *file)
@@ -69,3 +71,8 @@ void CalcDistributedFourier(PGM *file)
     //printf("Distribuido\n");
 }
 
+int Fourier(int **matriz,int y,int x)
+{
+    int min = min(matriz[y][x] + 10,255);
+    return min;
+}

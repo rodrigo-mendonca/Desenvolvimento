@@ -54,7 +54,7 @@ double Ang(double X,double Y)
     return nAngulo;
 }
 
-INumber Multipl(INumber P1, INumber P2)
+INumber IMult(INumber P1, INumber P2)
 {
     INumber iRetorno;
 

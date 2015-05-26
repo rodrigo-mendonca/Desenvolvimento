@@ -20,6 +20,6 @@ typedef struct _INumber {
 
 double Mod(double,double);
 double Ang(double,double);
-INumber Multipl(INumber,INumber);
+INumber IMult(INumber,INumber);
 
 
