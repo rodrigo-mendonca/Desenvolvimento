@@ -630,7 +630,7 @@ namespace PGMProcessing
 
             string _processResults = _p.StandardOutput.ReadToEnd();
             // abre o arquivo salvo adiconando como uma nova versão
-            OpenFile(_processResults);
+            OpenFile(Temp);
         }
     }
 }

@@ -191,7 +191,7 @@ namespace PGMProcessing
 
         private void ToolFourier_Click(object sender, EventArgs e)
         {
-            oControler.Fourier('D');
+            oControler.Fourier('I');
             ImgReflesh();
         }
     }

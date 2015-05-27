@@ -1,5 +1,4 @@
 #include "PGM.h"
-#include "INumber.h"
 
 int **alloc_matrix(int height, int width)
 {
@@ -13,6 +12,26 @@ int **alloc_matrix(int height, int width)
 }
 
 void free_matrix(int **matrix, int height)
+{
+    int i;
+    for (i = 0; i < height; ++i)
+        free(matrix[i]);
+    free(matrix);
+}
+
+INumber **alloc_Imatrix(int height, int width)
+{
+    INumber **ret;
+    int i;
+
+    ret = (INumber **)malloc(sizeof(INumber*) * height);
+    for (i = 0; i < height; ++i)
+        ret[i] = (INumber*)malloc(sizeof(INumber) * width);
+
+    return ret;
+}
+
+void free_Imatrix(INumber **matrix, int height)
 {
     int i;
     for (i = 0; i < height; ++i)
@@ -90,7 +109,7 @@ void savefile(const char *fileName, const PGM *data)
 
     for (i = 0; i < data->height; ++i)
         for (j = 0; j < data->width; ++j) {
-            lo =data->matrix[i][j];
+            lo = min(data->matrix[i][j],255);
             fputc(lo, pgmFile);
         }
 
