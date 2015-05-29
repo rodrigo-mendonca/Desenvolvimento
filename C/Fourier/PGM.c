@@ -19,6 +19,26 @@ void free_matrix(int **matrix, int height)
     free(matrix);
 }
 
+double **alloc_dmatrix(int height, int width)
+{
+    double **ret;
+    int i;
+
+    ret = (double **)malloc(sizeof(double*) * height);
+    for (i = 0; i < height; ++i)
+        ret[i] = (double*)malloc(sizeof(double) * width);
+
+    return ret;
+}
+
+void free_dmatrix(double **matrix, int height)
+{
+    int i;
+    for (i = 0; i < height; ++i)
+        free(matrix[i]);
+    free(matrix);
+}
+
 INumber **alloc_Imatrix(int height, int width)
 {
     INumber **ret;

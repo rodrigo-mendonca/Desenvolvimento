@@ -2,19 +2,22 @@
 #include <stdlib.h>
 #include "PGM.h"
 #include <limits.h>
-#include <omp.h>
 #include <math.h>
 
 void CalcFourier(PGM *);
 void CalcParallelFourier(PGM *);
 void CalcDistributedFourier(PGM *file);
-INumber *Fourier(int *,int,int,int);
-int Espectro(INumber);
+void Fourier(INumber **,int,int,int);
+INumber FourierFunc(INumber **,int,int,int,int,int,int);
+
+double Espectro(INumber);
+int Normalize(double,double);
 
 int main(int argc, char *argv[])
 {
     char *entrada = "imagem01.pgm";
     char *saida   = "imagem02.pgm";
+    char *espectro= "espectro.pgm";
     char *tipo    = "I";
 
     if(argc > 1){
@@ -35,10 +38,16 @@ int main(int argc, char *argv[])
             CalcParallelFourier(file);
             break;
     }
+
+    PGM *fileesp = (PGM*)malloc(sizeof(PGM));
+    fileesp->matrix = file->norespectro;
+
+    savefile(espectro, fileesp);
     savefile(saida, file);
+
     free(file);
 
-    printf(saida);
+    printf("%s",saida);
     return 0;
 }
 
@@ -52,13 +61,27 @@ void CalcFourier(PGM *file)
     file->imatrix = (INumber**)alloc_Imatrix(h,w);
 
     for(i=0;i<h;i++)
-        file->imatrix[i] = Fourier(file->matrix[i],i,w,0);
+        for(j=0;j<w;j++)
+            file->imatrix[i][j].r = file->matrix[i][j];
 
-    file->espectro = alloc_matrix(h,w);
+    Fourier(file->imatrix,h,w,0);
+
+    file->espectro = alloc_dmatrix(h,w);
+    file->maxespectro = 0;
 
     for(i=0;i<h;i++)
-        for(j=0;j<w;j++)
+        for(j=0;j<w;j++){
             file->espectro[i][j] = Espectro(file->imatrix[i][j]);
+
+            if(file->maxespectro < file->espectro[i][j])
+                file->maxespectro = file->espectro[i][j];
+
+        }
+
+    file->norespectro = alloc_matrix(h,w);
+    for(i=0;i<h;i++)
+        for(j=0;j<w;j++)
+            file->norespectro[i][j] = Normalize(file->espectro[i][j],file->maxespectro);
 }
 
 void CalcParallelFourier(PGM *file)
@@ -66,66 +89,84 @@ void CalcParallelFourier(PGM *file)
     //printf("Paralelo\n");
     /*
     int i,j;
-	int CHUNK = 100;
+    int CHUNK = 100;
     int w = file->width;
     int h = file->height;
-
     int **matriz = alloc_matrix(h,w);
-
-	#pragma omp parallel shared(file,matriz,w,h,CHUNK) private(i,j) num_threads(10)
-	{
-		#pragma omp for schedule(guided)
-		for(i=0;i<h;i++)
+    #pragma omp parallel shared(file,matriz,w,h,CHUNK) private(i,j) num_threads(10)
+    {
+        #pragma omp for schedule(guided)
+        for(i=0;i<h;i++)
         for(j=0;j<w;j++)
             matriz[i][j] = Fourier(file->matrix,i,j);
-	}
-	*/
+    }
+    */
 }
-
-INumber* Fourier(int *matriz,int l,int h,int inversa)
+void Fourier(INumber **Matriz,int h,int w,int Inversa)
 {
-    int Neg = -1;
-    if(inversa)
-        Neg = 1;
+    int freq,i;
 
-    int N = h;
-    int freq,t;
-    INumber *frequencies = malloc(sizeof(INumber) * N);
-
-    for (freq = 0; freq < N; freq++) {
-        double re = 0;
-        double im = 0;
-
-        for (t = 0; t < N; t++) {
-            double time= (double)t;
-            double var = matriz[t];
-
-            double rate = Neg * (2.0 * PI) * freq * time / N;
-
-            double re_part = var * cos(rate);
-            double im_part = var * sin(rate);
-
-            re += re_part;
-            im += im_part;
+    for (i = 0; i < h; i++) {
+        for (freq = 0; freq < w; freq++) {
+            Matriz[i][freq] = FourierFunc(Matriz,i,freq,freq,h,1,Inversa);
         }
-
-        if(inversa){
-            re = re / N;
-            im = im / N;
-        }
-
-        frequencies[freq].r = re;
-        frequencies[freq].i = im;
     }
 
-    return frequencies;
+    for (i = 0; i < w; i++) {
+        for (freq = 0; freq < h; freq++) {
+            Matriz[freq][i] = FourierFunc(Matriz,freq,i,freq,h,0,Inversa);
+        }
+    }
 }
 
-int Espectro(INumber var)
+double Espectro(INumber var)
 {
-    double Esp = log(1 + sqrt(var.r*var.r + var.i*var.i));
-
-    return (int)Esp;
+    return log(1 + sqrt(var.r*var.r + var.i*var.i));;
 }
 
+INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inversa)
+{
+    INumber Retorno;
+    double re = 0;
+    double im = 0;
+    int t;
 
+    int Neg = -1;
+    if(Inversa)
+        Neg = 1;
+
+
+    for (t = 0; t < N; t++) {
+        double time= (double)t;
+        INumber var;
+
+        // define se vai correr entre as linhas ou colulas
+        if(Line)
+            var = Matriz[Y][t];
+        else
+            var = Matriz[t][X];
+
+        double rate = Neg * (2.0 * PI) * Freq * time / N;
+
+        double re_part = var.r * cos(rate);
+        double im_part = var.i * sin(rate);
+
+        re += re_part;
+        im += im_part;
+    }
+
+    if(Inversa){
+        re = re / N;
+        im = im / N;
+    }
+
+    Retorno.r = re;
+    Retorno.i = im;
+
+    return Retorno;
+}
+
+int Normalize(double Var,double Max)
+{
+    return (Var/Max)*255;
+}

@@ -10,11 +10,17 @@ typedef struct _PGM {
     int maxGray;
     int **matrix;
     INumber **imatrix;
-    int **espectro;
+    double **espectro;
+    int **norespectro;
+    double maxespectro;
 } PGM;
 
 int **alloc_matrix(int , int );
 void free_matrix(int **, int );
+
+double **alloc_dmatrix(int , int );
+void free_dmatrix(double **, int );
+
 INumber **alloc_Imatrix(int , int );
 void free_Imatrix(INumber **, int );
 

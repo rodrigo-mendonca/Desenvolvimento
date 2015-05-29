@@ -43,3 +43,31 @@
 	<stdlib.h>
 	<stdio.h>
 
+1432695067 source:/Users/rmendonca/Documents/Github/Desenvolvimento/C/Fourier/INumber.c
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+	"INumber.h"
+
+1432695067 /Users/rmendonca/Documents/Github/Desenvolvimento/C/Fourier/INumber.h
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+
+1432868017 source:/Users/rmendonca/Documents/Github/Desenvolvimento/C/Fourier/PGM.c
+	"PGM.h"
+
+1432868045 /Users/rmendonca/Documents/Github/Desenvolvimento/C/Fourier/PGM.h
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	"INumber.h"
+
+1432868017 source:/Users/rmendonca/Documents/Github/Desenvolvimento/C/Fourier/main.c
+	<stdio.h>
+	<stdlib.h>
+	"PGM.h"
+	<limits.h>
+	<math.h>
+
