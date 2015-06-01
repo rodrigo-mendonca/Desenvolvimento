@@ -40,6 +40,9 @@ int main(int argc, char *argv[])
     }
 
     PGM *fileesp = (PGM*)malloc(sizeof(PGM));
+    fileesp->height = file->height;
+    fileesp->width = file->width;
+    fileesp->maxGray = file->maxGray;
     fileesp->matrix = file->norespectro;
 
     savefile(espectro, fileesp);
@@ -69,15 +72,19 @@ void CalcFourier(PGM *file)
     file->espectro = alloc_dmatrix(h,w);
     file->maxespectro = 0;
 
-    for(i=0;i<h;i++)
+    for(i=0;i<h;i++){
         for(j=0;j<w;j++){
             file->espectro[i][j] = Espectro(file->imatrix[i][j]);
+
+            if(file->espectro[i][j] > 0)
+                printf("Chegou!");
 
             if(file->maxespectro < file->espectro[i][j])
                 file->maxespectro = file->espectro[i][j];
 
         }
-
+    }
+    printf("MaxEspectro:%g",file->maxespectro);
     file->norespectro = alloc_matrix(h,w);
     for(i=0;i<h;i++)
         for(j=0;j<w;j++)
@@ -108,7 +115,7 @@ void Fourier(INumber **Matriz,int h,int w,int Inversa)
 
     for (i = 0; i < h; i++) {
         for (freq = 0; freq < w; freq++) {
-            Matriz[i][freq] = FourierFunc(Matriz,i,freq,freq,h,1,Inversa);
+            Matriz[i][freq] = FourierFunc(Matriz,i,freq,freq,w,1,Inversa);
         }
     }
 
@@ -135,19 +142,22 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
     if(Inversa)
         Neg = 1;
 
-
     for (t = 0; t < N; t++) {
-        double time= (double)t;
+        double time = (double)t;
+        double Fr = (double)Freq;
         INumber var;
 
         // define se vai correr entre as linhas ou colulas
-        if(Line)
+        if(Line){
             var = Matriz[Y][t];
-        else
+        }
+        else{
             var = Matriz[t][X];
+        }
 
-        double rate = Neg * (2.0 * PI) * Freq * time / N;
+        double rate = Neg * (2.0 * PI) * Fr * time / N;
 
+<<<<<<< HEAD
         INumber part;
         part.r = cos(rate);
         part.i = sin(rate);
@@ -156,9 +166,16 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
         
         double re_part = var.r * cos(rate);
         double im_part = var.i * sin(rate);
+=======
+        INumber Part;
+        Part.r = cos(rate);
+        Part.i = sin(rate);
+>>>>>>> 4b7c80c4ab521c423c7bbf4a9400c2411f73148b
 
-        re += re_part;
-        im += im_part;
+        INumber Result = IMult(var,Part);
+
+        re += Result.r;
+        im += Result.i;
     }
 
     if(Inversa){
@@ -174,5 +191,9 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
 
 int Normalize(double Var,double Max)
 {
-    return (Var/Max)*255;
+    double N = Max;
+    int retorno = (int)( Var/N)*255;
+    printf("V:%g T:%g N:%i", Var,N,retorno);
+
+    return retorno;
 }
