@@ -148,6 +148,12 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
 
         double rate = Neg * (2.0 * PI) * Freq * time / N;
 
+        INumber part;
+        part.r = cos(rate);
+        part.i = sin(rate);
+
+        
+        
         double re_part = var.r * cos(rate);
         double im_part = var.i * sin(rate);
 
