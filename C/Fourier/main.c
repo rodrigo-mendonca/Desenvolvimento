@@ -7,7 +7,7 @@
 void CalcFourier(PGM *);
 void CalcParallelFourier(PGM *);
 void CalcDistributedFourier(PGM *file);
-void Fourier(INumber **,int,int,int);
+void Fourier(INumber **,INumber **,int,int,int);
 INumber FourierFunc(INumber **,int,int,int,int,int,int);
 
 double Espectro(INumber);
@@ -15,8 +15,8 @@ int Normalize(double,double);
 
 int main(int argc, char *argv[])
 {
-    char *entrada = "imagem01.pgm";
-    char *saida   = "imagem02.pgm";
+    char *entrada = "imagem04.pgm";
+    char *saida   = "imagem042.pgm";
     char *espectro= "espectro.pgm";
     char *tipo    = "I";
 
@@ -56,18 +56,23 @@ int main(int argc, char *argv[])
 
 void CalcFourier(PGM *file)
 {
-    //printf("Normal\n");
     int i,j;
     int w = file->width;
     int h = file->height;
 
-    file->imatrix = (INumber**)alloc_Imatrix(h,w);
+    INumber** imatrix = (INumber**)alloc_Imatrix(h,w);
+    file->imatrix     = (INumber**)alloc_Imatrix(h,w);
 
     for(i=0;i<h;i++)
-        for(j=0;j<w;j++)
-            file->imatrix[i][j].r = file->matrix[i][j];
+        for(j=0;j<w;j++){
+            imatrix[i][j].r = file->matrix[i][j];
+            imatrix[i][j].i = 0;
 
-    Fourier(file->imatrix,h,w,0);
+            file->imatrix[i][j].r = 0;
+            file->imatrix[i][j].i = 0;
+        }
+
+    Fourier(file->imatrix,imatrix,h,w,0);
 
     file->espectro = alloc_dmatrix(h,w);
     file->maxespectro = 0;
@@ -76,15 +81,11 @@ void CalcFourier(PGM *file)
         for(j=0;j<w;j++){
             file->espectro[i][j] = Espectro(file->imatrix[i][j]);
 
-            if(file->espectro[i][j] > 0)
-                printf("Chegou!");
-
             if(file->maxespectro < file->espectro[i][j])
                 file->maxespectro = file->espectro[i][j];
-
         }
     }
-    printf("MaxEspectro:%g",file->maxespectro);
+
     file->norespectro = alloc_matrix(h,w);
     for(i=0;i<h;i++)
         for(j=0;j<w;j++)
@@ -93,49 +94,43 @@ void CalcFourier(PGM *file)
 
 void CalcParallelFourier(PGM *file)
 {
-    //printf("Paralelo\n");
-    /*
-    int i,j;
-    int CHUNK = 100;
-    int w = file->width;
-    int h = file->height;
-    int **matriz = alloc_matrix(h,w);
-    #pragma omp parallel shared(file,matriz,w,h,CHUNK) private(i,j) num_threads(10)
-    {
-        #pragma omp for schedule(guided)
-        for(i=0;i<h;i++)
-        for(j=0;j<w;j++)
-            matriz[i][j] = Fourier(file->matrix,i,j);
-    }
-    */
+
 }
-void Fourier(INumber **Matriz,int h,int w,int Inversa)
+
+void Fourier(INumber **iMatriz,INumber **Matriz,int h,int w,int Inversa)
 {
     int freq,i;
 
     for (i = 0; i < h; i++) {
         for (freq = 0; freq < w; freq++) {
-            Matriz[i][freq] = FourierFunc(Matriz,i,freq,freq,w,1,Inversa);
+            iMatriz[i][freq] = FourierFunc(Matriz,i,freq,freq,w,1,Inversa);
         }
     }
 
     for (i = 0; i < w; i++) {
         for (freq = 0; freq < h; freq++) {
-            Matriz[freq][i] = FourierFunc(Matriz,freq,i,freq,h,0,Inversa);
+            Matriz[freq][i] = FourierFunc(iMatriz,freq,i,freq,h,0,Inversa);
         }
     }
+
+    iMatriz = Matriz;
 }
 
 double Espectro(INumber var)
 {
-    return log(1 + sqrt(var.r*var.r + var.i*var.i));;
+    double a = var.r*var.r;
+    double b = var.i*var.i;
+    double T = sqrt(a + b);
+    double nlog = log(1 + T);
+
+    return nlog;
 }
 
 INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inversa)
 {
     INumber Retorno;
-    double re = 0;
-    double im = 0;
+    long double re = 0;
+    long double im = 0;
     int t;
 
     int Neg = -1;
@@ -157,20 +152,9 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
 
         double rate = Neg * (2.0 * PI) * Fr * time / N;
 
-<<<<<<< HEAD
-        INumber part;
-        part.r = cos(rate);
-        part.i = sin(rate);
-
-        
-        
-        double re_part = var.r * cos(rate);
-        double im_part = var.i * sin(rate);
-=======
         INumber Part;
         Part.r = cos(rate);
         Part.i = sin(rate);
->>>>>>> 4b7c80c4ab521c423c7bbf4a9400c2411f73148b
 
         INumber Result = IMult(var,Part);
 
@@ -191,9 +175,8 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
 
 int Normalize(double Var,double Max)
 {
-    double N = Max;
-    int retorno = (int)( Var/N)*255;
-    printf("V:%g T:%g N:%i", Var,N,retorno);
+    long double N = Max;
+    int retorno = (int)((Var/N)*255);
 
     return retorno;
 }

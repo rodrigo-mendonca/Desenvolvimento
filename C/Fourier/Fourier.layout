@@ -2,18 +2,18 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
 	<File name="INumber.c" open="1" top="0" tabpos="4">
-		<Cursor position="1236" topLine="0" />
+		<Cursor position="113" topLine="45" />
 	</File>
 	<File name="INumber.h" open="1" top="0" tabpos="5">
-		<Cursor position="314" topLine="0" />
+		<Cursor position="431" topLine="0" />
 	</File>
 	<File name="PGM.c" open="1" top="0" tabpos="3">
-		<Cursor position="305" topLine="90" />
+		<Cursor position="1840" topLine="72" />
 	</File>
 	<File name="PGM.h" open="1" top="0" tabpos="2">
-		<Cursor position="234" topLine="0" />
+		<Cursor position="313" topLine="3" />
 	</File>
 	<File name="main.c" open="1" top="1" tabpos="1">
-		<Cursor position="2544" topLine="101" />
+		<Cursor position="657" topLine="11" />
 	</File>
 </CodeBlocks_layout_file>
