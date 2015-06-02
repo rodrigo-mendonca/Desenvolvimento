@@ -9,6 +9,8 @@ typedef struct _PGM {
     int width;
     int maxGray;
     int **matrix;
+    int **matrixinv;
+    INumber **imatrixinv;
     INumber **imatrix;
     double **espectro;
     int **norespectro;

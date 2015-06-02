@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1433186059 source:c:\users\rmendonca\documents\github\desenvolvimento\c\fourier\main.c
+1433279315 source:c:\users\rmendonca\documents\github\desenvolvimento\c\fourier\main.c
 	<stdio.h>
 	<stdlib.h>
 	"PGM.h"
@@ -24,7 +24,7 @@
 1432903622 source:c:\users\rmendonca\documents\github\desenvolvimento\c\fourier\pgm.c
 	"PGM.h"
 
-1432903622 c:\users\rmendonca\documents\github\desenvolvimento\c\fourier\pgm.h
+1433258706 c:\users\rmendonca\documents\github\desenvolvimento\c\fourier\pgm.h
 	<stdio.h>
 	<string.h>
 	<ctype.h>

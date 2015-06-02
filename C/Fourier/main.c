@@ -16,7 +16,8 @@ int Normalize(double,double);
 int main(int argc, char *argv[])
 {
     char *entrada = "imagem04.pgm";
-    char *saida   = "imagem042.pgm";
+    char *original = "original04.pgm";
+    char *saida   = "Inversa04.pgm";
     char *espectro= "espectro.pgm";
     char *tipo    = "I";
 
@@ -45,10 +46,19 @@ int main(int argc, char *argv[])
     fileesp->maxGray = file->maxGray;
     fileesp->matrix = file->norespectro;
 
-    savefile(espectro, fileesp);
-    savefile(saida, file);
+    PGM *fileinv = (PGM*)malloc(sizeof(PGM));
+    fileinv->height = file->height;
+    fileinv->width = file->width;
+    fileinv->maxGray = file->maxGray;
+    fileinv->matrix = file->matrixinv;
 
+    savefile(espectro, fileesp);
+    savefile(original, file);
+    savefile(saida, fileinv);
+
+    free(fileesp);
     free(file);
+    free(fileinv);
 
     printf("%s",saida);
     return 0;
@@ -65,21 +75,27 @@ void CalcFourier(PGM *file)
 
     for(i=0;i<h;i++)
         for(j=0;j<w;j++){
-            imatrix[i][j].r = file->matrix[i][j];
+            imatrix[i][j].r = (double)file->matrix[i][j];
             imatrix[i][j].i = 0;
 
             file->imatrix[i][j].r = 0;
             file->imatrix[i][j].i = 0;
         }
 
+    // calculo do fourier
     Fourier(file->imatrix,imatrix,h,w,0);
 
+    // CALCULO DO ESPECTRO
     file->espectro = alloc_dmatrix(h,w);
     file->maxespectro = 0;
 
     for(i=0;i<h;i++){
         for(j=0;j<w;j++){
+            printf("i:%d,j:%d - ",i,j);
             file->espectro[i][j] = Espectro(file->imatrix[i][j]);
+
+            if(j % 100 == 0)
+                system("pause");
 
             if(file->maxespectro < file->espectro[i][j])
                 file->maxespectro = file->espectro[i][j];
@@ -90,6 +106,17 @@ void CalcFourier(PGM *file)
     for(i=0;i<h;i++)
         for(j=0;j<w;j++)
             file->norespectro[i][j] = Normalize(file->espectro[i][j],file->maxespectro);
+
+
+    file->imatrixinv =(INumber**)alloc_Imatrix(h,w);
+    Fourier(imatrix,file->imatrixinv,h,w,1);
+
+    file->matrixinv = (int**)alloc_matrix(h, w);
+
+    for(i=0;i<h;i++)
+        for(j=0;j<w;j++){
+            file->matrixinv[i][j] = file->imatrixinv[i][j].r;
+        }
 }
 
 void CalcParallelFourier(PGM *file)
@@ -118,8 +145,8 @@ void Fourier(INumber **iMatriz,INumber **Matriz,int h,int w,int Inversa)
 
 double Espectro(INumber var)
 {
-    double a = var.r*var.r;
-    double b = var.i*var.i;
+    long double a = var.r*var.r;
+    long double b = var.i*var.i;
     double T = sqrt(a + b);
     double nlog = log(1 + T);
 
@@ -132,6 +159,7 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
     long double re = 0;
     long double im = 0;
     int t;
+    double Nt = (double)N;
 
     int Neg = -1;
     if(Inversa)
@@ -150,7 +178,7 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
             var = Matriz[t][X];
         }
 
-        double rate = Neg * (2.0 * PI) * Fr * time / N;
+        double rate = Neg * (2.0 * PI) * Fr * time / Nt;
 
         INumber Part;
         Part.r = cos(rate);
@@ -163,8 +191,8 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
     }
 
     if(Inversa){
-        re = re / N;
-        im = im / N;
+        re = re / Nt;
+        im = im / Nt;
     }
 
     Retorno.r = re;
@@ -175,7 +203,7 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
 
 int Normalize(double Var,double Max)
 {
-    long double N = Max;
+    double N = Max;
     int retorno = (int)((Var/N)*255);
 
     if(retorno > 255)
@@ -183,6 +211,9 @@ int Normalize(double Var,double Max)
 
     if(retorno < 0)
         retorno = 0;
+
+
+    printf("Var:%g,N:%g = %d\n",Var,N,retorno);
 
     return retorno;
 }
