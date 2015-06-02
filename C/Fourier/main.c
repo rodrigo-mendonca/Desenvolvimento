@@ -178,5 +178,11 @@ int Normalize(double Var,double Max)
     long double N = Max;
     int retorno = (int)((Var/N)*255);
 
+    if(retorno > 255)
+        retorno = 255;
+
+    if(retorno < 0)
+        retorno = 0;
+
     return retorno;
 }
