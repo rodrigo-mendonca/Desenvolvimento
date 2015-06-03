@@ -4,9 +4,8 @@
 #include <limits.h>
 #include <math.h>
 
-void CalcFourier(PGM *);
-void CalcParallelFourier(PGM *);
-void CalcDistributedFourier(PGM *file);
+void CalcFourier(PGM*,int);
+void ParallelFourier(INumber**,INumber**,int,int,int);
 void Fourier(INumber **,INumber **,int,int,int);
 INumber FourierFunc(INumber **,int,int,int,int,int,int);
 
@@ -15,36 +14,38 @@ int Normalize(double,double);
 
 int main(int argc, char *argv[])
 {
+    printf("%s\n","Processando...");
+
     char *entrada = "imagem04.pgm";
-    char *original = "original04.pgm";
-    char *saida   = "Inversa04.pgm";
+    char *saida   = "inversa04.pgm";
     char *espectro= "espectro.pgm";
-    char *tipo    = "I";
+    char *tipo    = "P";
 
     if(argc > 1){
         entrada = argv[1];
         saida   = argv[2];
-        tipo    = argv[3];
+        espectro= argv[3];
+        tipo    = argv[4];
     }
 
+    printf("Arquivo do Original:%s\n",entrada);
+    printf("Arquivo da inversa:%s\n",saida);
+    printf("Arquivo do Espectro:%s\n",espectro);
+    
     PGM *file = (PGM*)malloc(sizeof(PGM));
 
     readfile(entrada, file);
 
     switch (*tipo){
         case 'I':
-            CalcFourier(file);
+            printf("%s\n","Rodando Padrao...");
+            CalcFourier(file,0);
             break;
         case 'P':
-            CalcParallelFourier(file);
+            printf("%s\n","Rodando Paralelo...");
+            CalcFourier(file,1);
             break;
     }
-
-    PGM *fileesp = (PGM*)malloc(sizeof(PGM));
-    fileesp->height = file->height;
-    fileesp->width = file->width;
-    fileesp->maxGray = file->maxGray;
-    fileesp->matrix = file->norespectro;
 
     PGM *fileinv = (PGM*)malloc(sizeof(PGM));
     fileinv->height = file->height;
@@ -52,19 +53,24 @@ int main(int argc, char *argv[])
     fileinv->maxGray = file->maxGray;
     fileinv->matrix = file->matrixinv;
 
-    savefile(espectro, fileesp);
-    savefile(original, file);
-    savefile(saida, fileinv);
+    PGM *fileesp = (PGM*)malloc(sizeof(PGM));
+    fileesp->height = file->height;
+    fileesp->width = file->width;
+    fileesp->maxGray = file->maxGray;
+    fileesp->matrix = file->norespectro;
 
+    savefile(saida, fileinv);
+    savefile(espectro, fileesp);
+    
     free(fileesp);
     free(file);
     free(fileinv);
 
-    printf("%s",saida);
+    printf("%s","Concluido!");
     return 0;
 }
 
-void CalcFourier(PGM *file)
+void CalcFourier(PGM *file,int parallel)
 {
     int i,j;
     int w = file->width;
@@ -81,47 +87,75 @@ void CalcFourier(PGM *file)
             file->imatrix[i][j].r = 0;
             file->imatrix[i][j].i = 0;
         }
+    // calculo do fourier, roda paralelo ou nao depedendo do paramatro
+    if(parallel)
+        ParallelFourier(file->imatrix,imatrix,h,w,0);
+    else
+        Fourier(file->imatrix,imatrix,h,w,0);
 
-    // calculo do fourier
-    Fourier(file->imatrix,imatrix,h,w,0);
+    free_Imatrix(imatrix,h);
 
     // CALCULO DO ESPECTRO
-    file->espectro = alloc_dmatrix(h,w);
+    file->espectro = (double**)alloc_dmatrix(h,w);
     file->maxespectro = 0;
 
     for(i=0;i<h;i++){
         for(j=0;j<w;j++){
-            printf("i:%d,j:%d - ",i,j);
             file->espectro[i][j] = Espectro(file->imatrix[i][j]);
-
-            if(j % 100 == 0)
-                system("pause");
 
             if(file->maxespectro < file->espectro[i][j])
                 file->maxespectro = file->espectro[i][j];
         }
     }
 
-    file->norespectro = alloc_matrix(h,w);
+    file->norespectro = (int**)alloc_matrix(h,w);
     for(i=0;i<h;i++)
         for(j=0;j<w;j++)
             file->norespectro[i][j] = Normalize(file->espectro[i][j],file->maxespectro);
 
+    //free_Imatrix(file->espectro,h);
 
     file->imatrixinv =(INumber**)alloc_Imatrix(h,w);
-    Fourier(imatrix,file->imatrixinv,h,w,1);
+
+    // calculo do fourier inverso, roda paralelo ou nao depedendo do paramatro
+    if(parallel)
+        ParallelFourier(file->imatrixinv,file->imatrix,h,w,1);
+    else
+        Fourier(file->imatrixinv,file->imatrix,h,w,1);
 
     file->matrixinv = (int**)alloc_matrix(h, w);
 
     for(i=0;i<h;i++)
         for(j=0;j<w;j++){
-            file->matrixinv[i][j] = file->imatrixinv[i][j].r;
+            file->matrixinv[i][j] = Normalize(file->imatrixinv[i][j].r,255);
         }
+    //free_Imatrix(file->imatrixinv,h);
 }
 
-void CalcParallelFourier(PGM *file)
+void ParallelFourier(INumber **iMatriz,INumber **Matriz,int h,int w,int Inversa)
 {
+    int freq,i, CHUNK = 2;
+    #pragma omp parallel shared(iMatriz,Matriz,h,w,Inversa,CHUNK) private(i,freq)
+	{
+		#pragma omp for schedule(dynamic)
+		for (i = 0; i < h; i++) {
+            for (freq = 0; freq < w; freq++) {
+                iMatriz[i][freq] = FourierFunc(Matriz,i,freq,freq,w,1,Inversa);
+            }
+        }
+	}
 
+	#pragma omp parallel shared(iMatriz,Matriz,h,w,Inversa,CHUNK) private(i,freq)
+	{
+		#pragma omp for schedule(dynamic)
+		for (i = 0; i < w; i++) {
+            for (freq = 0; freq < h; freq++) {
+                Matriz[freq][i] = FourierFunc(iMatriz,freq,i,freq,h,0,Inversa);
+            }
+        }
+	}
+
+	iMatriz = Matriz;
 }
 
 void Fourier(INumber **iMatriz,INumber **Matriz,int h,int w,int Inversa)
@@ -147,8 +181,8 @@ double Espectro(INumber var)
 {
     long double a = var.r*var.r;
     long double b = var.i*var.i;
-    double T = sqrt(a + b);
-    double nlog = log(1 + T);
+    long double T = sqrtf(a + b);
+    double nlog = logf(1 + T);
 
     return nlog;
 }
@@ -156,8 +190,8 @@ double Espectro(INumber var)
 INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inversa)
 {
     INumber Retorno;
-    long double re = 0;
-    long double im = 0;
+    double re = 0;
+    double im = 0;
     int t;
     double Nt = (double)N;
 
@@ -211,9 +245,6 @@ int Normalize(double Var,double Max)
 
     if(retorno < 0)
         retorno = 0;
-
-
-    printf("Var:%g,N:%g = %d\n",Var,N,retorno);
 
     return retorno;
 }
