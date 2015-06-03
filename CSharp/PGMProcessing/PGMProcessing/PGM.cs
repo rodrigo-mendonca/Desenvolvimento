@@ -612,13 +612,14 @@ namespace PGMProcessing
         {
             string Temp = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".pgm";
             string Save = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".pgm";
+            string Espectro = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".pgm";
 
             SaveAsFile(Save);
 
-            string program = @"C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\C\Fourier\bin\Debug\Fourier.exe";
+            string program = @"Fourier.exe";
 
             ProcessStartInfo _info =
-            new ProcessStartInfo(program, Save + " " + Temp + " " + Tipo);
+            new ProcessStartInfo(program, Save + " " + Temp + " " + Espectro + " " + Tipo);
 
             _info.RedirectStandardOutput = true;
             _info.UseShellExecute = false;
