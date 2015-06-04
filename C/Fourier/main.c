@@ -12,8 +12,8 @@ void ParallelFourier(INumber**,INumber**,int,int,int);
 void Fourier(INumber **,INumber **,int,int,int);
 INumber FourierFunc(INumber **,int,int,int,int,int,int);
 
-double Espectro(INumber);
-int Normalize(double,double);
+long double Espectro(INumber);
+int Normalize(long double,long double);
 
 int main(int argc, char *argv[])
 {
@@ -91,15 +91,16 @@ void CalcFourier(PGM *file,int parallel)
 
     for(i=0;i<h;i++)
         for(j=0;j<w;j++){
-            imatrix[i][j].r = (double)file->matrix[i][j];
+            imatrix[i][j].r = (long double)file->matrix[i][j];
             imatrix[i][j].i = 0;
 
             file->imatrix[i][j].r = 0;
             file->imatrix[i][j].i = 0;
         }
     // calculo do fourier, roda paralelo ou nao depedendo do paramatro
-     printf("Calculando fourier...");
-     fflush(stdout);
+    printf("Calculando fourier...");
+    fflush(stdout);
+
     if(parallel)
     {
     	double Start = omp_get_wtime();
@@ -118,7 +119,7 @@ void CalcFourier(PGM *file,int parallel)
     free_Imatrix(imatrix,h);
 
     // CALCULO DO ESPECTRO
-    file->espectro = (double**)alloc_dmatrix(h,w);
+    file->espectro = (long double**)alloc_dmatrix(h,w);
     file->maxespectro = 0;
 
     for(i=0;i<h;i++){
@@ -213,12 +214,12 @@ void Fourier(INumber **iMatriz,INumber **Matriz,int h,int w,int Inversa)
     iMatriz = Matriz;
 }
 
-double Espectro(INumber var)
+long double Espectro(INumber var)
 {
     long double a = var.r*var.r;
     long double b = var.i*var.i;
     long double T = sqrtf(a + b);
-    double nlog = logf(1 + T);
+    long double nlog = logf(1 + T);
 
     return nlog;
 }
@@ -226,12 +227,12 @@ double Espectro(INumber var)
 INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inversa)
 {
     INumber Retorno;
-    double re = 0;
-    double im = 0;
+    long double re = 0;
+    long double im = 0;
     int t;
     double Nt = (double)N;
 
-    int Neg = -1;
+    double Neg = -1;
     if(Inversa)
         Neg = 1;
 
@@ -248,11 +249,11 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
             var = Matriz[t][X];
         }
 
-        double rate = Neg * (2.0 * PI) * Fr * time / Nt;
+        long double rate = (Neg * (2.0 * PI) * Fr) * (time / Nt);
 
         INumber Part;
-        Part.r = cos(rate);
-        Part.i = sin(rate);
+        Part.r = cosl(rate);
+        Part.i = sinl(rate);
 
         INumber Result = IMult(var,Part);
 
@@ -271,10 +272,10 @@ INumber FourierFunc(INumber **Matriz,int Y,int X,int Freq,int N,int Line,int Inv
     return Retorno;
 }
 
-int Normalize(double Var,double Max)
+int Normalize(long double Var,long double Max)
 {
-    double N = Max;
-    int retorno = (int)((Var/N)*255);
+    long double R = (Var/Max)*255;
+    int retorno = (int)R;
 
     if(retorno > 255)
         retorno = 255;

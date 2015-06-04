@@ -12,16 +12,16 @@ typedef struct _PGM {
     int **matrixinv;
     INumber **imatrixinv;
     INumber **imatrix;
-    double **espectro;
+    long double **espectro;
     int **norespectro;
-    double maxespectro;
+    long double maxespectro;
 } PGM;
 
 int **alloc_matrix(int , int );
 void free_matrix(int **, int );
 
-double **alloc_dmatrix(int , int );
-void free_dmatrix(double **, int );
+long double **alloc_dmatrix(int , int );
+void free_dmatrix(long double **, int );
 
 INumber **alloc_Imatrix(int , int );
 void free_Imatrix(INumber **, int );

@@ -19,19 +19,19 @@ void free_matrix(int **matrix, int height)
     free(matrix);
 }
 
-double **alloc_dmatrix(int height, int width)
+long double **alloc_dmatrix(int height, int width)
 {
-    double **ret;
+    long double **ret;
     int i;
 
-    ret = (double **)malloc(sizeof(double*) * height);
+    ret = (long double **)malloc(sizeof(long double*) * height);
     for (i = 0; i < height; ++i)
-        ret[i] = (double*)malloc(sizeof(double) * width);
+        ret[i] = (long double*)malloc(sizeof(long double) * width);
 
     return ret;
 }
 
-void free_dmatrix(double **matrix, int height)
+void free_dmatrix(long double **matrix, int height)
 {
     int i;
     for (i = 0; i < height; ++i)

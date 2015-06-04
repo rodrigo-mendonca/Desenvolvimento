@@ -14,8 +14,8 @@
      _a > _b ? _a : _b; })
 
 typedef struct _INumber {
-    double r;
-    double i;
+    long double r;
+    long double i;
 } INumber;
 
 double Mod(double,double);
