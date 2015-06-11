@@ -1,13 +1,13 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <windows.h>
+#include <time.h>
 
 #define TAM 10;
 
 void list_print(int *);
 void list_ordenar(int *);
 int list_confere_ordem(int *);
-void list_posicao(int);
 void list_trocar(int*,int,int);
 void troca(int *,int,int);
 
@@ -17,10 +17,11 @@ int main()
 {
     int Tam = TAM;
     int *List = malloc(sizeof(int)*Tam);
+    srand (time(NULL));
 
     int i;
     for(i = 0;i<Tam;i++)
-        List[i] = Tam - i;
+        List[i] = (int) 1 + (rand() % 20);
 
     list_ordenar(List);
 
@@ -60,7 +61,7 @@ int list_confere_ordem(int *List)
     else{
         system("cls");
         list_print(List);
-        printf("\nOrdenado!");
+        printf("\nOrdenado!\n\n");
     }
     Sleep(Speed*3);
 
@@ -69,38 +70,42 @@ int list_confere_ordem(int *List)
 
 void list_ordenar(int *List)
 {
-    int Tam = TAM;
-    int i,j = 0;
+    int i,tro = 0,inv = 0;
+    int n = TAM;
 
     while(list_confere_ordem(List)){
+        int ini = -1,fim = -1;
         system("cls");
         list_print(List);
-        //printf(" 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12|\n");
-        list_posicao(j);
+
+        for(i=1;i<n;i++){
+            if(ini < 0){
+                if(List[i-1] > List[i])
+                    ini = i-1;
+            }
+
+            if(fim < 0 && ini > -1){
+                if(List[i - 1] < List[i] && ini !=i - 1)
+                    fim = i - 1;
+            }
+        }
+
+        if(ini == -1)
+            ini = 0;
+        if(fim == -1)
+            fim = n-1;
 
         Sleep(Speed);
-        if(List[j] > List[j+1]){
+        list_trocar(List,ini,fim);
 
-
-            list_trocar(List,j,j+1);
-            j--;
-            if(j< 0)
-                j=0;
-        }
+        if(ini+1 == fim)
+            tro++;
         else
-            j++;
+            inv++;
     }
-
-}
-
-void list_posicao(int Pos)
-{
-    printf("%c",32);
-    int j;
-    for(j = 1;j<= Pos*4;j++)
-        printf("%c",32);
-
-    printf("%c",24);
+    printf("Total de Operacoes\n");
+    printf("Troca:%i\n",tro);
+    printf("Inversa:%i\n",inv);
 }
 
 void list_trocar(int *List,int Ini,int Fim)
