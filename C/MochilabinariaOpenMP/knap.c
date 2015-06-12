@@ -189,6 +189,7 @@ void init_books ()
 
 void get_opts (int argc, char** argv)
 {
+
     int c;
     extern char *optarg;
     extern int optind;
@@ -272,8 +273,8 @@ void randgen_books_ (const int n, int* weight, int* profit)
     int k;
     for (k = 0; k < n; ++k) {
         #if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
-            weight[k] = 1 + (int)(max_random_weight * rand());
-            profit[k] = 1 + (int)(max_random_profit * rand());
+            weight[k] = 1 + (int)(rand() % max_random_weight );
+            profit[k] = 1 + (int)(rand() %  max_random_profit);
         #else
             weight[k] = 1 + (int)(max_random_weight * drand48());
             profit[k] = 1 + (int)(max_random_profit * drand48());
@@ -290,6 +291,8 @@ void randgen_books (long seedval, const int n, int* weight, int* profit)
     #else
         srand48(seedval);
     #endif
+
+     randgen_books_ (n, weight, profit);
 }
 
 void staticgen_books (const int n, int* weight, int* profit)

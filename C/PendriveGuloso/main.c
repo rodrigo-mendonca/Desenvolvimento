@@ -6,14 +6,6 @@ int* Ordenar(int*,int);
 int Sum(int*,int);
 void RandFiles(int *,int,int);
 
-
-typedef struct HeapSort HeapSort;
-struct HeapSort {
-   HeapSort *Rigth;
-   HeapSort *Left;
-   int Value;
-};
-
 int main()
 {
     int Tam = 50;

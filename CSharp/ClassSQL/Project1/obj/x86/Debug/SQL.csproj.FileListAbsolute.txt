@@ -6,3 +6,4 @@ C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\ClassSQL\Project1\bin
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\ClassSQL\Project1\bin\Debug\SQL.pdb
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\ClassSQL\Project1\obj\x86\Debug\SQL.dll
 C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\ClassSQL\Project1\obj\x86\Debug\SQL.pdb
+C:\Users\rmendonca\Documents\GitHub\Desenvolvimento\CSharp\ClassSQL\Project1\obj\x86\Debug\SQL.csprojResolveAssemblyReference.cache

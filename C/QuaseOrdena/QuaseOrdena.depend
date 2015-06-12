@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1432561549 source:c:\users\rmendonca\documents\github\desenvolvimento\c\quaseordena\main.c
+1434053804 source:c:\users\rmendonca\documents\github\desenvolvimento\c\quaseordena\main.c
 	<unistd.h>
 	<stdio.h>
 	<windows.h>
+	<time.h>
 

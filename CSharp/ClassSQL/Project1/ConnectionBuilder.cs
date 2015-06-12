@@ -11,7 +11,7 @@ namespace SQL
     {
         SqlConnection oConexao = null;
         string cConexao;
-        string cFileConnect = @"X:\INVEST\InvestExcel\Conexao.cfg";
+        string cFileConnect = @"Conexao.cfg";
 
         public ConnectionBuilder()
         {
