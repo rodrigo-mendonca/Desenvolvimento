@@ -1,18 +1,18 @@
 # depslib dependency file v1.0
-1432565401 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\main.c
+1434057124 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\main.c
 	<stdio.h>
 	<stdlib.h>
 
-1112648331 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\timer.c
+1434135733 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\timer.c
 	<stddef.h>
 	<stdio.h>
 	"timer.h"
 
-1112648331 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\timer.h
+1434057125 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\timer.h
 	<sys/time.h>
 	<time.h>
 
-1432567166 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\knap.c
+1434135194 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\knap.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -22,8 +22,9 @@
 	<unistd.h>
 	"timer.h"
 	"knap_defaults.h"
+	"OpenMp.h"
 
-1112648331 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\knap_defaults.h
+1434057124 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\knap_defaults.h
 
 1432565845 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\rand48.h
 	<stdlib.h>
@@ -53,4 +54,39 @@
 	<stddef.h>
 	<stdio.h>
 	"timer.h"
+
+1434134681 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\openmp.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+	<time.h>
+	<errno.h>
+	<unistd.h>
+	<omp.h>
+	"timer.h"
+	"knap_defaults.h"
+	"OpenMp.h"
+
+1434132327 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\openmp.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+	<time.h>
+	<errno.h>
+	<unistd.h>
+	"timer.h"
+	"knap_defaults.h"
+
+1434132413 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\openmp.h
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+	<time.h>
+	<errno.h>
+	<unistd.h>
+	"timer.h"
+	"knap_defaults.h"
 

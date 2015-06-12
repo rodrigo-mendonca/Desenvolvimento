@@ -7,21 +7,18 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\MochilabinariaOpenMP" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option output="bin/Debug/MochilabinariaOpenMP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="-b 10000 -c 10000 -W 30 -P 150 -s 250 -v -r" />
+				<Option parameters="-b 10 -c 100 -W 30 -P 15 -s 25 -v -r" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
-				<Linker>
-					<Add option="-fopenmp" />
-				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin\Release\MochilabinariaOpenMP" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/MochilabinariaOpenMP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -35,14 +32,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="OpenMp.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="OpenMp.h" />
 		<Unit filename="knap.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="knap_defaults.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="timer.c">
 			<Option compilerVar="CC" />
 		</Unit>

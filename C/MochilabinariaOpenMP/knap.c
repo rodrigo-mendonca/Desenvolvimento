@@ -8,6 +8,7 @@
 
 #include "timer.h"
 #include "knap_defaults.h"
+#include "OpenMp.h"
 
 int n_books = DEFAULT_N_BOOKS;
 int bag_cap = DEFAULT_BAG_CAP;
@@ -34,9 +35,13 @@ void read_books (FILE*, const int n, int* weight, int* profit);
 void randgen_books (long seedval, const int n, int* weight, int* profit);
 void staticgen_books (const int n, int* weight, int* profit);
 
-
 int main (int argc, char** argv)
 {
+    //1 - Normal
+    //2 - Paralelo
+
+    int tipo = 1;
+
     int total_profit, total_weight, book_i, n_sold;
     struct Timer solve_timer, backtrack_timer;
 
@@ -52,12 +57,13 @@ int main (int argc, char** argv)
     }
     init_books ();
 
+    /*
     if (verbose >= 1) {
         int i;
         for (i = 0; i < n_books; i++)
             printf("book %5d:     w = %5d       p = %5d\n", i, weight[i], profit[i]);
     }
-
+    */
     total = malloc ((bag_cap+1) * n_books * sizeof(int));
     if (!total) {
         fprintf (stderr,"Insufficient memory for profit table\n");
@@ -68,11 +74,21 @@ int main (int argc, char** argv)
     initialize_timer(&backtrack_timer);
 
     start_timer(&solve_timer);
-    total_profit = solve (n_books, bag_cap, weight, profit, total);
+
+    if(tipo == 1)
+        total_profit = solve(n_books, bag_cap, weight, profit, total);
+    if(tipo == 2)
+        total_profit = solveparallel(n_books, bag_cap, weight, profit, total);
+
     stop_timer(&solve_timer);
 
     start_timer(&backtrack_timer);
-    backtrack (n_books, bag_cap, weight, total, use_book);
+
+    if(tipo == 1)
+        backtrack (n_books, bag_cap, weight, total, use_book);
+    if(tipo == 2)
+        backtrackparallel(n_books, bag_cap, weight, total, use_book);
+
     stop_timer(&backtrack_timer);
 
     printf ("Total profit: %d\n", total_profit);
@@ -99,7 +115,7 @@ int main (int argc, char** argv)
     return 0;
 }
 
-int solve (const int n_books, const int bag_cap,const int* weight, const int* profit,int* total)
+int solve(const int n_books, const int bag_cap,const int* weight, const int* profit,int* total)
 {
     int book_i;
     int cap_j;
@@ -140,7 +156,7 @@ int solve (const int n_books, const int bag_cap,const int* weight, const int* pr
     return prev_book_total[bag_cap];
 }
 
-void backtrack (const int n_books, const int bag_cap,const int* weight,const int* total,int* use_book)
+void backtrack(const int n_books, const int bag_cap,const int* weight,const int* total,int* use_book)
 {
     int book_i;
     const int* cur_total;
@@ -157,8 +173,7 @@ void backtrack (const int n_books, const int bag_cap,const int* weight,const int
     use_book[0] = (*cur_total > 0);
 }
 
-
-void init_books ()
+void init_books()
 {
     switch (init_from) {
         case STATIC:
@@ -187,9 +202,8 @@ void init_books ()
   }
 }
 
-void get_opts (int argc, char** argv)
+void get_opts(int argc, char** argv)
 {
-
     int c;
     extern char *optarg;
     extern int optind;
@@ -244,31 +258,31 @@ void get_opts (int argc, char** argv)
     exit(1);
 }
 
-void dump_usage (FILE* f)
+void dump_usage(FILE* f)
 {
   /*h?b:c:f:rW:P:s:v*/
   fprintf (f, "Usage:"
-	   "\t\t-h or -?      this message\n"
-	   "\t\t-b <int>      number of books (%d)\n"
-	   "\t\t-c <int>      bag capacity (%d)\n"
-   "\t\t-g            generate weights and profits statically (default)\n"
-	   "\t\t-f <filename> file to read weights and profits\n"
-	   "\t\t-r            generate weights and profits randomly\n"
-	   "\t\t-W <int>      max random weight\n"
-	   "\t\t-P <int>      max random profit\n"
-	   "\t\t-s <long>     random seed\n",
-           "\t\t-v            increase verbosity\n",
-	   n_books, bag_cap);
+        "\t\t-h or -?      this message\n"
+        "\t\t-b <int>      number of books (%d)\n"
+        "\t\t-c <int>      bag capacity (%d)\n"
+        "\t\t-g            generate weights and profits statically (default)\n"
+        "\t\t-f <filename> file to read weights and profits\n"
+        "\t\t-r            generate weights and profits randomly\n"
+        "\t\t-W <int>      max random weight\n"
+        "\t\t-P <int>      max random profit\n"
+        "\t\t-s <long>     random seed\n",
+        "\t\t-v            increase verbosity\n",
+        n_books, bag_cap);
 }
 
-void read_books (FILE* f, const int n, int* weight, int* profit)
+void read_books(FILE* f, const int n, int* weight, int* profit)
 {
     int k;
     for (k = 0; k < n; ++k)
         fscanf (f, "%d %d\n", &weight[k], &profit[k]);
 }
 
-void randgen_books_ (const int n, int* weight, int* profit)
+void randgen_books_(const int n, int* weight, int* profit)
 {
     int k;
     for (k = 0; k < n; ++k) {
@@ -282,7 +296,7 @@ void randgen_books_ (const int n, int* weight, int* profit)
   }
 }
 
-void randgen_books (long seedval, const int n, int* weight, int* profit)
+void randgen_books(long seedval, const int n, int* weight, int* profit)
 {
     if (seedval < 0)
         seedval = (long)clock();
@@ -295,7 +309,7 @@ void randgen_books (long seedval, const int n, int* weight, int* profit)
      randgen_books_ (n, weight, profit);
 }
 
-void staticgen_books (const int n, int* weight, int* profit)
+void staticgen_books(const int n, int* weight, int* profit)
 {
     #if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
         srand (1010101L);

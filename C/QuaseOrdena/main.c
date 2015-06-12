@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
+    #include <windows.h>
+#endif
+
 #define TAM 10;
 
 void list_print(int *);
@@ -25,7 +30,7 @@ int main()
 
     int i;
     for(i = 0;i<Tam;i++){
-        
+
         if(random)
             List[i] = (int) 1 + (rand() % 20);
         else{
@@ -90,9 +95,9 @@ void list_ordenar(int *List)
     // se nao consegui ordena aplica a inversa 1 ou n vezes ate ordenars
     while(!list_confere_ordem(List)){
         int ini = -1,fim = -1;
-        
+
         limpar();
-        
+
         list_print(List);
 
         for(i=1;i<n;i++){
@@ -126,8 +131,6 @@ void list_ordenar(int *List)
 int buscatroca(int *List){
     int i;
     int n = TAM;
-    int atual = 0;
-
     int ini = -1,fim = -1;
     for(i=1;i<n;i++){
         if(ini < 0){
@@ -147,7 +150,7 @@ int buscatroca(int *List){
         fim = n-1;
 
     troca(List,ini,fim);
-    
+
     return list_confere_ordem(List);
 }
 
