@@ -40,7 +40,7 @@ int main (int argc, char** argv)
     //1 - Normal
     //2 - Paralelo
 
-    int tipo = 1;
+    char tipo = (char)*argv[1];
 
     int total_profit, total_weight, book_i, n_sold;
     struct Timer solve_timer, backtrack_timer;
@@ -74,22 +74,25 @@ int main (int argc, char** argv)
     initialize_timer(&backtrack_timer);
 
     start_timer(&solve_timer);
+    double Start = omp_get_wtime();
 
-    if(tipo == 1)
+    if(tipo == '1')
         total_profit = solve(n_books, bag_cap, weight, profit, total);
-    if(tipo == 2)
+    if(tipo == '2')
         total_profit = solveparallel(n_books, bag_cap, weight, profit, total);
 
     stop_timer(&solve_timer);
 
     start_timer(&backtrack_timer);
 
-    if(tipo == 1)
+    if(tipo == '1')
         backtrack (n_books, bag_cap, weight, total, use_book);
-    if(tipo == 2)
+    if(tipo == '2')
         backtrackparallel(n_books, bag_cap, weight, total, use_book);
 
     stop_timer(&backtrack_timer);
+    double End = omp_get_wtime() - Start;
+
 
     printf ("Total profit: %d\n", total_profit);
     printf ("Using books:\n");
@@ -111,7 +114,7 @@ int main (int argc, char** argv)
 
     printf ("Capacity used: %d of %d with %d books\n",total_weight, bag_cap, n_sold);
     printf ("Times: solve %g, backtrack %g\n",timer_duration(solve_timer),timer_duration(backtrack_timer));
-
+    
     return 0;
 }
 

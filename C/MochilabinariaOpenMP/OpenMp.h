@@ -5,6 +5,7 @@
 #include <time.h>
 #include <errno.h>
 #include <unistd.h>
+#include <omp.h>
 
 #include "timer.h"
 #include "knap_defaults.h"

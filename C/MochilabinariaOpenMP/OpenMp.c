@@ -18,7 +18,7 @@ int solveparallel(const int n_books, const int bag_cap,const int* weight, const 
     int* prev_book_total;
     int* book_total;
 
-    #pragma omp parallel shared(weight,total,profit,bag_cap) private(cap_j)
+    #pragma omp parallel shared(weight,total,profit) private(cap_j)
 	{
 	    #pragma omp for schedule(dynamic)
         /* Base case for using only book 1. */
@@ -33,7 +33,7 @@ int solveparallel(const int n_books, const int bag_cap,const int* weight, const 
     prev_book_total = &total[0];
     book_total = &total[bag_cap+1];
 
-    #pragma omp parallel shared(weight,book_total,prev_book_total,profit,bag_cap,n_books) private(book_i,cap_j)
+    #pragma omp parallel shared(weight,book_total,prev_book_total,profit) private(cap_j,book_i)
 	{
 	    #pragma omp for schedule(dynamic)
         for (book_i = 1; book_i < n_books; ++book_i) {
@@ -67,10 +67,11 @@ void backtrackparallel(const int n_books, const int bag_cap,const int* weight,co
     memset (use_book, 0, n_books * sizeof(int));
     cur_total = &total[n_books * (bag_cap+1) - 1];
 
-    #pragma omp parallel shared(weight,use_book,bag_cap,cur_total,n_books) private(book_i)
+    #pragma omp parallel shared(weight,use_book,cur_total) private(book_i)
 	{
 	    #pragma omp for schedule(dynamic)
-        for (book_i = n_books-1; book_i > 0; --book_i, cur_total -= (bag_cap+1)) {
+        for (book_i = n_books-1; book_i > 0; --book_i) {
+            cur_total -= (bag_cap+1);
             if (*cur_total != *(cur_total - (bag_cap+1))) {
                 use_book[book_i] = 1;
                 cur_total -= weight[book_i];

@@ -3,5 +3,5 @@ LDFLAGS=-fopenmp -lm
  
 all: lib 
 	
-lib: OpenMp.o timer.o knap.c
-	$(CC) -o MochilabinariaOpenMP knap.c OpenMp.o timer.o $(LDFLAGS) 
+lib: OpenMp.c timer.o knap.c
+	$(CC) -o MochilabinariaOpenMP knap.c OpenMp.c timer.o $(LDFLAGS) 
