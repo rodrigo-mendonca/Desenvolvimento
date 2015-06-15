@@ -8,7 +8,7 @@
 
 #include "timer.h"
 #include "knap_defaults.h"
-#include "OpenMp.h"
+#include "LMPI.h"
 
 int n_books = DEFAULT_N_BOOKS;
 int bag_cap = DEFAULT_BAG_CAP;
@@ -68,30 +68,40 @@ int main (int argc, char** argv)
         return ENOMEM;
     }
 
-    initialize_timer(&solve_timer);
-    initialize_timer(&backtrack_timer);
+    int myid, local_profit;
+    double startSolve, endSolve, startBack, endBack;
+    MPI_Init(&argc,&argv);
+    MPI_Comm_rank(MPI_COMM_WORLD,&myid);
+    startSolve = MPI_Wtime();
 
-    start_timer(&solve_timer);
-    double Start = omp_get_wtime();
+    if(tipo == 1) {
+        if (myid==0)
+            total_profit = solve(n_books, bag_cap, weight, profit, total);
+    }
+    if(tipo == 0)
+    {
+        local_profit = solveparallel(n_books, bag_cap, weight, profit, total,argc, argv);
+
+        MPI_Reduce(&local_profit,&total_profit,1,MPI_INT,MPI_SUM,0,MPI_COMM_WORLD);
+    }
+
+    startBack = endSolve = MPI_Wtime();
 
     if(tipo == 1)
-        total_profit = solve(n_books, bag_cap, weight, profit, total);
+    {
+        if(myid==0)
+            backtrack (n_books, bag_cap, weight, total, use_book);
+    }
     if(tipo == 0)
-        total_profit = solveparallel(n_books, bag_cap, weight, profit, total);
+        backtrackparallel(n_books, bag_cap, weight, total, use_book,argc, argv);
 
-    stop_timer(&solve_timer);
+    endBack = MPI_Wtime();
 
-    start_timer(&backtrack_timer);
-
-    if(tipo == 1)
-        backtrack (n_books, bag_cap, weight, total, use_book);
-    if(tipo == 0)
-        backtrackparallel(n_books, bag_cap, weight, total, use_book);
-
-    stop_timer(&backtrack_timer);
-    double End = omp_get_wtime() - Start;
+    MPI_Finalize();
 
 
+
+    //printf("--------------------------------- MEU ID = %d\n",myid );
     printf ("Total profit: %d\n", total_profit);
     printf ("Using books:\n");
     total_weight = n_sold = 0;
@@ -111,7 +121,7 @@ int main (int argc, char** argv)
         printf ("Profit didn't balance!\n");
 
     printf ("Capacity used: %d of %d with %d books\n",total_weight, bag_cap, n_sold);
-    printf ("Times: solve %g, backtrack %g\n",timer_duration(solve_timer),timer_duration(backtrack_timer));
+    printf ("Times: solve %g, backtrack %g\n",endSolve- startSolve ,endBack-startBack);
     
     return 0;
 }
@@ -283,7 +293,8 @@ void read_books(FILE* f, const int n, int* weight, int* profit)
 {
     int k;
     for (k = 0; k < n; ++k)
-        fscanf (f, "%d %d\n", &weight[k], &profit[k]);
+        if (!fscanf (f, "%d %d\n", &weight[k], &profit[k]))
+		printf("Error reading file");
 }
 
 void randgen_books_(const int n, int* weight, int* profit)
