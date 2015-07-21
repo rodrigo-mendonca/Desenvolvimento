@@ -21,17 +21,29 @@ namespace USBBackupWindows
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cmdOri_Click(object sender, EventArgs e)
         {
-            DriversList.DataSource = Controle.ListDrives();
+            FolderBrowserDialog Brower = new FolderBrowserDialog();
+            Brower.ShowDialog();
+
+            DirectoryInfo Dir = new DirectoryInfo(Brower.SelectedPath);
+            txtOrigen.Text = Brower.SelectedPath;
+            Controle.SetOrigin(Dir);
         }
 
-        private void DriversList_DoubleClick(object sender, EventArgs e)
+        private void cmdDes_Click(object sender, EventArgs e)
         {
-            string DriveName = (string)DriversList.SelectedValue;
+            FolderBrowserDialog Brower = new FolderBrowserDialog();
+            Brower.ShowDialog();
 
-            DriveInfo Dri = DriveInfo.GetDrives().Where(i=>i.Name == DriveName).Single();
-            DirectorysList.DataSource = Controle.ListDirectory(Dri);
+            DirectoryInfo Dir = new DirectoryInfo(Brower.SelectedPath);
+            txtDestino.Text = Brower.SelectedPath;
+            Controle.SetDestiny(Dir);
+        }
+
+        private void cmdBackup_Click(object sender, EventArgs e)
+        {
+            Controle.Backup();
         }
     }
 }
