@@ -20,6 +20,7 @@ func proxyConn(conn *net.TCPConn) {
 	}
 
 	rConn, err := net.DialTCP("tcp", nil, rAddr)
+
 	if err != nil {
 		panic(err)
 	}
@@ -74,6 +75,7 @@ func main() {
 	fmt.Printf("Listening: %v\nProxying: %v\n\n", *localAddr, *remoteAddr)
 
 	addr, err := net.ResolveTCPAddr("tcp", *localAddr)
+	
 	if err != nil {
 		panic(err)
 	}
@@ -86,11 +88,14 @@ func main() {
 	pending, complete := make(chan *net.TCPConn), make(chan *net.TCPConn)
 
 	for i := 0; i < 5; i++ {
+		
 		go handleConn(pending, complete)
 	}
+
 	go closeConn(complete)
 
 	for {
+		log.Printf("Aqui")
 		conn, err := listener.AcceptTCP()
 		if err != nil {
 			panic(err)
