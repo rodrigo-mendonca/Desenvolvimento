@@ -15,10 +15,12 @@ namespace USBBackupWindows
     public partial class USBBackupWindows : Form
     {
         USBBackup.USBBackup Controle = new USBBackup.USBBackup();
-
+        bool Executando = false;
         public USBBackupWindows()
         {
             InitializeComponent();
+            txtOrigen.Text = Directory.GetCurrentDirectory();
+            txtDestino.Text = Directory.GetCurrentDirectory();
         }
 
         private void cmdOri_Click(object sender, EventArgs e)
@@ -26,9 +28,12 @@ namespace USBBackupWindows
             FolderBrowserDialog Brower = new FolderBrowserDialog();
             Brower.ShowDialog();
 
-            DirectoryInfo Dir = new DirectoryInfo(Brower.SelectedPath);
-            txtOrigen.Text = Brower.SelectedPath;
-            Controle.SetOrigin(Dir);
+            if (Brower.SelectedPath != "")
+            {
+                DirectoryInfo Dir = new DirectoryInfo(Brower.SelectedPath);
+                txtOrigen.Text = Brower.SelectedPath;
+                Controle.SetOrigin(Dir);
+            }
         }
 
         private void cmdDes_Click(object sender, EventArgs e)
@@ -36,12 +41,34 @@ namespace USBBackupWindows
             FolderBrowserDialog Brower = new FolderBrowserDialog();
             Brower.ShowDialog();
 
-            DirectoryInfo Dir = new DirectoryInfo(Brower.SelectedPath);
-            txtDestino.Text = Brower.SelectedPath;
-            Controle.SetDestiny(Dir);
+            if (Brower.SelectedPath != "")
+            {
+                DirectoryInfo Dir = new DirectoryInfo(Brower.SelectedPath);
+                txtDestino.Text = Brower.SelectedPath;
+                Controle.SetDestiny(Dir);
+            }
         }
 
         private void cmdBackup_Click(object sender, EventArgs e)
+        {
+            if (!Executando)
+            {
+                Executando = true;
+                cmdBackup.Text = "Parar";
+                timer.Interval = (int)sprMinutos.Value * 60000;
+                timer.Enabled = true;
+                lblMsg.Text = "Executando...";
+            }
+            else
+            {
+                Executando = false;
+                cmdBackup.Text = "Backup";
+                timer.Enabled = false;
+                lblMsg.Text = "";
+            }
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
         {
             Controle.Backup();
         }
