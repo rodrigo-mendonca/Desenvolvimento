@@ -51,7 +51,7 @@ public class SynchronousSocketClient
             } catch (Exception e) {
                 Console.WriteLine("Unexpected exception : {0}", e.ToString());
             }
-
+            Console.ReadKey();
         } catch (Exception e) {
             Console.WriteLine( e.ToString());
         }
