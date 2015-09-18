@@ -1,17 +1,51 @@
 package main
 
 import (
+    "os"
 	"math"
     "time"
     "fmt"
     "math/rand"
+    "strings"
+    "strconv"
 )
 
 func main() {
-    rand.Seed( time.Now().UTC().UnixNano())
+    rand.Seed(time.Now().UTC().UnixNano())
 
-    fmt.Printf("Teste!")
+    var k Kohonen
 
+    k.Create(10,3)
+
+    k.Exec("Food.txt")
+}
+
+func checkerro(e error) {
+    if e != nil {
+        panic(e)
+    }
+}
+
+func readline(f *os.File) string{
+    ret :=""
+    c := ""
+    b := make([]byte, 1)
+
+    // quanto não for enter
+    for c != "\n" {
+        f.Read(b)
+
+        // se não ler nada, arquivo acabou, então sai do loop
+        if b[0] == 0{
+            break
+        }
+
+        c = string(b)
+        fmt.Printf(c)
+        fmt.Printf("\n")
+        ret += c
+    }
+    return ret
 }
 
 // -----------------------------------Kohonen--------------------------------------------------------------------------------------
@@ -19,17 +53,19 @@ type Kohonen struct {
     outputs [][]Neuron
     iteration,length,dimenions int
     patterns [][]float64
+    labels []string
 }
 
-func (r Kohonen) Create(l int, d int, f string) {
+func (r Kohonen) Create(l int, d int) {
     r.length = l
     r.dimenions = d
-
+    r.iteration = 0
     r.Initialise()
 }
 
 func (r Kohonen) Exec(f string) {
     r.LoadData(f)
+    fmt.Printf("Teste!")
     r.NormalisePatterns()
     r.Train(0.00000001)
     r.DumpCoordinates()
@@ -44,44 +80,143 @@ func (r Kohonen) Initialise() {
 
     for i := 0; i < r.length; i++ {
         for j := 0; j < r.length; j++ {
-            outputs[i][j].Create(i,j,r.length)
-            outputs[i][j].Weigths = make([]float64,r.dimenions)
+            r.outputs[i][j].Create(i,j,r.length)
+            r.outputs[i][j].Weigths = make([]float64,r.dimenions)
 
             for k := 0; k < r.dimenions; k++ {
-                outputs[i][j].Weigths[k] = rand.Float64()
+                r.outputs[i][j].Weigths[k] = rand.Float64()
             }
         }
     }
 }
 
 func (r Kohonen) LoadData(f string) {
-    
+    // faz a leitura do arquivo
+    file,err := os.Open(f)
+    checkerro(err)
+    //linenum:=0
+
+    // faz a leitura da linha
+    line:=readline(file)
+    for line!="" {
+        fmt.Printf("aqui")
+        line=readline(file)
+
+        params:=strings.Split(line,",")
+
+        r.labels=make([]string,r.dimenions+1)
+        r.labels[0] = params[0]
+        inputs := make([]float64,r.dimenions)
+
+        for i := 0; i < r.dimenions; i++ {
+            p:=params[i+1]
+
+            r.labels[i+1] = p
+
+            num,err:=strconv.ParseFloat(p, 64)
+
+            inputs[i] = num
+
+            checkerro(err)
+        }
+        r.patterns = append(r.patterns, inputs)
+
+        fmt.Printf(line)
+    }
+    fmt.Printf("aqui")
 }
 
 func (r Kohonen) NormalisePatterns() {
-    
+    sum:=float64(0)
+    l:=float64(len(r.patterns))
+
+    for j := 0; j < r.dimenions; j++ {
+
+        for _, num := range r.patterns {
+            sum += num[j]
+        }
+
+        avg:= sum / l
+
+        for i := 0; i < len(r.patterns); i++ {
+            r.patterns[i][j] = r.patterns[i][j] / avg
+        }
+    }
 }
 
 func (r Kohonen) Train(maxErro float64) {
-    
+    erro:=maxErro
+
+    for erro > maxErro {
+        erro=0
+        var TrainingSet [][]float64
+
+        for _, num := range r.patterns {
+            TrainingSet = append(TrainingSet,num)
+        }
+
+        for i := 0; i < len(r.patterns); i++ {
+            ind:=rand.Intn(len(r.patterns) - i)
+            pattern:=TrainingSet[ind]
+
+            erro+=r.TrainPattern(pattern)
+
+            TrainingSet = append(TrainingSet[:ind],TrainingSet[ind+1:]...)
+        }
+    }
 }
 
-func (r Kohonen) TrainPattern(patterns []float64) {
-    
+func (r Kohonen) TrainPattern(pattern []float64) float64{
+    erro:=float64(0)
+
+    var winner Neuron
+
+    for i := 0; i < r.length; i++ {
+        for j := 0; j < r.length; j++ {
+            erro+= r.outputs[i][j].UpdateWeigths(pattern,winner,r.iteration)
+        }   
+    }
+    r.iteration++
+
+    l:=float64(r.length)
+    return math.Abs(erro / (l * l))
 }
 
 func (r Kohonen) DumpCoordinates() {
-    
+    for i := 0; i < len(r.patterns); i++ {
+        neu:= r. Winner(r.patterns[i])
+        fmt.Printf("%s %d %d",r.labels[i],neu.x,neu.y)
+    }
 }
 
-func (r Kohonen) Winner(patterns []float64) Neuron{
-    var n Neuron
+func (r Kohonen) Winner(pattern []float64) Neuron{
+    var winner Neuron
 
-    return n
+    min:=math.MaxFloat64
+
+    for i := 0; i < r.length; i++ {
+        for j := 0; j < r.length; j++ {
+            dist:=r.Distance(pattern,r.outputs[i][j].Weigths)
+
+            if(dist< min){
+                min = dist
+
+                winner = r.outputs[i][j]
+            }
+        }
+    }
+
+    return winner
 }
 
 func (r Kohonen) Distance(v1 []float64,v2 []float64)  float64{
-    return 0.0
+    v:=float64(0)
+
+    for i := 0; i < len(v1); i++ {
+        v+=math.Pow(v1[i] -v2[i],2)
+    }
+
+    return math.Sqrt(v)
 }
 // -----------------------------------FimKohonen-----------------------------------------------------------------------------------
 

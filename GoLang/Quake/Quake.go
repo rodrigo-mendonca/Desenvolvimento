@@ -138,7 +138,7 @@ func scanGame(){
 
 	//fmt.Printf("Jogo:%d\n",totalgame)
 
-	listagame = append(listagame, newgame)
+	listagame = append(listagame, *newgame)
 	totalgame = totalgame + 1
 }
 
