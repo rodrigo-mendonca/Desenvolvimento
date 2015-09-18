@@ -8,6 +8,7 @@ import (
     "math/rand"
     "strings"
     "strconv"
+    "bufio"
 )
 
 func main() {
@@ -15,37 +16,17 @@ func main() {
 
     var k Kohonen
 
-    k.Create(10,3)
+    k = k.Create(10,3)
 
     k.Exec("Food.txt")
+
+    fmt.Printf("Concluido")
 }
 
 func checkerro(e error) {
     if e != nil {
         panic(e)
     }
-}
-
-func readline(f *os.File) string{
-    ret :=""
-    c := ""
-    b := make([]byte, 1)
-
-    // quanto não for enter
-    for c != "\n" {
-        f.Read(b)
-
-        // se não ler nada, arquivo acabou, então sai do loop
-        if b[0] == 0{
-            break
-        }
-
-        c = string(b)
-        fmt.Printf(c)
-        fmt.Printf("\n")
-        ret += c
-    }
-    return ret
 }
 
 // -----------------------------------Kohonen--------------------------------------------------------------------------------------
@@ -56,16 +37,16 @@ type Kohonen struct {
     labels []string
 }
 
-func (r Kohonen) Create(l int, d int) {
+func (r Kohonen) Create(l int, d int) Kohonen{
     r.length = l
     r.dimenions = d
     r.iteration = 0
     r.Initialise()
+    return r
 }
 
 func (r Kohonen) Exec(f string) {
     r.LoadData(f)
-    fmt.Printf("Teste!")
     r.NormalisePatterns()
     r.Train(0.00000001)
     r.DumpCoordinates()
@@ -91,39 +72,41 @@ func (r Kohonen) Initialise() {
 }
 
 func (r Kohonen) LoadData(f string) {
+
     // faz a leitura do arquivo
     file,err := os.Open(f)
     checkerro(err)
-    //linenum:=0
 
-    // faz a leitura da linha
-    line:=readline(file)
-    for line!="" {
-        fmt.Printf("aqui")
-        line=readline(file)
+    reader := bufio.NewReader(file)
+    scanner := bufio.NewScanner(reader)
+    
+    linenum:=0
 
-        params:=strings.Split(line,",")
+    for scanner.Scan() {
+        line:=scanner.Text()
 
-        r.labels=make([]string,r.dimenions+1)
-        r.labels[0] = params[0]
-        inputs := make([]float64,r.dimenions)
+        if(linenum>0){
+            params:=strings.Split(line,",")
+            
+            r.labels=make([]string,r.dimenions+1)
+            r.labels[0] = params[0]
+            inputs := make([]float64,r.dimenions)
 
-        for i := 0; i < r.dimenions; i++ {
-            p:=params[i+1]
+            for i := 0; i < r.dimenions; i++ {
+                p:=params[i+1]
 
-            r.labels[i+1] = p
+                r.labels[i+1] = p
 
-            num,err:=strconv.ParseFloat(p, 64)
+                num,err:=strconv.ParseFloat(p, 64)
 
-            inputs[i] = num
+                inputs[i] = num
 
-            checkerro(err)
+                checkerro(err)
+            }
+            r.patterns = append(r.patterns, inputs)
         }
-        r.patterns = append(r.patterns, inputs)
-
-        fmt.Printf(line)
+        linenum++;
     }
-    fmt.Printf("aqui")
 }
 
 func (r Kohonen) NormalisePatterns() {
@@ -183,9 +166,10 @@ func (r Kohonen) TrainPattern(pattern []float64) float64{
 }
 
 func (r Kohonen) DumpCoordinates() {
+
     for i := 0; i < len(r.patterns); i++ {
         neu:= r. Winner(r.patterns[i])
-        fmt.Printf("%s %d %d",r.labels[i],neu.x,neu.y)
+        fmt.Printf("%s %d %d\n",r.labels[i],neu.x,neu.y)
     }
 }
 
