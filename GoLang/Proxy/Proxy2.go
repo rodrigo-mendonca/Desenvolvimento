@@ -11,7 +11,7 @@ import (
 )
 
 var localAddr *string = flag.String("l", "localhost:9999", "local address")
-var remoteAddr *string = flag.String("r", "localhost:80", "remote address")
+var remoteAddr *string = flag.String("r", "localhost:90", "remote address")
 
 func proxyConn(conn *net.TCPConn) {
 	rAddr, err := net.ResolveTCPAddr("tcp", *remoteAddr)
