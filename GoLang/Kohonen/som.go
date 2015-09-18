@@ -11,6 +11,10 @@ import (
     "bufio"
 )
 
+type Color struct {
+    R, G ,B float32
+}
+
 func main() {
     rand.Seed(time.Now().UTC().UnixNano())
 
@@ -32,27 +36,28 @@ func checkerro(e error) {
 // -----------------------------------Kohonen--------------------------------------------------------------------------------------
 type Kohonen struct {
     outputs [][]Neuron
-    iteration,length,dimenions int
+    iteration,length,dimenions,numlines int
     patterns [][]float64
     labels []string
+    Colors [][]Color
 }
 
 func (r Kohonen) Create(l int, d int) Kohonen{
     r.length = l
     r.dimenions = d
     r.iteration = 0
-    r.Initialise()
+    r = r.Initialise()
     return r
 }
 
 func (r Kohonen) Exec(f string) {
-    r.LoadData(f)
-    r.NormalisePatterns()
-    r.Train(0.00000001)
+    r = r.LoadData(f)
+    r = r.NormalisePatterns()
+    r = r.Train(0.00000001)
     r.DumpCoordinates()
 }
 
-func (r Kohonen) Initialise() {
+func (r Kohonen) Initialise() Kohonen{
     r.outputs=make([][]Neuron,r.length)
 
     for i := 0; i < r.length; i++ {
@@ -61,7 +66,7 @@ func (r Kohonen) Initialise() {
 
     for i := 0; i < r.length; i++ {
         for j := 0; j < r.length; j++ {
-            r.outputs[i][j].Create(i,j,r.length)
+            r.outputs[i][j] = r.outputs[i][j].Create(i,j,r.length)
             r.outputs[i][j].Weigths = make([]float64,r.dimenions)
 
             for k := 0; k < r.dimenions; k++ {
@@ -69,9 +74,10 @@ func (r Kohonen) Initialise() {
             }
         }
     }
+    return r
 }
 
-func (r Kohonen) LoadData(f string) {
+func (r Kohonen) LoadData(f string) Kohonen {
 
     // faz a leitura do arquivo
     file,err := os.Open(f)
@@ -80,36 +86,35 @@ func (r Kohonen) LoadData(f string) {
     reader := bufio.NewReader(file)
     scanner := bufio.NewScanner(reader)
     
-    linenum:=0
+    r.numlines=-1
 
     for scanner.Scan() {
         line:=scanner.Text()
 
-        if(linenum>0){
+        if(r.numlines>-1){
             params:=strings.Split(line,",")
             
-            r.labels=make([]string,r.dimenions+1)
-            r.labels[0] = params[0]
+            r.labels = append(r.labels, params[0])
+
             inputs := make([]float64,r.dimenions)
 
             for i := 0; i < r.dimenions; i++ {
-                p:=params[i+1]
-
-                r.labels[i+1] = p
+                p:=params[i + 1]
 
                 num,err:=strconv.ParseFloat(p, 64)
 
                 inputs[i] = num
-
                 checkerro(err)
             }
             r.patterns = append(r.patterns, inputs)
         }
-        linenum++;
+        r.numlines++;
     }
+
+    return r
 }
 
-func (r Kohonen) NormalisePatterns() {
+func (r Kohonen) NormalisePatterns() Kohonen{
     sum:=float64(0)
     l:=float64(len(r.patterns))
 
@@ -121,55 +126,67 @@ func (r Kohonen) NormalisePatterns() {
 
         avg:= sum / l
 
-        for i := 0; i < len(r.patterns); i++ {
+        for i := 0; i < r.numlines; i++ {
             r.patterns[i][j] = r.patterns[i][j] / avg
         }
     }
+    return r
 }
 
-func (r Kohonen) Train(maxErro float64) {
-    erro:=maxErro
+func (r Kohonen) Train(maxErro float64) Kohonen{
+    erro:=math.MaxFloat64
 
     for erro > maxErro {
-        erro=0
+        erro=float64(0)
+
         var TrainingSet [][]float64
 
         for _, num := range r.patterns {
             TrainingSet = append(TrainingSet,num)
         }
 
-        for i := 0; i < len(r.patterns); i++ {
-            ind:=rand.Intn(len(r.patterns) - i)
+        for i := 0; i < r.numlines; i++ {
+            ind:=rand.Intn((r.numlines - i))
+
             pattern:=TrainingSet[ind]
-
-            erro+=r.TrainPattern(pattern)
-
+            v:=float64(0)
+            v,r = r.TrainPattern(pattern)
+            erro+=v
+            
             TrainingSet = append(TrainingSet[:ind],TrainingSet[ind+1:]...)
         }
+        //fmt.Printf("Erro:%i\n",erro)
     }
+
+    return r
 }
 
-func (r Kohonen) TrainPattern(pattern []float64) float64{
+func (r Kohonen) TrainPattern(pattern []float64) (float64,Kohonen){
     erro:=float64(0)
 
     var winner Neuron
 
     for i := 0; i < r.length; i++ {
         for j := 0; j < r.length; j++ {
-            erro+= r.outputs[i][j].UpdateWeigths(pattern,winner,r.iteration)
+            v:=float64(0)
+            v,r.outputs[i][j] = r.outputs[i][j].UpdateWeigths(pattern,winner,r.iteration)
+            erro+= v
         }   
     }
     r.iteration++
 
     l:=float64(r.length)
-    return math.Abs(erro / (l * l))
+    return math.Abs(erro / (l * l)),r
 }
 
-func (r Kohonen) DumpCoordinates() {
-
-    for i := 0; i < len(r.patterns); i++ {
-        neu:= r. Winner(r.patterns[i])
-        fmt.Printf("%s %d %d\n",r.labels[i],neu.x,neu.y)
+func (r Kohonen) DumpCoordinates(){
+    i:=0
+    for _, num := range r.patterns {
+        neu:= r. Winner(num)
+        
+        s:=r.labels[i]
+        fmt.Printf("%s,%d,%d\n",s,neu.x,neu.y)
+        i++
     }
 }
 
@@ -213,13 +230,17 @@ type Neuron struct {
     nf float64
 }
 
-func (r Neuron) Create(x int, y int, l int) {
+func (r Neuron) Create(x int, y int, l int) Neuron{
     r.x = x
     r.y = y
     r.length = l
 
     dl:=float64(l)
-    r.nf = 1000 / math.Log(dl)
+
+    log:=math.Log(dl)
+    r.nf = 1000 / log
+    
+    return r
 }
 
 
@@ -241,24 +262,24 @@ func (r Neuron) LearningRate(it int) float64 {
 func (r Neuron) Strength(it int) float64 {
     dit:=float64(it)
     dl:=float64(r.length)
-
+    fmt.Printf("%g\n",r.nf)
     return math.Exp(-dit / r.nf) * dl
 }
 
-func (r Neuron) UpdateWeigths(pattern []float64,winner Neuron,it int) float64 {
+func (r Neuron) UpdateWeigths(pattern []float64,winner Neuron,it int) (float64,Neuron) {
     sum:=float64(0)
-
-    for i := 0; i < r.length; i++ {
+    
+    for i := 0; i < len(r.Weigths); i++ {
         delta:=r.LearningRate(it) * r.Gauss(winner, it) * (pattern[i] - r.Weigths[i])
 
         r.Weigths[i]+=delta
 
-        //RGB[i] = 
         sum+=delta
     }
+
     dl:=float64(r.length)
 
-    return sum / dl
+    return sum / dl, r
 }
 // --------------------------------FimNeuronio--------------------------------------------------------------------------------------
 
