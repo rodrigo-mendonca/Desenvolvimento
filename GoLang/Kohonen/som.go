@@ -29,7 +29,6 @@ func main() {
     var k Kohonen
 
     k = k.Create(400,3)
-
     k = k.Exec("Food.txt")
 
     Show(k.Before.Name())
