@@ -27,11 +27,14 @@ func main() {
     fmt.Printf("Concluido")
 }
 
+// ---------------------------------- Funcoes -------------------------------------------------------------------------------------
 func checkerro(e error) {
     if e != nil {
         panic(e)
     }
 }
+// ---------------------------------- FimFuncoes ----------------------------------------------------------------------------------
+
 
 // -----------------------------------Kohonen--------------------------------------------------------------------------------------
 type Kohonen struct {
@@ -53,7 +56,7 @@ func (r Kohonen) Create(l int, d int) Kohonen{
 func (r Kohonen) Exec(f string) {
     r = r.LoadData(f)
     r = r.NormalisePatterns()
-    r = r.Train(0.00000001)
+    r = r.Train(0.0000001)
     r.DumpCoordinates()
 }
 
@@ -67,10 +70,11 @@ func (r Kohonen) Initialise() Kohonen{
     for i := 0; i < r.length; i++ {
         for j := 0; j < r.length; j++ {
             r.outputs[i][j] = r.outputs[i][j].Create(i,j,r.length)
-            r.outputs[i][j].Weigths = make([]float64,r.dimenions)
+            r.outputs[i][j].Weights = make([]float64,r.dimenions)
+            r.outputs[i][j].RGB = make([]int,r.dimenions)
 
             for k := 0; k < r.dimenions; k++ {
-                r.outputs[i][j].Weigths[k] = rand.Float64()
+                r.outputs[i][j].Weights[k] = rand.Float64()
             }
         }
     }
@@ -155,7 +159,7 @@ func (r Kohonen) Train(maxErro float64) Kohonen{
             
             TrainingSet = append(TrainingSet[:ind],TrainingSet[ind+1:]...)
         }
-        //fmt.Printf("Erro:%i\n",erro)
+        //fmt.Printf("Erro:%f\n",erro)
     }
 
     return r
@@ -165,6 +169,7 @@ func (r Kohonen) TrainPattern(pattern []float64) (float64,Kohonen){
     erro:=float64(0)
 
     var winner Neuron
+    winner = r.Winner(pattern)
 
     for i := 0; i < r.length; i++ {
         for j := 0; j < r.length; j++ {
@@ -174,7 +179,7 @@ func (r Kohonen) TrainPattern(pattern []float64) (float64,Kohonen){
         }   
     }
     r.iteration++
-
+    
     l:=float64(r.length)
     return math.Abs(erro / (l * l)),r
 }
@@ -197,11 +202,11 @@ func (r Kohonen) Winner(pattern []float64) Neuron{
 
     for i := 0; i < r.length; i++ {
         for j := 0; j < r.length; j++ {
-            dist:=r.Distance(pattern,r.outputs[i][j].Weigths)
+            dist:=r.Distance(pattern,r.outputs[i][j].Weights)
 
             if(dist< min){
                 min = dist
-
+                
                 winner = r.outputs[i][j]
             }
         }
@@ -224,7 +229,7 @@ func (r Kohonen) Distance(v1 []float64,v2 []float64)  float64{
 
 // -----------------------------------Neuronio-------------------------------------------------------------------------------------
 type Neuron struct {
-    Weigths []float64
+    Weights []float64
     RGB []int
     x,y,length int
     nf float64
@@ -256,23 +261,28 @@ func (r Neuron) Gauss(win Neuron, it int) float64 {
 func (r Neuron) LearningRate(it int) float64 {
     dit:=float64(it)
 
-    return math.Exp(-dit / 1000) * 0.1
+    return math.Exp(-dit / 1000) * 0.1 // 1000 tem que ser constrante
 }
 
 func (r Neuron) Strength(it int) float64 {
     dit:=float64(it)
     dl:=float64(r.length)
-    fmt.Printf("%g\n",r.nf)
     return math.Exp(-dit / r.nf) * dl
 }
 
 func (r Neuron) UpdateWeigths(pattern []float64,winner Neuron,it int) (float64,Neuron) {
     sum:=float64(0)
     
-    for i := 0; i < len(r.Weigths); i++ {
-        delta:=r.LearningRate(it) * r.Gauss(winner, it) * (pattern[i] - r.Weigths[i])
+    for i := 0; i < len(r.Weights); i++ {
+        delta:=r.LearningRate(it) * r.Gauss(winner, it) * (pattern[i] - r.Weights[i])
 
-        r.Weigths[i]+=delta
+        r.Weights[i]+=delta
+
+        r.RGB[i] = int((r.Weights[i] * 255))
+
+        if r.RGB[i] > 255{
+            r.RGB[i] = 255
+        }
 
         sum+=delta
     }

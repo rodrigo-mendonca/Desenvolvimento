@@ -41,23 +41,23 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(260, 237);
+            this.pictureBox1.Size = new System.Drawing.Size(454, 339);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(289, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(472, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(260, 237);
+            this.pictureBox2.Size = new System.Drawing.Size(454, 339);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // cmdTreinar
             // 
-            this.cmdTreinar.Location = new System.Drawing.Point(472, 255);
+            this.cmdTreinar.Location = new System.Drawing.Point(851, 357);
             this.cmdTreinar.Name = "cmdTreinar";
             this.cmdTreinar.Size = new System.Drawing.Size(75, 23);
             this.cmdTreinar.TabIndex = 2;
@@ -67,7 +67,12 @@
             // 
             // NumTreinamento
             // 
-            this.NumTreinamento.Location = new System.Drawing.Point(346, 258);
+            this.NumTreinamento.Location = new System.Drawing.Point(725, 360);
+            this.NumTreinamento.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.NumTreinamento.Name = "NumTreinamento";
             this.NumTreinamento.Size = new System.Drawing.Size(120, 20);
             this.NumTreinamento.TabIndex = 3;
@@ -81,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 286);
+            this.ClientSize = new System.Drawing.Size(941, 385);
             this.Controls.Add(this.NumTreinamento);
             this.Controls.Add(this.cmdTreinar);
             this.Controls.Add(this.pictureBox2);

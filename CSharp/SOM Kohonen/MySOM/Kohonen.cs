@@ -21,14 +21,15 @@ namespace MySOM
     public Bitmap oAntes;
     public Bitmap oDepois;
     EventHandler Evento;
+    public string Msg = "";
 
     public Bitmap Preenchebitmap()
     {
         Bitmap Retorno = new Bitmap(length, length);
 
-        Parallel.For(0, length, i =>
+        for (int i = 0; i < length; i++)
         {
-            Parallel.For(0, length, j =>
+            for (int j = 0; j < length; j++)
             {
                 int x = outputs[i, j].X;
                 int y = outputs[i, j].Y;
@@ -38,15 +39,15 @@ namespace MySOM
                 int b = outputs[i, j].RGB[2];
 
                 Retorno.SetPixel(x, y, Color.FromArgb(r, g, b));
-            });
-        });
+            }
+        }
         return Retorno;
     }
 
     public Kohonen(int dimensions, int length)
     {
         this.length = length;
-
+        iteration = 0;
         this.dimensions = dimensions;
 
         Initialise();
@@ -125,7 +126,10 @@ namespace MySOM
             double average = sum / patterns.Count;
 
             for (int i = 0; i < patterns.Count; i++)
+            {
                 patterns[i][j] = patterns[i][j] / average;
+
+            }
         }
     }
 
@@ -178,8 +182,9 @@ namespace MySOM
         {
             Neuron n = Winner(patterns[i]);
 
-            Console.WriteLine("{0},{1},{2}", labels[i], n.X, n.Y);
+            Msg += labels[i] + "," + n.X.ToString() + "," + n.Y.ToString() + "\n";
         }
+        Msg += "\ni:" + iteration.ToString();
     }
 
     private Neuron Winner(double[] pattern)

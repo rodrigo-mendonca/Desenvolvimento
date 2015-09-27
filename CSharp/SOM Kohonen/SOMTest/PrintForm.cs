@@ -34,14 +34,16 @@ namespace SOMTest
             oMap = new Kohonen(3, (int)NumTreinamento.Value);
             pictureBox1.Image = oMap.oAntes;
             pictureBox1.Refresh();
+
             oMap.Init("Food.txt",new EventHandler(Teste));
             pictureBox2.Image = oMap.oDepois;
             cmdTreinar.Enabled = true;
+
+            MessageBox.Show(oMap.Msg);
         }
 
         private void Teste(object sender, EventArgs e)
         {
-            
             Bitmap pic = (Bitmap)sender;
 
             if (frame % 10000 == 0)
@@ -52,8 +54,6 @@ namespace SOMTest
                 
             }
             frame++;
-            
-            //lblFrame.Text = frame.ToString();
         }
     }
 }
