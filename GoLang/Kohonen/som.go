@@ -9,30 +9,54 @@ import (
     "strings"
     "strconv"
     "bufio"
+    "image"
+    "image/color"
+    "image/draw"
+    "image/png"
+    "log"
+    "os/exec"
 )
 
-type Color struct {
-    R, G ,B float32
-}
+var (
+    white color.Color = color.RGBA{255, 255, 255, 255}
+    black color.Color = color.RGBA{0, 0, 0, 255}
+    blue  color.Color = color.RGBA{0, 0, 255, 255}
+)
 
 func main() {
     rand.Seed(time.Now().UTC().UnixNano())
 
     var k Kohonen
 
-    k = k.Create(10,3)
+    k = k.Create(400,3)
 
-    k.Exec("Food.txt")
+    k = k.Exec("Food.txt")
+
+    Show(k.Before.Name())
+    Show(k.After.Name())
 
     fmt.Printf("Concluido")
 }
 
 // ---------------------------------- Funcoes -------------------------------------------------------------------------------------
+
 func checkerro(e error) {
     if e != nil {
         panic(e)
     }
 }
+
+func Show(name string) {
+    command := "open"
+    arg1 := "-a"
+    arg2 := "/Applications/Preview.app"
+    cmd := exec.Command(command, arg1, arg2, name)
+    err := cmd.Run()
+    if err != nil {
+        log.Fatal(err)
+    }
+}
+
 // ---------------------------------- FimFuncoes ----------------------------------------------------------------------------------
 
 
@@ -42,22 +66,45 @@ type Kohonen struct {
     iteration,length,dimenions,numlines int
     patterns [][]float64
     labels []string
-    Colors [][]Color
+    Before *os.File
+    After *os.File
+
 }
 
 func (r Kohonen) Create(l int, d int) Kohonen{
     r.length = l
     r.dimenions = d
     r.iteration = 0
+    r.Before, _ = os.Create("Before.png")
+    r.After, _ = os.Create("After.png")
+
     r = r.Initialise()
+
     return r
 }
 
-func (r Kohonen) Exec(f string) {
+func (r Kohonen) Exec(f string) Kohonen{
     r = r.LoadData(f)
     r = r.NormalisePatterns()
     r = r.Train(0.0000001)
+    
+    Screen := image.NewRGBA(image.Rect(0, 0, r.length, r.length))
+    draw.Draw(Screen, Screen.Bounds(), &image.Uniform{white}, image.ZP, draw.Src)
+
+    for i := 0; i < r.length; i++ {
+        for j := 0; j < r.length; j++ {
+            red:=uint8(r.outputs[i][j].RGB[0])
+            green:=uint8(r.outputs[i][j].RGB[1])
+            blue:=uint8(r.outputs[i][j].RGB[2])
+
+            Screen.Set(i, j, color.RGBA{red, green, blue, 255})
+        }
+    }
+    png.Encode(r.After, Screen)
+
     r.DumpCoordinates()
+
+    return r
 }
 
 func (r Kohonen) Initialise() Kohonen{
@@ -67,6 +114,9 @@ func (r Kohonen) Initialise() Kohonen{
         r.outputs[i] = make([]Neuron,r.length)
     }
 
+    Screen := image.NewRGBA(image.Rect(0, 0, r.length, r.length))
+    draw.Draw(Screen, Screen.Bounds(), &image.Uniform{white}, image.ZP, draw.Src)
+
     for i := 0; i < r.length; i++ {
         for j := 0; j < r.length; j++ {
             r.outputs[i][j] = r.outputs[i][j].Create(i,j,r.length)
@@ -75,14 +125,23 @@ func (r Kohonen) Initialise() Kohonen{
 
             for k := 0; k < r.dimenions; k++ {
                 r.outputs[i][j].Weights[k] = rand.Float64()
+                r.outputs[i][j].RGB[k] = int((r.outputs[i][j].Weights[k] * 255))
             }
+
+            red:=uint8(r.outputs[i][j].RGB[0])
+            green:=uint8(r.outputs[i][j].RGB[1])
+            blue:=uint8(r.outputs[i][j].RGB[2])
+
+            Screen.Set(i, j, color.RGBA{red, green, blue, 255})
         }
     }
+    
+    png.Encode(r.Before, Screen)
+
     return r
 }
 
 func (r Kohonen) LoadData(f string) Kohonen {
-
     // faz a leitura do arquivo
     file,err := os.Open(f)
     checkerro(err)
@@ -233,17 +292,21 @@ type Neuron struct {
     RGB []int
     x,y,length int
     nf float64
+    maxint float64
+    maxvar float64
 }
 
 func (r Neuron) Create(x int, y int, l int) Neuron{
     r.x = x
     r.y = y
     r.length = l
+    r.maxint = 1000
+    r.maxvar = 0.1
 
     dl:=float64(l)
 
     log:=math.Log(dl)
-    r.nf = 1000 / log
+    r.nf = r.maxint / log
     
     return r
 }
@@ -261,7 +324,7 @@ func (r Neuron) Gauss(win Neuron, it int) float64 {
 func (r Neuron) LearningRate(it int) float64 {
     dit:=float64(it)
 
-    return math.Exp(-dit / 1000) * 0.1 // 1000 tem que ser constrante
+    return math.Exp(-dit / r.maxint) * r.maxvar // 1000 tem que ser constrante
 }
 
 func (r Neuron) Strength(it int) float64 {

@@ -1,7 +1,6 @@
 package main
 
 import (
-	_ "image/png"
 	"log"
 	"runtime"
 	"github.com/go-gl/gl/v2.1/gl"
@@ -16,8 +15,8 @@ type Color struct {
 
 func init() {
 	runtime.LockOSThread()
-    weight=400
-    height=300
+    weight=10
+    height=10
     rand.Seed( time.Now().UTC().UnixNano())
 }
 
@@ -41,7 +40,6 @@ func main() {
             Matriz[x][y].B = randfloat();
         }
     }
-    
 
 	if err := glfw.Init(); err != nil {
 		log.Fatalln("failed to initialize glfw:", err)
@@ -49,7 +47,7 @@ func main() {
 	defer glfw.Terminate()
 
     // faz a configuracao da tela
-	window, err := glfw.CreateWindow(weight, height, "TCC", nil, nil)
+	window, err := glfw.CreateWindow(100, 100 , "TCC", nil, nil)
 	if err != nil {
 		panic(err)
 	}
