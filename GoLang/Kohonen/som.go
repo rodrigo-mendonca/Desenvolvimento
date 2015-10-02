@@ -5,6 +5,7 @@ import (
 	"math"
     "time"
     "fmt"
+    "flag"
     "math/rand"
     "strings"
     "strconv"
@@ -16,6 +17,7 @@ import (
     "os/exec"
     "gopkg.in/mgo.v2"
     "gopkg.in/mgo.v2/bson"
+    "encoding/json"
 )
 
 var (
@@ -73,17 +75,14 @@ type KDDCup struct{
 }
 
 var k Kohonen
-var gridsize int
-var server string
-func Init() {
-    rand.Seed(time.Now().UTC().UnixNano())
-    gridsize = 10
-    server ="localhost"
-}
+var Gridsize int
+var Server, TrainName string
+var SaveTrain bool
 
 func main() {
-    
-    Init()
+    LoadParams()
+
+    rand.Seed(time.Now().UTC().UnixNano())
 
     loadtype:=0
 
@@ -102,11 +101,12 @@ func main() {
 
     k.DumpCoordinates()
 
-    //Show(k.Before.Name())
-    //Show(k.After.Name())
+    //ShowPng(k.Before.Name())
+    //ShowPng(k.After.Name())
 
-    SaveTrainDB()
-
+    if SaveTrain{
+        SaveTrainJson()
+    }
     fmt.Printf("Concluido!")
 }
 
@@ -118,7 +118,42 @@ func checkerro(e error) {
     }
 }
 
-func Show(name string) {
+func LoadParams(){
+    fmt.Println("Params")
+    flag.StringVar(&Server,"server", "localhost", "Server name")
+    flag.IntVar(&Gridsize,"grid", 10, "Grid Size")
+    flag.BoolVar(&SaveTrain,"s", false, "Training Save?")
+    flag.StringVar(&TrainName,"train", "GridTrain", "Training name")
+
+    config:= flag.String("config", "", "Config file")
+
+    flag.Parse()
+
+    fmt.Println("-Server:", Server)
+    fmt.Println("-Grid Size:", Gridsize)
+    fmt.Println("-Training Save?:", SaveTrain)
+
+    if SaveTrain{
+        fmt.Println("-Training name:", TrainName)
+    }
+
+    fmt.Println("-Config:", *config)
+
+    if *config!="" {
+        file,err := os.Open(*config)
+        checkerro(err)
+
+        reader := bufio.NewReader(file)
+        scanner := bufio.NewScanner(reader)
+        for scanner.Scan() {
+            line:=scanner.Text()
+            fmt.Println("--"+line)
+        }
+    }
+    fmt.Println("Traning...")
+}
+
+func ShowPng(name string) {
     command := "open"
     arg1 := "-a"
     arg2 := "/Applications/Preview.app"
@@ -130,7 +165,7 @@ func Show(name string) {
 
 func LoadColletion(name string) *mgo.Collection{
     // faz a conexao com a base de dados
-    session, err := mgo.Dial(server)
+    session, err := mgo.Dial(Server)
     if err != nil {
         panic(err)
     }
@@ -159,23 +194,24 @@ func LoadData(f string,dimensions int) Kohonen {
             params:=strings.Split(line,",")
             
             labels = append(labels, params[0])
-
+            //fmt.Printf("%s,",params[0])
             inputs := make([]float64,dimensions)
 
             for i := 0; i < dimensions; i++ {
                 p:=params[i + 1]
-
+                
                 num,err:=strconv.ParseFloat(p, 64)
-
+                //fmt.Printf("%f,",num)
                 inputs[i] = num
                 checkerro(err)
             }
+            //fmt.Printf("\n")
             patterns = append(patterns, inputs)
         }
         numlines++;
     }
 
-    k = k.Create(gridsize,dimensions)
+    k = k.Create(Gridsize,dimensions)
     k.labels   = labels
     k.patterns = patterns
     k.numlines = numlines
@@ -190,17 +226,19 @@ func LoadKDDCup(dimensions int) Kohonen{
 
     Colletion := LoadColletion("KDDCup")
     
-    var listreg []KDDCup
+    var listreg [][]string
     err := Colletion.Find(bson.M{}).All(&listreg)
     checkerro(err)
     numlines:=0
     for _,reg:= range listreg{
-        labels = append(labels, reg.Attack)
-        //fmt.Printf("Found document: %+v\n", reg)
+        labels = append(labels, reg[0])
+        
+        fmt.Printf(reg[0]+"\n")
+
         numlines++
     }
 
-    k = k.Create(gridsize,dimensions)
+    k = k.Create(Gridsize,dimensions)
     k.labels   = labels
     k.numlines = numlines
 
@@ -228,12 +266,32 @@ func LoadTrainDB() [][]Neuron{
     var DbTrain []Neuron
     var ListTrain [][]Neuron
 
-    Colletion := LoadColletion("GridTrain")
+    Colletion := LoadColletion(TrainName)
 
     err := Colletion.Find(bson.M{}).All(&DbTrain)
     checkerro(err)
 
     return ListTrain
+}
+
+func SaveTrainJson(){
+    o, err := os.Create("TrainDb.json")
+    if err != nil {
+        panic(err)
+    }
+
+    b, err := json.Marshal(k.outputs)
+    if err != nil {
+        fmt.Println(err)
+        return
+    }
+    o.WriteString(string(b))
+
+    fmt.Printf("Treinamento Salvo\n")
+}
+
+func LoadTrainJson(){
+    
 }
 // ---------------------------------- FimFuncoes ----------------------------------------------------------------------------------
 
@@ -342,8 +400,10 @@ func (r Kohonen) Train(maxErro float64) Kohonen{
 
         for _, num := range r.patterns {
             TrainingSet = append(TrainingSet,num)
+            fmt.Printf("%v\n", num)
         }
-
+        fmt.Printf("\n")
+        
         for i := 0; i < r.numlines; i++ {
             ind:=rand.Intn((r.numlines - i))
 
@@ -382,7 +442,7 @@ func (r Kohonen) TrainPattern(pattern []float64) (float64,Kohonen){
 func (r Kohonen) DumpCoordinates(){
     i:=0
     for _, num := range r.patterns {
-        neu:= r. Winner(num)
+        neu:= r.Winner(num)
         
         s:=r.labels[i]
         fmt.Printf("%s,%d,%d\n",s,neu.X,neu.Y)
@@ -436,8 +496,8 @@ func (r Neuron) Create(x int, y int, l int) Neuron{
     r.X = x
     r.Y = y
     r.Length = l
-    r.Maxint = 1000
-    r.Maxvar = 0.1
+    r.Maxint = float64(1000)
+    r.Maxvar = float64(0.1)
 
     dl:=float64(l)
 
