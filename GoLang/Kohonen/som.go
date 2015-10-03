@@ -11,7 +11,6 @@ import (
     "bufio"
 )
 
-
 func main() {
     LoadParams()
 
