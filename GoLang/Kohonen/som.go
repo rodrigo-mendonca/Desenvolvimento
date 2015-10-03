@@ -74,40 +74,42 @@ type KDDCup struct{
     Attack string
 }
 
-var k Kohonen
-var Gridsize int
-var Server, TrainName string
-var SaveTrain bool
+var Koh Kohonen
+var Gridsize,Dimensions int
+var Server, Dbname, Trainname string
+var Savetrain bool
+var Loadtype int
+var Filename string
+var Error float64
 
 func main() {
     LoadParams()
 
     rand.Seed(time.Now().UTC().UnixNano())
 
-    loadtype:=0
-
     // faz a leitura dos dados de treinamento
-    if loadtype == 0 {
-        k = LoadData("Food.txt",3)
+    if Loadtype == 0 {
+        Koh = LoadFile(Filename)
     }
-    if loadtype == 1 {
-        k = LoadKDDCup(42)
+    if Loadtype == 1 {
+        Koh = LoadKDDCup()
+    }
+    if Loadtype == 2 {
+        //Koh = LoadJson()
     }
 
     // faz o treinamento da base de dados
-    k = k.Train(0.0000001)
+    Koh = Koh.Train(Error)
     // Desenha o estado atual da grade
-    k.Draw()
-
-    k.DumpCoordinates()
+    Koh.Draw()
 
     //ShowPng(k.Before.Name())
     //ShowPng(k.After.Name())
 
-    if SaveTrain{
+    if Savetrain{
         SaveTrainJson()
     }
-    fmt.Printf("Concluido!")
+    fmt.Printf("Completed!")
 }
 
 // ---------------------------------- Funcoes -------------------------------------------------------------------------------------
@@ -121,25 +123,39 @@ func checkerro(e error) {
 func LoadParams(){
     fmt.Println("Params")
     flag.StringVar(&Server,"server", "localhost", "Server name")
+    flag.StringVar(&Dbname,"base", "TCC", "Data base name")
     flag.IntVar(&Gridsize,"grid", 10, "Grid Size")
-    flag.BoolVar(&SaveTrain,"s", false, "Training Save?")
-    flag.StringVar(&TrainName,"train", "GridTrain", "Training name")
+    flag.BoolVar(&Savetrain,"s", false, "Training Save?")
+    flag.StringVar(&Trainname,"train", "GridTrain", "Training name")
+    flag.IntVar(&Loadtype,"type", 0, "0-Load file,1-Load KddCup")
+    flag.StringVar(&Filename,"f", "", "File name")
+    flag.IntVar(&Dimensions,"dim", 3, "Dimensions Weigths")
+    flag.Float64Var(&Error,"err", 0.0000001, "Minimum error")
 
     config:= flag.String("config", "", "Config file")
 
     flag.Parse()
+    
+    fmt.Println("-type:", Loadtype)
 
-    fmt.Println("-Server:", Server)
-    fmt.Println("-Grid Size:", Gridsize)
-    fmt.Println("-Training Save?:", SaveTrain)
-
-    if SaveTrain{
-        fmt.Println("-Training name:", TrainName)
+    if Loadtype == 0{
+        fmt.Println("-File:", Filename)
     }
 
-    fmt.Println("-Config:", *config)
+    if Loadtype == 1{
+        fmt.Println("-Server:", Server)
+        fmt.Println("-DataBase:", Server)
+    }
+
+    fmt.Println("-Grid Size:", Gridsize)
+    fmt.Println("-Training Save?:", Savetrain)
+
+    if Savetrain{
+        fmt.Println("-Training name:", Trainname)
+    }
 
     if *config!="" {
+        fmt.Println("-Config:", *config)
         file,err := os.Open(*config)
         checkerro(err)
 
@@ -150,7 +166,7 @@ func LoadParams(){
             fmt.Println("--"+line)
         }
     }
-    fmt.Println("Traning...")
+    fmt.Println("Trainning...")
 }
 
 func ShowPng(name string) {
@@ -172,10 +188,10 @@ func LoadColletion(name string) *mgo.Collection{
 
     session.SetMode(mgo.Monotonic, true)
 
-    return session.DB("TCC").C(name)
+    return session.DB(Dbname).C(name)
 }
 
-func LoadData(f string,dimensions int) Kohonen {
+func LoadFile(f string) Kohonen {
     // faz a leitura do arquivo
     file,err := os.Open(f)
     checkerro(err)
@@ -184,6 +200,7 @@ func LoadData(f string,dimensions int) Kohonen {
     scanner := bufio.NewScanner(reader)
     
     numlines:=-1
+
     var patterns [][]float64
     var labels []string
 
@@ -194,33 +211,30 @@ func LoadData(f string,dimensions int) Kohonen {
             params:=strings.Split(line,",")
             
             labels = append(labels, params[0])
-            //fmt.Printf("%s,",params[0])
-            inputs := make([]float64,dimensions)
 
-            for i := 0; i < dimensions; i++ {
+            inputs := make([]float64,Dimensions)
+
+            for i := 0; i < Dimensions; i++ {
                 p:=params[i + 1]
-                
+
                 num,err:=strconv.ParseFloat(p, 64)
-                //fmt.Printf("%f,",num)
+
                 inputs[i] = num
                 checkerro(err)
             }
-            //fmt.Printf("\n")
             patterns = append(patterns, inputs)
         }
         numlines++;
     }
 
-    k = k.Create(Gridsize,dimensions)
-    k.labels   = labels
-    k.patterns = patterns
-    k.numlines = numlines
-
-    return k
+    Koh = Koh.Create(Gridsize,Dimensions)
+    Koh.labels   = labels
+    Koh.patterns = patterns
+    Koh.numlines = numlines
+    return Koh
 }
 
-func LoadKDDCup(dimensions int) Kohonen{
-
+func LoadKDDCup() Kohonen{
     //var patterns [][]float64
     var labels []string
 
@@ -238,11 +252,11 @@ func LoadKDDCup(dimensions int) Kohonen{
         numlines++
     }
 
-    k = k.Create(Gridsize,dimensions)
-    k.labels   = labels
-    k.numlines = numlines
+    Koh = Koh.Create(Gridsize,Dimensions)
+    Koh.labels   = labels
+    Koh.numlines = numlines
 
-    return k
+    return Koh
 }
 
 func SaveTrainDB(){
@@ -250,7 +264,7 @@ func SaveTrainDB(){
     Colletion.RemoveAll(nil)
 
     ind:=0
-    for _, newline:= range k.outputs {
+    for _, newline:= range Koh.outputs {
         for _, newreg:= range newline {
             err := Colletion.Insert(newreg)
             checkerro(err)
@@ -266,7 +280,7 @@ func LoadTrainDB() [][]Neuron{
     var DbTrain []Neuron
     var ListTrain [][]Neuron
 
-    Colletion := LoadColletion(TrainName)
+    Colletion := LoadColletion(Trainname)
 
     err := Colletion.Find(bson.M{}).All(&DbTrain)
     checkerro(err)
@@ -280,7 +294,7 @@ func SaveTrainJson(){
         panic(err)
     }
 
-    b, err := json.Marshal(k.outputs)
+    b, err := json.Marshal(Koh.outputs)
     if err != nil {
         fmt.Println(err)
         return
@@ -388,9 +402,7 @@ func (r Kohonen) NormalisePatterns() Kohonen{
 }
 
 func (r Kohonen) Train(maxErro float64) Kohonen{
-
     r = r.NormalisePatterns()
-
     erro:=math.MaxFloat64
 
     for erro > maxErro {
@@ -400,10 +412,8 @@ func (r Kohonen) Train(maxErro float64) Kohonen{
 
         for _, num := range r.patterns {
             TrainingSet = append(TrainingSet,num)
-            fmt.Printf("%v\n", num)
         }
-        fmt.Printf("\n")
-        
+
         for i := 0; i < r.numlines; i++ {
             ind:=rand.Intn((r.numlines - i))
 
@@ -442,10 +452,10 @@ func (r Kohonen) TrainPattern(pattern []float64) (float64,Kohonen){
 func (r Kohonen) DumpCoordinates(){
     i:=0
     for _, num := range r.patterns {
-        neu:= r.Winner(num)
+        neu:= r. Winner(num)
         
         s:=r.labels[i]
-        fmt.Printf("%s,%d,%d\n",s,neu.X,neu.Y)
+        fmt.Printf("%s,%d,%d\n",s,neu.x,neu.y)
         i++
     }
 }
@@ -484,33 +494,32 @@ func (r Kohonen) Distance(v1 []float64,v2 []float64)  float64{
 
 // -----------------------------------Neuronio-------------------------------------------------------------------------------------
 type Neuron struct {
-    X,Y,Length int
-    Nf float64
-    Maxint float64
-    Maxvar float64
     Weights []float64
     RGB []int
+    x,y,length int
+    nf float64
+    maxint float64
+    maxvar float64
 }
 
 func (r Neuron) Create(x int, y int, l int) Neuron{
-    r.X = x
-    r.Y = y
-    r.Length = l
-    r.Maxint = float64(1000)
-    r.Maxvar = float64(0.1)
+    r.x = x
+    r.y = y
+    r.length = l
+    r.maxint = 1000
+    r.maxvar = 0.1
 
     dl:=float64(l)
 
     log:=math.Log(dl)
-    r.Nf = r.Maxint / log
+    r.nf = r.maxint / log
     
     return r
 }
 
-
 func (r Neuron) Gauss(win Neuron, it int) float64 {
-    dx:=float64(win.X - r.X)
-    dy:=float64(win.X - r.Y)
+    dx:=float64(win.x - r.x)
+    dy:=float64(win.y - r.y)
 
     distance:=math.Sqrt(math.Pow(dx, 2) + math.Pow(dy, 2))
 
@@ -520,13 +529,13 @@ func (r Neuron) Gauss(win Neuron, it int) float64 {
 func (r Neuron) LearningRate(it int) float64 {
     dit:=float64(it)
 
-    return math.Exp(-dit / r.Maxint) * r.Maxvar // 1000 tem que ser constrante
+    return math.Exp(-dit / r.maxint) * r.maxvar // 1000 tem que ser constrante
 }
 
 func (r Neuron) Strength(it int) float64 {
     dit:=float64(it)
-    dl:=float64(r.Length)
-    return math.Exp(-dit / r.Nf) * dl
+    dl:=float64(r.length)
+    return math.Exp(-dit / r.nf) * dl
 }
 
 func (r Neuron) UpdateWeigths(pattern []float64,winner Neuron,it int) (float64,Neuron) {
@@ -546,7 +555,7 @@ func (r Neuron) UpdateWeigths(pattern []float64,winner Neuron,it int) (float64,N
         sum+=delta
     }
 
-    dl:=float64(r.Length)
+    dl:=float64(r.length)
 
     return sum / dl, r
 }
