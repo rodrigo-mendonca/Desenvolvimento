@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySOM", "MySOM\MySOM.csproj", "{596107E7-0975-4562-98ED-78DFAC01D228}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOMTest", "SOMTest\SOMTest.csproj", "{D59D83F5-3446-49A1-B615-BD05579FB2CC}"
