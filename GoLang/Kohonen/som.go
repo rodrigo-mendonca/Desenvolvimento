@@ -3,18 +3,15 @@ package main
 import (
     //"./somstructs"
     somf "./somfunctions"
-    "time"
     "fmt"
     "flag"
-    "math/rand"
+    
     "os"
     "bufio"
 )
 
 func main() {
     LoadParams()
-
-    rand.Seed(time.Now().UTC().UnixNano())
 
     // faz a leitura dos dados de treinamento
     if somf.Loadtype == 0 {
@@ -28,16 +25,31 @@ func main() {
     }
 
     // faz o treinamento da base de dados
-    somf.Koh = somf.Koh.Train(somf.Error)
+    somf.Koh = somf.Koh.Train(5000)
     // Desenha o estado atual da grade
     somf.Koh.Draw()
-
-    //ShowPng(k.Before.Name())
-    //ShowPng(k.After.Name())
 
     if somf.Savetrain{
         somf.SaveTrainJson()
     }
+    
+    var num float64
+    
+    for true {
+        var a []float64
+        a = append(a, 0,0,0)
+        for i := 0; i < 3; i++ {
+            fmt.Printf("%d >> ", i)
+            n, err := fmt.Scanf("%g\n", &num)
+            if err != nil {
+                fmt.Println(n, err)
+            }
+            a[i] = num
+        }
+        
+        somf.Koh.Test(a)
+    }
+    
     fmt.Printf("Completed!")
 }
 
